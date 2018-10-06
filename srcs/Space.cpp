@@ -33,15 +33,15 @@ void Space::getInput(int ch) {
 		case 'q':
 		case 'Q':
 			ship_user->move(WEST);
-			_bm->fireUser()
+			_bm->fireUser();
 			break;
 		case 'e':
 		case 'E':
 			ship_user->move(EAST);
-			_bm->fireUser()
+			_bm->fireUser();
 			break;
 		case ' ':
-			_bm->fireUser()
+			_bm->fireUser();
 			break;
 		case 27:
 			return;

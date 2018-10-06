@@ -3,7 +3,7 @@
 //
 
 #include <Ship/ShipMob.hpp>
-#include <Bullets/BasicBullet.hpp>
+#include <Bullets/MobBullet.hpp>
 #include <ncurses.h>
 #include <cstdlib>
 
@@ -31,7 +31,7 @@ ShipMob::ShipMob(ShipMob const &i) {
 
 ABullet *ShipMob::fire() const {
 	if (_current_bullets > 0) {
-		return new BasicBullet();
+		return new MobBullet();
 	}
 	return 0;
 }
