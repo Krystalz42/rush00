@@ -9,6 +9,7 @@
 #include <utils/IShooter.hpp>
 #include <utils/List.tpp>
 #include <utils/IBulletsManager.hpp>
+#include <Ship/AShip.hpp>
 
 class BulletsManager {
 private:
@@ -20,6 +21,7 @@ private:
 public:
 	void 		moveBullets();
 
+	BulletsManager(List<IBulletsManager *> *pList);
 };
 
 #endif //__BULLETSMANAGER_HPP__
