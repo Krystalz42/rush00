@@ -6,6 +6,7 @@
 #include <ncurses.h>
 #include <cstdlib>
 #include <Bullets/MobBullet.hpp>
+#include <iostream>
 
 #include "Ship/ShipMob.hpp"
 
@@ -16,14 +17,17 @@
 /** Constructor **/
 
 
-ShipMob::ShipMob() {
-	_p = new Position(rand() % (COLS / 3), rand() % (LINES - 1));
-	_max_bullets = 10;
-	_current_bullets = 10;
+ShipMob::ShipMob() :
+	AShip(
+			10,
+			10,
+			0,
+			1){
+	Position *p = new Position(rand() % (COLS / 3), rand() % (LINES - 1));
 }
 
 ShipMob::ShipMob(ShipMob const &i) {
-
+	*this = i;
 }
 
 /** Public **/

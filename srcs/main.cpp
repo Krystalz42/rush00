@@ -2,6 +2,10 @@
 
 #include <utils/Utils.hpp>
 #include <Space.hpp>
+#include <ostream>
+#include <fstream>
+
+std::ofstream		file("/tmp/log.out");
 
 void listenUser() {
 
@@ -25,7 +29,6 @@ void listenUser() {
 }
 
 int main() {
-
 	Utils::getInstance();
 	listenUser();
 	Utils::getInstance()->exitAndReset();

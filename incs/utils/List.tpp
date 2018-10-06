@@ -5,6 +5,12 @@
 #ifndef __LIST_HPP__
 #define __LIST_HPP__
 
+#include <iostream>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+
+extern std::ofstream		file;
 template <typename T>
 class List {
 
@@ -15,8 +21,6 @@ public:
 		struct t_list		*next;
 		struct t_list		*prev;
 	}				lst;
-
-	typedef void (*operator_f)(void);
 
 	void				pushFront(T element);
 	void 				erase(T element);
@@ -40,16 +44,29 @@ private:
 
 template<typename T>
 List<T>::List() {
-
+	beg = 0;
+	end = 0;
 }
 
 template<typename T>
 void List<T>::pushFront(T element) {
-	for (lst *it = beg; it != 0; it = it->next) {
-		if (it->data == element) {
-			it->prev->next = it->next;
-			it->next->prev = it->prev;
-		}
+	file << "Push" << std::endl;
+	if (beg == 0) {
+		file << "1st" << std::endl;
+
+		beg = new t_list;
+		beg->data = element;
+		end = beg;
+		beg->next = 0;
+		beg->prev = 0;
+	} else {
+		file << "other" << std::endl;
+		t_list *element_lst = new t_list;
+		element_lst->data = element;
+		end->next = element_lst;
+		element_lst->prev = end;
+		end = element_lst;
+		element_lst->next = 0;
 	}
 }
 

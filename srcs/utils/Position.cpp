@@ -4,13 +4,14 @@
 
 #include <utils/Position.hpp>
 #include <ncurses.h>
+#include <iostream>
 
 Position::Position() {
 
 }
 
-Position::Position(int _x, int _y) : _x(_x), _y(_y) {
-
+Position::Position(int x, int y) : _x(x), _y(y) {
+	std::cout << "Position create" <<  x << y << std::endl;
 }
 
 Position::Position(Position const &i) {

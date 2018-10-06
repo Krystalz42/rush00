@@ -22,7 +22,7 @@ public:
 	void setY(int _y);
 
 public:
-	Position(int _x, int _y);
+	Position(int x, int y);
 
 	Position(Position const &i);
 	~Position();

@@ -11,6 +11,19 @@ AShip::AShip() {
 
 }
 
+AShip::AShip(
+		unsigned int _current_bullets,
+		unsigned int _max_bullets,
+			Position *_p,
+			unsigned int _life
+			) :
+			_current_bullets(_current_bullets),
+			_max_bullets(_max_bullets),
+			_p(_p),
+			_life(_life) {
+
+}
+
 AShip::AShip(AShip const &i) {
 
 }
@@ -44,6 +57,7 @@ AShip::~AShip() {
 void AShip::moveShip(Move m) {
 
 }
+
 
 
 

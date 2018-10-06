@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/_.dir/srcs/utils/Logger.cpp.o"
   "CMakeFiles/_.dir/srcs/main.cpp.o"
   "CMakeFiles/_.dir/srcs/utils/Position.cpp.o"
   "CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.o"

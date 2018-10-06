@@ -5,14 +5,16 @@
 #include <Space.hpp>
 #include <Ship/ShipMob.hpp>
 #include <iostream>
-#include <utils/Logger.hpp>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
 
-#include "Space.hpp"
+extern std::ofstream		file;
 
 /** Static **/
 /** Constructor **/
 
-Space::Space() : _level(0) {
+Space::Space() : _level(1) {
 	initLevel();
 }
 
@@ -66,24 +68,22 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
-	std::string s("Init level");
-	s += _level;
-	Logger::getInstance()->log(Logger::CONSOLE, s);
 	int difficulty = _level * 10;
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
 
 	ship_ennemy = new List<AShip *>;
 
+	file << "Init Ship" << difficulty << std::endl;
 	for (int idx = 0; idx < difficulty; idx++) {
-		ship_ennemy->pushFront(new ShipMob());
+		file << "ShipMob" << idx << std::endl;
+//		ship_ennemy->pushFront(new ShipMob());
 	}
-	Logger::getInstance()->log(Logger::CONSOLE, "Finish init");
 	for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
-		t_bm->pushFront(it->data);
-		t_sm->pushFront(it->data);
+		file << "Go" << std::endl;
+//		t_bm->pushFront(it->data);
+//		t_sm->pushFront(it->data);
 	}
-	Logger::getInstance()->log(Logger::CONSOLE, "Finish init");
 	_bm = new BulletsManager(t_bm);
 	_sm = new ShipManager(t_sm);
 }

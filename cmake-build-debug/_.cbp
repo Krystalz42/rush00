@@ -129,9 +129,6 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/List.tpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Logger.hpp">
-			<Option target="_"/>
-		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Position.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -163,9 +160,6 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp">
-			<Option target="_"/>
-		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Logger.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Position.cpp">

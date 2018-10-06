@@ -17,7 +17,10 @@ protected:
 	unsigned int	_max_bullets;
 	Position		*_p;
 	unsigned int	_life;
+	AShip(unsigned int _current_bullets, unsigned int _max_bullets,
+		  Position *_p, unsigned int _life);
 
+protected:
 	AShip();
 	virtual void		drawShip() const = 0;
 	virtual void		deleteShip() const = 0;

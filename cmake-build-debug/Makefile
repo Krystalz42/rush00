@@ -366,33 +366,6 @@ srcs/main.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/main.cpp.s
 .PHONY : srcs/main.cpp.s
 
-srcs/utils/Logger.o: srcs/utils/Logger.cpp.o
-
-.PHONY : srcs/utils/Logger.o
-
-# target to build an object file
-srcs/utils/Logger.cpp.o:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Logger.cpp.o
-.PHONY : srcs/utils/Logger.cpp.o
-
-srcs/utils/Logger.i: srcs/utils/Logger.cpp.i
-
-.PHONY : srcs/utils/Logger.i
-
-# target to preprocess a source file
-srcs/utils/Logger.cpp.i:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Logger.cpp.i
-.PHONY : srcs/utils/Logger.cpp.i
-
-srcs/utils/Logger.s: srcs/utils/Logger.cpp.s
-
-.PHONY : srcs/utils/Logger.s
-
-# target to generate assembly for a file
-srcs/utils/Logger.cpp.s:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Logger.cpp.s
-.PHONY : srcs/utils/Logger.cpp.s
-
 srcs/utils/Position.o: srcs/utils/Position.cpp.o
 
 .PHONY : srcs/utils/Position.o
@@ -483,9 +456,6 @@ help:
 	@echo "... srcs/main.o"
 	@echo "... srcs/main.i"
 	@echo "... srcs/main.s"
-	@echo "... srcs/utils/Logger.o"
-	@echo "... srcs/utils/Logger.i"
-	@echo "... srcs/utils/Logger.s"
 	@echo "... srcs/utils/Position.o"
 	@echo "... srcs/utils/Position.i"
 	@echo "... srcs/utils/Position.s"
