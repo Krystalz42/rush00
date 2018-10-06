@@ -122,22 +122,35 @@ CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BulletsManager.cpp -o CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s
 
-CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o: CMakeFiles/_.dir/flags.make
-CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o: ../srcs/Bullets/BasicBullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp
+CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o: ../srcs/Bullets/PlayerBullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp
 
-CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp > CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i
+CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp > CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i
 
-CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp -o CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s
+CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp -o CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s
+
+CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o: ../srcs/Bullets/MobBullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/MobBullet.cpp
+
+CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/MobBullet.cpp > CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.i
+
+CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/MobBullet.cpp -o CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.s
 
 CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o: CMakeFiles/_.dir/flags.make
 CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o: ../srcs/Ship/ShipMob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMob.cpp
 
 CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.s: cmake_force
 
 CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o: CMakeFiles/_.dir/flags.make
 CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o: ../srcs/Ship/ShipManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipManager.cpp
 
 CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.s: cmake_force
 
 CMakeFiles/_.dir/srcs/Space.cpp.o: CMakeFiles/_.dir/flags.make
 CMakeFiles/_.dir/srcs/Space.cpp.o: ../srcs/Space.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/_.dir/srcs/Space.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/_.dir/srcs/Space.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Space.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Space.cpp
 
 CMakeFiles/_.dir/srcs/Space.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/_.dir/srcs/Space.cpp.s: cmake_force
 
 CMakeFiles/_.dir/srcs/utils/Utils.cpp.o: CMakeFiles/_.dir/flags.make
 CMakeFiles/_.dir/srcs/utils/Utils.cpp.o: ../srcs/utils/Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/_.dir/srcs/utils/Utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/_.dir/srcs/utils/Utils.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/utils/Utils.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Utils.cpp
 
 CMakeFiles/_.dir/srcs/utils/Utils.cpp.i: cmake_force
@@ -194,7 +207,8 @@ __OBJECTS = \
 "CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.o" \
 "CMakeFiles/_.dir/srcs/Ship/AShip.cpp.o" \
 "CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o" \
-"CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o" \
+"CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o" \
+"CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o" \
 "CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o" \
 "CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o" \
 "CMakeFiles/_.dir/srcs/Space.cpp.o" \
@@ -208,14 +222,15 @@ _ : CMakeFiles/_.dir/srcs/utils/Position.cpp.o
 _ : CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/AShip.cpp.o
 _ : CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o
-_ : CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o
+_ : CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o
+_ : CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o
 _ : CMakeFiles/_.dir/srcs/Space.cpp.o
 _ : CMakeFiles/_.dir/srcs/utils/Utils.cpp.o
 _ : CMakeFiles/_.dir/build.make
 _ : CMakeFiles/_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable _"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable _"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

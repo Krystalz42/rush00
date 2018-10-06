@@ -2,8 +2,13 @@
 
 #include <utils/Utils.hpp>
 #include <Space.hpp>
+#include <ostream>
+#include <fstream>
+
+std::ofstream		file("/tmp/log.out");
 
 void listenUser() {
+
 	Space		s = Space();
 	int ch;
 	unsigned count = 0;
@@ -24,7 +29,6 @@ void listenUser() {
 }
 
 int main() {
-
 	Utils::getInstance();
 	listenUser();
 	Utils::getInstance()->exitAndReset();

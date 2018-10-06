@@ -12,6 +12,5 @@ ShipManager::ShipManager() {
 }
 
 ShipManager::ShipManager(List<IShipsManager *> *pList) {
-	IShipsManager * s = new ShipMob();
 }
 

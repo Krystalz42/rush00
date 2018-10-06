@@ -53,7 +53,7 @@ SRCS = \
 				Ship/ShipMob.cpp	\
 				Ship/ShipManager.cpp\
 				Space.cpp\
-				utils/Utils.cpp
+				utils/Utils.cpp\
 
 # ---------------------------------------------------------------------------- #
 # /!\ COLOR FOR PRINTF /!\                                                     #
@@ -89,8 +89,10 @@ CPPFLAGS	= \
 			  -I$(DIR_INCS)							\
 
 CFLAGS		= \
-			 # -Wall -Werror -Wextra					\
 				-std=c++98					\
+				-g3			\
+				-fsanitize=address		\
+			 # -Wall -Werror -Wextra					\
 
 # ---------------------------------------------------------------------------- #
 # /!\ SOURCE NORMALIZATION AND COMPILATION RULES /!\                           #
@@ -135,7 +137,7 @@ $(DIR_DEPS) :
 all : $(NAME)
 
 $(NAME)		: $(DIR_OBJS) $(DIR_DEPS) $(O_SRCS) $(LIBS)
-	$(CC) $(O_SRCS) -o  $(NAME) $(LDFLAGS) $(LDLIBS)
+	$(CC) $(O_SRCS) -o  $(NAME) $(LDFLAGS) $(LDLIBS) $(CFLAGS)
 
 clean		:
 	$(RM) $(DIR_OBJS)

@@ -4,13 +4,17 @@
 
 #include <Space.hpp>
 #include <Ship/ShipMob.hpp>
+#include <iostream>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
 
-#include "Space.hpp"
+extern std::ofstream		file;
 
 /** Static **/
 /** Constructor **/
 
-Space::Space() : _level(0) {
+Space::Space() : _level(1) {
 	initLevel();
 }
 
@@ -24,20 +28,20 @@ void Space::getInput(int ch) {
 	{
 		case 'd':
 		case 'D':
-			ship_user->move(EAST);
+			ship_user->moveShip(EAST);
 			break;
 		case 'a':
 		case 'A':
-			ship_user->move(WEST);
+			ship_user->moveShip(WEST);
 			break;
 		case 'q':
 		case 'Q':
-			ship_user->move(WEST);
+			ship_user->moveShip(WEST);
 			_bm->fireUser();
 			break;
 		case 'e':
 		case 'E':
-			ship_user->move(EAST);
+			ship_user->moveShip(EAST);
 			_bm->fireUser();
 			break;
 		case ' ':
@@ -70,12 +74,15 @@ void Space::initLevel() {
 
 	ship_ennemy = new List<AShip *>;
 
+	file << "Init Ship" << difficulty << std::endl;
 	for (int idx = 0; idx < difficulty; idx++) {
-		ship_ennemy->pushFront(new ShipMob());
+		file << "ShipMob" << idx << std::endl;
+//		ship_ennemy->pushFront(new ShipMob());
 	}
 	for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
-		t_bm->pushFront(it->data);
-		t_sm->pushFront(it->data);
+		file << "Go" << std::endl;
+//		t_bm->pushFront(it->data);
+//		t_sm->pushFront(it->data);
 	}
 	_bm = new BulletsManager(t_bm);
 	_sm = new ShipManager(t_sm);
