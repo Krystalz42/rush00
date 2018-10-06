@@ -29,7 +29,7 @@ void listenUser() {
 }
 
 int main() {
-	// Utils::getInstance();
+	Utils::getInstance();
 	listenUser();
 	Utils::getInstance()->exitAndReset();
 }

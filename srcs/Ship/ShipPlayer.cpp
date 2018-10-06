@@ -34,7 +34,9 @@ ShipPlayer::ShipPlayer(ShipPlayer const &i) {
 
 ABullet *ShipPlayer::fire() const {
 	if (_current_bullets > 0) {
-		return new PlayerBullet();
+		Position * t_p = new Position(*_p);
+		t_p->setY(t_p->getY() + 1);
+		return new PlayerBullet(t_p);
 	}
 	return 0;
 }

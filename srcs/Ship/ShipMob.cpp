@@ -23,6 +23,7 @@ ShipMob::ShipMob() :
 			10,
 			new Position(rand() % (LINES / 3) ,rand() % (COLS - 1)),
 			1){
+
 	drawShip();
 }
 
@@ -34,7 +35,9 @@ ShipMob::ShipMob(ShipMob const &i) {
 
 ABullet *ShipMob::fire() const {
 	if (_current_bullets > 0) {
-		return new MobBullet();
+		Position * t_p = new Position(*_p);
+		t_p->setY(t_p->getY() + 1);
+		return new MobBullet(t_p);
 	}
 	return 0;
 }

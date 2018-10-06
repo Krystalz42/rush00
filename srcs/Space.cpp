@@ -87,7 +87,7 @@ void Space::initLevel() {
 		t_bm->pushFront(it->data);
 		t_sm->pushFront(it->data);
 	}
-	_bm = new BulletsManager(t_bm);
+	_bm = new BulletsManager(t_bm, ship_user);
 	_sm = new ShipManager(t_sm);
 //	delete t_bm;
 //	delete t_sm;
