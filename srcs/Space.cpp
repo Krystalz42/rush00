@@ -4,6 +4,8 @@
 
 #include <Space.hpp>
 #include <Ship/ShipMob.hpp>
+#include <iostream>
+#include <utils/Logger.hpp>
 
 #include "Space.hpp"
 
@@ -24,20 +26,20 @@ void Space::getInput(int ch) {
 	{
 		case 'd':
 		case 'D':
-			ship_user->move(EAST);
+			ship_user->moveShip(EAST);
 			break;
 		case 'a':
 		case 'A':
-			ship_user->move(WEST);
+			ship_user->moveShip(WEST);
 			break;
 		case 'q':
 		case 'Q':
-			ship_user->move(WEST);
+			ship_user->moveShip(WEST);
 			_bm->fireUser();
 			break;
 		case 'e':
 		case 'E':
-			ship_user->move(EAST);
+			ship_user->moveShip(EAST);
 			_bm->fireUser();
 			break;
 		case ' ':
@@ -64,6 +66,9 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
+	std::string s("Init level");
+	s += _level;
+	Logger::getInstance()->log(Logger::CONSOLE, s);
 	int difficulty = _level * 10;
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
@@ -73,10 +78,12 @@ void Space::initLevel() {
 	for (int idx = 0; idx < difficulty; idx++) {
 		ship_ennemy->pushFront(new ShipMob());
 	}
+	Logger::getInstance()->log(Logger::CONSOLE, "Finish init");
 	for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
 		t_bm->pushFront(it->data);
 		t_sm->pushFront(it->data);
 	}
+	Logger::getInstance()->log(Logger::CONSOLE, "Finish init");
 	_bm = new BulletsManager(t_bm);
 	_sm = new ShipManager(t_sm);
 }

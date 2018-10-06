@@ -19,6 +19,8 @@ protected:
 	unsigned int	_life;
 
 	AShip();
+	virtual void		drawShip() const = 0;
+	virtual void		deleteShip() const = 0;
 
 public:
 	AShip(AShip const &i);
@@ -26,7 +28,7 @@ public:
 
 	virtual AShip	&operator=(AShip const &i);
 
-	virtual void move(Move m);
+	virtual void moveShip(Move m);
 	virtual bool	isAlive();
 	virtual ABullet *fire() const = 0;
 	virtual void isHit();

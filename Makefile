@@ -53,7 +53,8 @@ SRCS = \
 				Ship/ShipMob.cpp	\
 				Ship/ShipManager.cpp\
 				Space.cpp\
-				utils/Utils.cpp
+				utils/Utils.cpp\
+				utils/Logger.cpp
 
 # ---------------------------------------------------------------------------- #
 # /!\ COLOR FOR PRINTF /!\                                                     #

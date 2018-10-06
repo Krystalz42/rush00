@@ -3,7 +3,7 @@
   incs/utils/Position.hpp incs/utils/List.tpp incs/Ship/AShip.hpp \
   incs/utils/IShooter.hpp incs/Bullets/ABullet.hpp \
   incs/utils/IBulletsManager.hpp incs/Bullets/BulletsManager.hpp \
-  incs/Ship/ShipMob.hpp
+  incs/Ship/ShipMob.hpp incs/utils/Logger.hpp
 
 incs/Space.hpp:
 
@@ -30,3 +30,5 @@ incs/utils/IBulletsManager.hpp:
 incs/Bullets/BulletsManager.hpp:
 
 incs/Ship/ShipMob.hpp:
+
+incs/utils/Logger.hpp:

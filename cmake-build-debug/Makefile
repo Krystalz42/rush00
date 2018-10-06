@@ -150,33 +150,6 @@ srcs/Bullets/ABullet.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.s
 .PHONY : srcs/Bullets/ABullet.cpp.s
 
-srcs/Bullets/BasicBullet.o: srcs/Bullets/BasicBullet.cpp.o
-
-.PHONY : srcs/Bullets/BasicBullet.o
-
-# target to build an object file
-srcs/Bullets/BasicBullet.cpp.o:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o
-.PHONY : srcs/Bullets/BasicBullet.cpp.o
-
-srcs/Bullets/BasicBullet.i: srcs/Bullets/BasicBullet.cpp.i
-
-.PHONY : srcs/Bullets/BasicBullet.i
-
-# target to preprocess a source file
-srcs/Bullets/BasicBullet.cpp.i:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i
-.PHONY : srcs/Bullets/BasicBullet.cpp.i
-
-srcs/Bullets/BasicBullet.s: srcs/Bullets/BasicBullet.cpp.s
-
-.PHONY : srcs/Bullets/BasicBullet.s
-
-# target to generate assembly for a file
-srcs/Bullets/BasicBullet.cpp.s:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s
-.PHONY : srcs/Bullets/BasicBullet.cpp.s
-
 srcs/Bullets/BulletsManager.o: srcs/Bullets/BulletsManager.cpp.o
 
 .PHONY : srcs/Bullets/BulletsManager.o
@@ -203,6 +176,60 @@ srcs/Bullets/BulletsManager.s: srcs/Bullets/BulletsManager.cpp.s
 srcs/Bullets/BulletsManager.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s
 .PHONY : srcs/Bullets/BulletsManager.cpp.s
+
+srcs/Bullets/MobBullet.o: srcs/Bullets/MobBullet.cpp.o
+
+.PHONY : srcs/Bullets/MobBullet.o
+
+# target to build an object file
+srcs/Bullets/MobBullet.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o
+.PHONY : srcs/Bullets/MobBullet.cpp.o
+
+srcs/Bullets/MobBullet.i: srcs/Bullets/MobBullet.cpp.i
+
+.PHONY : srcs/Bullets/MobBullet.i
+
+# target to preprocess a source file
+srcs/Bullets/MobBullet.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.i
+.PHONY : srcs/Bullets/MobBullet.cpp.i
+
+srcs/Bullets/MobBullet.s: srcs/Bullets/MobBullet.cpp.s
+
+.PHONY : srcs/Bullets/MobBullet.s
+
+# target to generate assembly for a file
+srcs/Bullets/MobBullet.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.s
+.PHONY : srcs/Bullets/MobBullet.cpp.s
+
+srcs/Bullets/PlayerBullet.o: srcs/Bullets/PlayerBullet.cpp.o
+
+.PHONY : srcs/Bullets/PlayerBullet.o
+
+# target to build an object file
+srcs/Bullets/PlayerBullet.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o
+.PHONY : srcs/Bullets/PlayerBullet.cpp.o
+
+srcs/Bullets/PlayerBullet.i: srcs/Bullets/PlayerBullet.cpp.i
+
+.PHONY : srcs/Bullets/PlayerBullet.i
+
+# target to preprocess a source file
+srcs/Bullets/PlayerBullet.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i
+.PHONY : srcs/Bullets/PlayerBullet.cpp.i
+
+srcs/Bullets/PlayerBullet.s: srcs/Bullets/PlayerBullet.cpp.s
+
+.PHONY : srcs/Bullets/PlayerBullet.s
+
+# target to generate assembly for a file
+srcs/Bullets/PlayerBullet.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s
+.PHONY : srcs/Bullets/PlayerBullet.cpp.s
 
 srcs/Ship/AShip.o: srcs/Ship/AShip.cpp.o
 
@@ -339,6 +366,33 @@ srcs/main.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/main.cpp.s
 .PHONY : srcs/main.cpp.s
 
+srcs/utils/Logger.o: srcs/utils/Logger.cpp.o
+
+.PHONY : srcs/utils/Logger.o
+
+# target to build an object file
+srcs/utils/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Logger.cpp.o
+.PHONY : srcs/utils/Logger.cpp.o
+
+srcs/utils/Logger.i: srcs/utils/Logger.cpp.i
+
+.PHONY : srcs/utils/Logger.i
+
+# target to preprocess a source file
+srcs/utils/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Logger.cpp.i
+.PHONY : srcs/utils/Logger.cpp.i
+
+srcs/utils/Logger.s: srcs/utils/Logger.cpp.s
+
+.PHONY : srcs/utils/Logger.s
+
+# target to generate assembly for a file
+srcs/utils/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Logger.cpp.s
+.PHONY : srcs/utils/Logger.cpp.s
+
 srcs/utils/Position.o: srcs/utils/Position.cpp.o
 
 .PHONY : srcs/utils/Position.o
@@ -405,12 +459,15 @@ help:
 	@echo "... srcs/Bullets/ABullet.o"
 	@echo "... srcs/Bullets/ABullet.i"
 	@echo "... srcs/Bullets/ABullet.s"
-	@echo "... srcs/Bullets/BasicBullet.o"
-	@echo "... srcs/Bullets/BasicBullet.i"
-	@echo "... srcs/Bullets/BasicBullet.s"
 	@echo "... srcs/Bullets/BulletsManager.o"
 	@echo "... srcs/Bullets/BulletsManager.i"
 	@echo "... srcs/Bullets/BulletsManager.s"
+	@echo "... srcs/Bullets/MobBullet.o"
+	@echo "... srcs/Bullets/MobBullet.i"
+	@echo "... srcs/Bullets/MobBullet.s"
+	@echo "... srcs/Bullets/PlayerBullet.o"
+	@echo "... srcs/Bullets/PlayerBullet.i"
+	@echo "... srcs/Bullets/PlayerBullet.s"
 	@echo "... srcs/Ship/AShip.o"
 	@echo "... srcs/Ship/AShip.i"
 	@echo "... srcs/Ship/AShip.s"
@@ -426,6 +483,9 @@ help:
 	@echo "... srcs/main.o"
 	@echo "... srcs/main.i"
 	@echo "... srcs/main.s"
+	@echo "... srcs/utils/Logger.o"
+	@echo "... srcs/utils/Logger.i"
+	@echo "... srcs/utils/Logger.s"
 	@echo "... srcs/utils/Position.o"
 	@echo "... srcs/utils/Position.i"
 	@echo "... srcs/utils/Position.s"

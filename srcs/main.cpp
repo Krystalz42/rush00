@@ -4,6 +4,7 @@
 #include <Space.hpp>
 
 void listenUser() {
+
 	Space		s = Space();
 	int ch;
 	unsigned count = 0;

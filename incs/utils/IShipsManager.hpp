@@ -8,7 +8,7 @@
 #include "ICollision.hpp"
 
 class IShipsManager : ICollision {
-	virtual void 	move(Move m) = 0;
+	virtual void 	moveShip(Move m) = 0;
 
 };
 

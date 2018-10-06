@@ -41,7 +41,7 @@ AShip::~AShip() {
 		delete _p;
 }
 
-void AShip::move(Move m) {
+void AShip::moveShip(Move m) {
 
 }
 

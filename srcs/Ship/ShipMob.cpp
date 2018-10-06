@@ -20,7 +20,6 @@ ShipMob::ShipMob() {
 	_p = new Position(rand() % (COLS / 3), rand() % (LINES - 1));
 	_max_bullets = 10;
 	_current_bullets = 10;
-
 }
 
 ShipMob::ShipMob(ShipMob const &i) {
@@ -51,5 +50,27 @@ ShipMob &ShipMob::operator=(ShipMob const &i) {
 
 ShipMob::~ShipMob() {
 
+}
+
+void ShipMob::moveShip(Move m) {
+	deleteShip();
+	switch (m) {
+		case NORTH: _p->setY(_p->getY() - 1); break;
+		case SOUTH: _p->setY(_p->getY() + 1); break;
+		case EAST:_p->setX(_p->getX() + 1); break;
+		case WEST:_p->setX(_p->getX() - 1); break;
+		case NONE:break;
+	}
+	drawShip();
+}
+
+void ShipMob::drawShip() const {
+	move(_p->getY(), _p->getX());
+	addch(SHIP_MOB);
+}
+
+void ShipMob::deleteShip() const {
+	move(_p->getY(), _p->getX());
+	addch(EMPTY);
 }
 

@@ -90,10 +90,13 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/ABullet.hpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/BasicBullet.hpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/BulletsManager.hpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/BulletsManager.hpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/MobBullet.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/PlayerBullet.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/AShip.hpp">
@@ -126,6 +129,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/List.tpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Logger.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Position.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -135,10 +141,13 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/ABullet.cpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BulletsManager.cpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BulletsManager.cpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/MobBullet.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/AShip.cpp">
@@ -154,6 +163,9 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Logger.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Position.cpp">
