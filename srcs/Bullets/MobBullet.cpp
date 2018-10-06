@@ -16,14 +16,6 @@ MobBullet::MobBullet(Position *p) : ABullet(p, NORTH) {
 
 }
 
-MobBullet::MobBullet(ABullet const &i) {
-
-}
-
-MobBullet::MobBullet() {
-
-}
-
 MobBullet::~MobBullet() {
     deleteBullet();
 }
