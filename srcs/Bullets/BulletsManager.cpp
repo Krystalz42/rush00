@@ -33,7 +33,7 @@ void BulletsManager::moveBullets() {
 		List<ABullet*>::t_list *tmp;
 		while (user_bullets) {
 			user_bullets->data->moveBullet();
-			enemy_shooters = _shooters_ennemy.begin();
+			enemy_shooters = _shooters_ennemy->begin();
 			while (enemy_shooters && *user_bullets->data->getPosition() != enemy_shooters->data->getPosition())
 				enemy_shooters = enemy_shooters->next;
 			if (*user_bullets->data->getPosition() == enemy_shooters->data->getPosition())
