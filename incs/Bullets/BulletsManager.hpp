@@ -13,7 +13,7 @@
 
 class BulletsManager {
 private:
-	List<IBulletsManager*>		_shooters_ennemy;
+	List<IBulletsManager*>		*_shooters_ennemy;
 	IBulletsManager			*_shooter_user;
 	List<ABullet*>		_bullets_ennemy;
 	List<ABullet*>		_bullets_user;
@@ -21,7 +21,7 @@ private:
 public:
 	void 		moveBullets();
 
-	BulletsManager(List<IBulletsManager *> *pList);
+	BulletsManager(List<IBulletsManager *> *pList, IBulletsManager* user);
 
 	void fireUser();
 };

@@ -49,7 +49,10 @@ void BulletsManager::moveBullets() {
 	}
 }
 
-BulletsManager::BulletsManager(List<IBulletsManager *> *pList) {
+BulletsManager::BulletsManager(List<IBulletsManager *> *pList, IBulletsManager* user) : 
+	_shooters_ennemy(pList),
+	_shooter_user(user)
+{
 
 }
 
