@@ -7,9 +7,10 @@
 
 #include <utils/IShooter.hpp>
 #include <clocale>
+#include <utils/IBulletsManager.hpp>
 #include "utils/IShooter.hpp"
 
-class AShip : public IShooter {
+class AShip : public IBulletsManager {
 protected:
 	Position		*_p;
 	unsigned int	life;

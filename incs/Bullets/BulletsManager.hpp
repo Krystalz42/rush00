@@ -8,10 +8,11 @@
 
 #include <utils/IShooter.hpp>
 #include <utils/List.tpp>
+#include <utils/IBulletsManager.hpp>
 
 class BulletsManager {
 private:
-	List<IShooter>		_shooters_ennemy;
+	List<IBulletsManager>		_shooters_ennemy;
 	IShooter			*_shooter_user;
 	List<ABullet>		_bullets_ennemy;
 	List<ABullet>		_bullets_user;

@@ -105,6 +105,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipMob.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Space.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/ft_retro.h">
 			<Option target="_"/>
 		</Unit>
@@ -114,6 +117,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/ICollision.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IShipsManager.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IShooter.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -121,6 +127,9 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Position.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Utils.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/ABullet.cpp">
@@ -141,10 +150,16 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMob.cpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Space.cpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Position.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Utils.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/CMakeLists.txt">

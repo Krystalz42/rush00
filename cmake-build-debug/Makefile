@@ -285,6 +285,33 @@ srcs/Ship/ShipMob.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.s
 .PHONY : srcs/Ship/ShipMob.cpp.s
 
+srcs/Space.o: srcs/Space.cpp.o
+
+.PHONY : srcs/Space.o
+
+# target to build an object file
+srcs/Space.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Space.cpp.o
+.PHONY : srcs/Space.cpp.o
+
+srcs/Space.i: srcs/Space.cpp.i
+
+.PHONY : srcs/Space.i
+
+# target to preprocess a source file
+srcs/Space.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Space.cpp.i
+.PHONY : srcs/Space.cpp.i
+
+srcs/Space.s: srcs/Space.cpp.s
+
+.PHONY : srcs/Space.s
+
+# target to generate assembly for a file
+srcs/Space.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Space.cpp.s
+.PHONY : srcs/Space.cpp.s
+
 srcs/main.o: srcs/main.cpp.o
 
 .PHONY : srcs/main.o
@@ -339,6 +366,33 @@ srcs/utils/Position.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Position.cpp.s
 .PHONY : srcs/utils/Position.cpp.s
 
+srcs/utils/Utils.o: srcs/utils/Utils.cpp.o
+
+.PHONY : srcs/utils/Utils.o
+
+# target to build an object file
+srcs/utils/Utils.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Utils.cpp.o
+.PHONY : srcs/utils/Utils.cpp.o
+
+srcs/utils/Utils.i: srcs/utils/Utils.cpp.i
+
+.PHONY : srcs/utils/Utils.i
+
+# target to preprocess a source file
+srcs/utils/Utils.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Utils.cpp.i
+.PHONY : srcs/utils/Utils.cpp.i
+
+srcs/utils/Utils.s: srcs/utils/Utils.cpp.s
+
+.PHONY : srcs/utils/Utils.s
+
+# target to generate assembly for a file
+srcs/utils/Utils.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Utils.cpp.s
+.PHONY : srcs/utils/Utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -366,12 +420,18 @@ help:
 	@echo "... srcs/Ship/ShipMob.o"
 	@echo "... srcs/Ship/ShipMob.i"
 	@echo "... srcs/Ship/ShipMob.s"
+	@echo "... srcs/Space.o"
+	@echo "... srcs/Space.i"
+	@echo "... srcs/Space.s"
 	@echo "... srcs/main.o"
 	@echo "... srcs/main.i"
 	@echo "... srcs/main.s"
 	@echo "... srcs/utils/Position.o"
 	@echo "... srcs/utils/Position.i"
 	@echo "... srcs/utils/Position.s"
+	@echo "... srcs/utils/Utils.o"
+	@echo "... srcs/utils/Utils.i"
+	@echo "... srcs/utils/Utils.s"
 .PHONY : help
 
 

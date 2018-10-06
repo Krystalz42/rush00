@@ -5,6 +5,7 @@
 #ifndef ICOLLISION_HPP
 #define ICOLLISION_HPP
 
+#include <ft_retro.h>
 #include "Position.hpp"
 
 class ICollision {

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o"
   "CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o"
   "CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o"
+  "CMakeFiles/_.dir/srcs/Space.cpp.o"
+  "CMakeFiles/_.dir/srcs/utils/Utils.cpp.o"
   "_.pdb"
   "_"
 )
