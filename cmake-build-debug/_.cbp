@@ -108,6 +108,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipMob.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipPlayer.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Space.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -154,6 +157,9 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMob.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipPlayer.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Space.cpp">

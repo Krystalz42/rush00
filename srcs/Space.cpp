@@ -8,6 +8,7 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <Ship/ShipPlayer.hpp>
 
 extern std::ofstream		file;
 
@@ -15,6 +16,7 @@ extern std::ofstream		file;
 /** Constructor **/
 
 Space::Space() : _level(1) {
+	ship_user = new ShipPlayer();
 	initLevel();
 }
 
@@ -24,6 +26,8 @@ Space::Space(Space const &i) {
 /** Public **/
 
 void Space::getInput(int ch) {
+	if (ship_user == 0)
+		return;
 	switch (ch)
 	{
 		case 'd':
@@ -54,7 +58,7 @@ void Space::getInput(int ch) {
 	}
 }
 
-void Space::moveBullets() {
+void Space::moveUserBullets() {
 	_bm->moveBullets();
 }
 
@@ -63,29 +67,31 @@ void Space::moveEnnemyBullets() {
 }
 
 void Space::ennemyAction() {
+
 }
 
 /** Private **/
 
 void Space::initLevel() {
+	file << "Init level" << std::endl;
 	int difficulty = _level * 10;
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
 
 	ship_ennemy = new List<AShip *>;
 
-	file << "Init Ship" << difficulty << std::endl;
 	for (int idx = 0; idx < difficulty; idx++) {
-		file << "ShipMob" << idx << std::endl;
-//		ship_ennemy->pushFront(new ShipMob());
+		ship_ennemy->pushFront(new ShipMob());
 	}
 	for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
-		file << "Go" << std::endl;
-//		t_bm->pushFront(it->data);
-//		t_sm->pushFront(it->data);
+		t_bm->pushFront(it->data);
+		t_sm->pushFront(it->data);
 	}
 	_bm = new BulletsManager(t_bm);
 	_sm = new ShipManager(t_sm);
+//	delete t_bm;
+//	delete t_sm;
+	file << "Finish init level" << std::endl;
 }
 /** Operator **/
 

@@ -21,7 +21,6 @@ AShip::AShip(
 			_max_bullets(_max_bullets),
 			_p(_p),
 			_life(_life) {
-
 }
 
 AShip::AShip(AShip const &i) {
