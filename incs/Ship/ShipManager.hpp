@@ -6,7 +6,6 @@
 #define SHIPMANAGER_HPP
 
 class ShipManager {
-
 };
 
 #endif //SHIPMANAGER_HPP

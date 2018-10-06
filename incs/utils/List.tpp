@@ -11,44 +11,49 @@ private:
 
 	typedef struct t_list{
 		T					data;
-		struct t_list		lst;
+		struct t_list		*next;
+		struct t_list		*prev;
 	}				list;
 
-	list		*lst;
+	list		*begin;
+	list		*end;
 
 public:
 	typedef void (*operator_f)(void);
 
-	void pushBack(T *element);
-	void pushFront(T *element);
-	T		*begin();
-	T		*end();
+	void		pushFront(T *element);
+	void 		erase(T *element);
+	T			*begin();
 	List();
 };
 
 template<typename T>
 List<T>::List() {
-}
 
+}
 
 template<typename T>
 T *List<T>::begin() {
-	return 0;
-}
-
-template<typename T>
-T *List<T>::end() {
-	return 0;
-}
-
-template<typename T>
-void List<T>::pushBack(T *element) {
-
+	return begin;
 }
 
 template<typename T>
 void List<T>::pushFront(T *element) {
+	end->next = element;
+	element->prev = end;
+	end = end->next;
+	end->next = 0;
+}
 
+template<typename T>
+void List<T>::erase(T *element) {
+	for (list *it = begin; it != 0; it = it->next) {
+		if (it == element) {
+			it->prev->next = it->next;
+			it->next->prev = it->prev;
+			delete element;
+		}
+	}
 }
 
 
