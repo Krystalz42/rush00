@@ -8,8 +8,13 @@
 #include "AShip.hpp"
 
 class ShipMob : virtual  public AShip{
+private:
+	ShipMob();
 public:
 	ShipMob(int x, int y);
+	ShipMob(ShipMob const & i);
+	virtual ~ShipMob();
+	ShipMob		&operator=(ShipMob const &i);
 
 	virtual ABullet *fire() const;
 };

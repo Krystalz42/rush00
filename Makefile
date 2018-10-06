@@ -49,7 +49,10 @@ SRCS = \
 				Bullets/BulletsManager.cpp \
 				Ship/AShip.cpp \
 				utils/Position.cpp \
-				Ship/ShipMob.cpp
+				Ship/ShipMob.cpp	\
+				Ship/ShipManager.cpp\
+				Space.cpp\
+				utils/Utils.cpp
 
 # ---------------------------------------------------------------------------- #
 # /!\ COLOR FOR PRINTF /!\                                                     #

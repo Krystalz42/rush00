@@ -14,30 +14,39 @@ AShip::AShip() {
 AShip::AShip(int x, int y) {
 
 }
-
-/** Public **/
-
-/** Private **/
-/** Operator **/
-/** Destructor **/
-
-AShip &AShip::operator=(const AShip &i) {
-	return *this;
-}
-
-const Position &AShip::getPosition() {
-	return *_p;
-}
-
 AShip::AShip(AShip const &i) {
 
 }
 
-AShip::~AShip() {
-
-}
+/** Public **/
 
 void AShip::isHit() {
-
+	_life--;
 }
+
+bool AShip::isAlive() {
+	return _life > 0;
+}
+
+Position const &AShip::getPosition() {
+	return *_p;
+}
+
+/** Private **/
+/** Operator **/
+AShip &AShip::operator=(const AShip &i) {
+	return *this;
+}
+
+/** Destructor **/
+AShip::~AShip() {
+	if (_p != 0)
+		delete _p;
+}
+
+
+
+
+
+
 

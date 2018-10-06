@@ -13,7 +13,8 @@
 class AShip : public IBulletsManager {
 protected:
 	Position		*_p;
-	unsigned int	life;
+	unsigned int	_life;
+	AShip();
 
 public:
 	AShip(int x, int y);
@@ -22,14 +23,10 @@ public:
 
 	AShip	&operator=(AShip const &i);
 
+	bool	isAlive();
 	virtual ABullet *fire() const = 0;
-
 	virtual void isHit();
-
 	virtual const Position &getPosition();
-private:
-	AShip();
-
 
 };
 

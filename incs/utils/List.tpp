@@ -11,7 +11,7 @@ class List {
 
 public:
 	typedef struct t_list{
-		T					data;
+		T					*data;
 		struct t_list		*next;
 		struct t_list		*prev;
 	}				lst;

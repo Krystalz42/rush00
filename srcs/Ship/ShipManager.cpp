@@ -9,3 +9,9 @@
 ShipManager::ShipManager() {
 
 }
+
+ShipManager::ShipManager(List<AShip>::t_list *list_ship) {
+	for (List<AShip>::t_list *it = list_ship; it != 0; it = it->next) {
+
+	}
+}
