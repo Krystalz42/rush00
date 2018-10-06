@@ -17,7 +17,7 @@ void listenUser() {
 		if ((ch = getch()) != ERR)
 			s.getInput(ch);
 		if ((count % 150) == 0)
-			s.moveBullets();
+			s.moveUserBullets();
 		if ((count % 300) == 0) {
 			s.moveEnnemyBullets();
 			s.ennemyAction();

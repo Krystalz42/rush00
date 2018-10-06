@@ -27,7 +27,7 @@ public:
 	Space &operator=(Space const & i);
 
 	void getInput(int ch);
-	void moveBullets();
+	void moveUserBullets();
 	void moveEnnemyBullets();
 	void ennemyAction();
 

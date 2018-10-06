@@ -312,6 +312,33 @@ srcs/Ship/ShipMob.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.s
 .PHONY : srcs/Ship/ShipMob.cpp.s
 
+srcs/Ship/ShipPlayer.o: srcs/Ship/ShipPlayer.cpp.o
+
+.PHONY : srcs/Ship/ShipPlayer.o
+
+# target to build an object file
+srcs/Ship/ShipPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.o
+.PHONY : srcs/Ship/ShipPlayer.cpp.o
+
+srcs/Ship/ShipPlayer.i: srcs/Ship/ShipPlayer.cpp.i
+
+.PHONY : srcs/Ship/ShipPlayer.i
+
+# target to preprocess a source file
+srcs/Ship/ShipPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.i
+.PHONY : srcs/Ship/ShipPlayer.cpp.i
+
+srcs/Ship/ShipPlayer.s: srcs/Ship/ShipPlayer.cpp.s
+
+.PHONY : srcs/Ship/ShipPlayer.s
+
+# target to generate assembly for a file
+srcs/Ship/ShipPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.s
+.PHONY : srcs/Ship/ShipPlayer.cpp.s
+
 srcs/Space.o: srcs/Space.cpp.o
 
 .PHONY : srcs/Space.o
@@ -450,6 +477,9 @@ help:
 	@echo "... srcs/Ship/ShipMob.o"
 	@echo "... srcs/Ship/ShipMob.i"
 	@echo "... srcs/Ship/ShipMob.s"
+	@echo "... srcs/Ship/ShipPlayer.o"
+	@echo "... srcs/Ship/ShipPlayer.i"
+	@echo "... srcs/Ship/ShipPlayer.s"
 	@echo "... srcs/Space.o"
 	@echo "... srcs/Space.i"
 	@echo "... srcs/Space.s"

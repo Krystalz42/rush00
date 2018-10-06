@@ -7,6 +7,7 @@
 
 #define EMPTY ' '
 #define SHIP_MOB '@'
+#define SHIP_PLAYER 'A'
 
 enum Move {
 	NORTH,

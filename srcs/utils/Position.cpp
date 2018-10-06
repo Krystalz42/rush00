@@ -10,8 +10,7 @@ Position::Position() {
 
 }
 
-Position::Position(int x, int y) : _x(x), _y(y) {
-	std::cout << "Position create" <<  x << y << std::endl;
+Position::Position(int y, int x) : _y(y), _x(x) {
 }
 
 Position::Position(Position const &i) {
