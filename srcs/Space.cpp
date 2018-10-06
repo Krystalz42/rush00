@@ -41,9 +41,6 @@ void Space::initLevel() {
 	_sm = new ShipManager();
 	_bm = new BulletsManager();
 
-	for (int idx = 0; idx < difficulty; idx++) {
-		_sm->
-	}
 
 }
 /** Operator **/

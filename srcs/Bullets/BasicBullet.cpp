@@ -12,7 +12,7 @@ void BasicBullet::deleteBullet() const {
 
 }
 
-BasicBullet::BasicBullet(Position *p) : ABullet(p) {
+BasicBullet::BasicBullet(Position *p) : ABullet(p, m) {
 
 }
 
@@ -22,4 +22,8 @@ BasicBullet::BasicBullet(ABullet const &i) {
 
 BasicBullet::BasicBullet() {
 
+}
+
+BasicBullet::~BasicBullet() {
+    deleteBullet();
 }

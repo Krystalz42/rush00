@@ -8,7 +8,7 @@
 #include "ICollision.hpp"
 #include "IShooter.hpp"
 
-class IBulletsManager : ICollision, IShooter{
+class IBulletsManager : public ICollision, public IShooter{
 public:
 	virtual ~IBulletsManager() {}
 };

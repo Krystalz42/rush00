@@ -8,7 +8,7 @@ void ABullet::moveBullet() {
 
 }
 
-ABullet::ABullet(Position *p) : p(p) {
+ABullet::ABullet(Position *p, Move m) : p(p) {
 
 }
 
@@ -21,6 +21,8 @@ ABullet::ABullet() {
 }
 
 ABullet::~ABullet() {
-
 }
 
+Position *ABullet::getPosition() {
+    return p;
+}

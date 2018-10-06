@@ -12,15 +12,17 @@
 class ABullet {
 protected:
 	Position		*p;
+	Move			m;			
 	virtual void		drawBullet() const = 0;
 	virtual void		deleteBullet() const = 0;
 
 public:
 	ABullet();
-	ABullet(Position *p);
+	ABullet(Position *p, Move m);
 	ABullet(ABullet const &i);
 	virtual ~ABullet();
 	void		moveBullet();
+	Position *	getPosition();
 };
 
 
