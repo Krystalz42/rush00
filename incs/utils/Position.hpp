@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_POSITION_HPP
-#define RUSH00_POSITION_HPP
+#ifndef __POSITION_HPP__
+#define __POSITION_HPP__
 
 
 class Position {
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //RUSH00_POSITION_HPP
+#endif //__POSITION_HPP__

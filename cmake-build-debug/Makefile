@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rush00
+# Target rules for targets named _
 
 # Build rule for target.
-rush00: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rush00
-.PHONY : rush00
+_ : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _
+.PHONY : _
 
 # fast build rule for target.
-rush00/fast:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/build
-.PHONY : rush00/fast
+_/fast:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/build
+.PHONY : _/fast
 
 srcs/Bullets/ABullet.o: srcs/Bullets/ABullet.cpp.o
 
@@ -129,7 +129,7 @@ srcs/Bullets/ABullet.o: srcs/Bullets/ABullet.cpp.o
 
 # target to build an object file
 srcs/Bullets/ABullet.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/ABullet.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.o
 .PHONY : srcs/Bullets/ABullet.cpp.o
 
 srcs/Bullets/ABullet.i: srcs/Bullets/ABullet.cpp.i
@@ -138,7 +138,7 @@ srcs/Bullets/ABullet.i: srcs/Bullets/ABullet.cpp.i
 
 # target to preprocess a source file
 srcs/Bullets/ABullet.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/ABullet.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.i
 .PHONY : srcs/Bullets/ABullet.cpp.i
 
 srcs/Bullets/ABullet.s: srcs/Bullets/ABullet.cpp.s
@@ -147,7 +147,7 @@ srcs/Bullets/ABullet.s: srcs/Bullets/ABullet.cpp.s
 
 # target to generate assembly for a file
 srcs/Bullets/ABullet.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/ABullet.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.s
 .PHONY : srcs/Bullets/ABullet.cpp.s
 
 srcs/Bullets/BasicBullet.o: srcs/Bullets/BasicBullet.cpp.o
@@ -156,7 +156,7 @@ srcs/Bullets/BasicBullet.o: srcs/Bullets/BasicBullet.cpp.o
 
 # target to build an object file
 srcs/Bullets/BasicBullet.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/BasicBullet.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o
 .PHONY : srcs/Bullets/BasicBullet.cpp.o
 
 srcs/Bullets/BasicBullet.i: srcs/Bullets/BasicBullet.cpp.i
@@ -165,7 +165,7 @@ srcs/Bullets/BasicBullet.i: srcs/Bullets/BasicBullet.cpp.i
 
 # target to preprocess a source file
 srcs/Bullets/BasicBullet.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/BasicBullet.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i
 .PHONY : srcs/Bullets/BasicBullet.cpp.i
 
 srcs/Bullets/BasicBullet.s: srcs/Bullets/BasicBullet.cpp.s
@@ -174,7 +174,7 @@ srcs/Bullets/BasicBullet.s: srcs/Bullets/BasicBullet.cpp.s
 
 # target to generate assembly for a file
 srcs/Bullets/BasicBullet.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/BasicBullet.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s
 .PHONY : srcs/Bullets/BasicBullet.cpp.s
 
 srcs/Bullets/BulletsManager.o: srcs/Bullets/BulletsManager.cpp.o
@@ -183,7 +183,7 @@ srcs/Bullets/BulletsManager.o: srcs/Bullets/BulletsManager.cpp.o
 
 # target to build an object file
 srcs/Bullets/BulletsManager.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/BulletsManager.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o
 .PHONY : srcs/Bullets/BulletsManager.cpp.o
 
 srcs/Bullets/BulletsManager.i: srcs/Bullets/BulletsManager.cpp.i
@@ -192,7 +192,7 @@ srcs/Bullets/BulletsManager.i: srcs/Bullets/BulletsManager.cpp.i
 
 # target to preprocess a source file
 srcs/Bullets/BulletsManager.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/BulletsManager.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.i
 .PHONY : srcs/Bullets/BulletsManager.cpp.i
 
 srcs/Bullets/BulletsManager.s: srcs/Bullets/BulletsManager.cpp.s
@@ -201,7 +201,7 @@ srcs/Bullets/BulletsManager.s: srcs/Bullets/BulletsManager.cpp.s
 
 # target to generate assembly for a file
 srcs/Bullets/BulletsManager.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Bullets/BulletsManager.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s
 .PHONY : srcs/Bullets/BulletsManager.cpp.s
 
 srcs/Ship/AShip.o: srcs/Ship/AShip.cpp.o
@@ -210,7 +210,7 @@ srcs/Ship/AShip.o: srcs/Ship/AShip.cpp.o
 
 # target to build an object file
 srcs/Ship/AShip.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Ship/AShip.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/AShip.cpp.o
 .PHONY : srcs/Ship/AShip.cpp.o
 
 srcs/Ship/AShip.i: srcs/Ship/AShip.cpp.i
@@ -219,7 +219,7 @@ srcs/Ship/AShip.i: srcs/Ship/AShip.cpp.i
 
 # target to preprocess a source file
 srcs/Ship/AShip.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Ship/AShip.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/AShip.cpp.i
 .PHONY : srcs/Ship/AShip.cpp.i
 
 srcs/Ship/AShip.s: srcs/Ship/AShip.cpp.s
@@ -228,7 +228,7 @@ srcs/Ship/AShip.s: srcs/Ship/AShip.cpp.s
 
 # target to generate assembly for a file
 srcs/Ship/AShip.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Ship/AShip.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/AShip.cpp.s
 .PHONY : srcs/Ship/AShip.cpp.s
 
 srcs/Ship/ShipMob.o: srcs/Ship/ShipMob.cpp.o
@@ -237,7 +237,7 @@ srcs/Ship/ShipMob.o: srcs/Ship/ShipMob.cpp.o
 
 # target to build an object file
 srcs/Ship/ShipMob.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Ship/ShipMob.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o
 .PHONY : srcs/Ship/ShipMob.cpp.o
 
 srcs/Ship/ShipMob.i: srcs/Ship/ShipMob.cpp.i
@@ -246,7 +246,7 @@ srcs/Ship/ShipMob.i: srcs/Ship/ShipMob.cpp.i
 
 # target to preprocess a source file
 srcs/Ship/ShipMob.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Ship/ShipMob.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.i
 .PHONY : srcs/Ship/ShipMob.cpp.i
 
 srcs/Ship/ShipMob.s: srcs/Ship/ShipMob.cpp.s
@@ -255,7 +255,7 @@ srcs/Ship/ShipMob.s: srcs/Ship/ShipMob.cpp.s
 
 # target to generate assembly for a file
 srcs/Ship/ShipMob.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/Ship/ShipMob.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.s
 .PHONY : srcs/Ship/ShipMob.cpp.s
 
 srcs/main.o: srcs/main.cpp.o
@@ -264,7 +264,7 @@ srcs/main.o: srcs/main.cpp.o
 
 # target to build an object file
 srcs/main.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/main.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/main.cpp.o
 .PHONY : srcs/main.cpp.o
 
 srcs/main.i: srcs/main.cpp.i
@@ -273,7 +273,7 @@ srcs/main.i: srcs/main.cpp.i
 
 # target to preprocess a source file
 srcs/main.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/main.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/main.cpp.i
 .PHONY : srcs/main.cpp.i
 
 srcs/main.s: srcs/main.cpp.s
@@ -282,7 +282,7 @@ srcs/main.s: srcs/main.cpp.s
 
 # target to generate assembly for a file
 srcs/main.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/main.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/main.cpp.s
 .PHONY : srcs/main.cpp.s
 
 srcs/utils/Position.o: srcs/utils/Position.cpp.o
@@ -291,7 +291,7 @@ srcs/utils/Position.o: srcs/utils/Position.cpp.o
 
 # target to build an object file
 srcs/utils/Position.cpp.o:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/utils/Position.cpp.o
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Position.cpp.o
 .PHONY : srcs/utils/Position.cpp.o
 
 srcs/utils/Position.i: srcs/utils/Position.cpp.i
@@ -300,7 +300,7 @@ srcs/utils/Position.i: srcs/utils/Position.cpp.i
 
 # target to preprocess a source file
 srcs/utils/Position.cpp.i:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/utils/Position.cpp.i
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Position.cpp.i
 .PHONY : srcs/utils/Position.cpp.i
 
 srcs/utils/Position.s: srcs/utils/Position.cpp.s
@@ -309,7 +309,7 @@ srcs/utils/Position.s: srcs/utils/Position.cpp.s
 
 # target to generate assembly for a file
 srcs/utils/Position.cpp.s:
-	$(MAKE) -f CMakeFiles/rush00.dir/build.make CMakeFiles/rush00.dir/srcs/utils/Position.cpp.s
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Position.cpp.s
 .PHONY : srcs/utils/Position.cpp.s
 
 # Help Target
@@ -320,7 +320,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rush00"
+	@echo "... _"
 	@echo "... srcs/Bullets/ABullet.o"
 	@echo "... srcs/Bullets/ABullet.i"
 	@echo "... srcs/Bullets/ABullet.s"

@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_BASICBULLET_HPP
-#define RUSH00_BASICBULLET_HPP
+#ifndef __BASICBULLET_HPP__
+#define __BASICBULLET_HPP__
 
 #include "ABullet.hpp"
 
@@ -21,4 +21,4 @@ private:
 	virtual void deleteBullet() const;
 };
 
-#endif //RUSH00_BASICBULLET_HPP
+#endif //__BASICBULLET_HPP__

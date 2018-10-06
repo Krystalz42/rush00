@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_LIST_HPP
-#define RUSH00_LIST_HPP
+#ifndef __LIST_HPP__
+#define __LIST_HPP__
 
 template <typename T>
 class List {
@@ -52,4 +52,4 @@ void List<T>::pushFront(T *element) {
 }
 
 
-#endif //RUSH00_LIST_HPP
+#endif //__LIST_HPP__

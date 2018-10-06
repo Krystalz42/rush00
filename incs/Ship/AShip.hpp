@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_ASHIP_HPP
-#define RUSH00_ASHIP_HPP
+#ifndef __ASHIP_HPP__
+#define __ASHIP_HPP__
 
 #include <utils/IShooter.hpp>
 #include <clocale>
@@ -32,4 +32,4 @@ private:
 
 };
 
-#endif //RUSH00_ASHIP_HPP
+#endif //__ASHIP_HPP__

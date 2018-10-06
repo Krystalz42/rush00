@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_BULLETSMANAGER_HPP
-#define RUSH00_BULLETSMANAGER_HPP
+#ifndef __BULLETSMANAGER_HPP__
+#define __BULLETSMANAGER_HPP__
 
 
 #include <utils/IShooter.hpp>
@@ -21,4 +21,4 @@ public:
 
 };
 
-#endif //RUSH00_BULLETSMANAGER_HPP
+#endif //__BULLETSMANAGER_HPP__

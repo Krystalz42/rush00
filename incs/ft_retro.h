@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_FT_RETRO_H
-#define RUSH00_FT_RETRO_H
+#ifndef __FT_RETRO_H
+#define __FT_RETRO_H
 
 enum Move {
 	NORTH,
@@ -12,4 +12,4 @@ enum Move {
 	WEST
 };
 
-#endif //RUSH00_FT_RETRO_H
+#endif //__FT_RETRO_H

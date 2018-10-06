@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_ISHOOTER_HPP
-#define RUSH00_ISHOOTER_HPP
+#ifndef __ISHOOTER_HPP__
+#define __ISHOOTER_HPP__
 
 #include "Bullets/ABullet.hpp"
 #include "Position.hpp"
@@ -16,4 +16,4 @@ public:
 	virtual ~IShooter() {}
 };
 
-#endif //RUSH00_ISHOOTER_HPP
+#endif //__ISHOOTER_HPP__

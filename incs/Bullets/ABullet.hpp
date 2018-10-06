@@ -2,8 +2,8 @@
 // Created by Alexandre ROULIN on 06/10/2018.
 //
 
-#ifndef RUSH00_BULLET_HPP
-#define RUSH00_BULLET_HPP
+#ifndef __BULLET_HPP__
+#define __BULLET_HPP__
 
 
 #include <ft_retro.h>
@@ -24,4 +24,4 @@ public:
 };
 
 
-#endif //RUSH00_BULLET_HPP
+#endif //__BULLET_HPP__
