@@ -36,8 +36,14 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
+	int difficulty = _level *  10;
+
 	_sm = new ShipManager();
 	_bm = new BulletsManager();
+
+	for (int idx = 0; idx < difficulty; idx++) {
+		_sm->
+	}
 
 }
 /** Operator **/

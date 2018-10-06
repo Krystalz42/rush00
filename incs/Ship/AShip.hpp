@@ -12,6 +12,8 @@
 
 class AShip : public IBulletsManager {
 protected:
+	unsigned int	_current_bullets;
+	unsigned int	_max_bullets;
 	Position		*_p;
 	unsigned int	_life;
 	AShip();
@@ -23,7 +25,7 @@ public:
 
 	AShip	&operator=(AShip const &i);
 
-	bool	isAlive();
+	virtual bool	isAlive();
 	virtual ABullet *fire() const = 0;
 	virtual void isHit();
 	virtual const Position &getPosition();

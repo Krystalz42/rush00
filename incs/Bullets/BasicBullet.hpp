@@ -7,13 +7,11 @@
 
 #include "ABullet.hpp"
 
-class BasicBullet : ABullet {
+class BasicBullet : virtual public ABullet {
 public:
 	BasicBullet();
-
-	BasicBullet(const ABullet &i);
-
 	BasicBullet(Position *p);
+	BasicBullet(const ABullet &i);
 
 
 private:

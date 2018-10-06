@@ -10,13 +10,13 @@
 #include "AShip.hpp"
 
 class ShipManager {
+private:
 	List<IShipsManager>		ships;
 	IShipsManager			*user_ship;
 
 public:
 	ShipManager();
 	ShipManager(List<AShip>::t_list *list_ship);
-public:
 };
 
 #endif //SHIPMANAGER_HPP
