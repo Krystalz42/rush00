@@ -6,7 +6,13 @@
 #include <Bullets/PlayerBullet.hpp>
 #include <Bullets/MobBullet.hpp>
 #include <Ship/ShipMob.hpp>
+#include <iostream>
+#include <iostream>
+#include <iomanip>
+#include <fstream>
 
+
+extern std::ofstream		file;
 
 void BulletsManager::moveBullets() {
 	{
@@ -33,18 +39,21 @@ void BulletsManager::moveBullets() {
 		List<ABullet*>::t_list *tmp;
 		while (user_bullets) {
 			user_bullets->data->moveBullet();
+
 			enemy_shooters = _shooters_ennemy->begin();
 			while (enemy_shooters && *user_bullets->data->getPosition() != enemy_shooters->data->getPosition())
 				enemy_shooters = enemy_shooters->next;
-			if (*user_bullets->data->getPosition() == enemy_shooters->data->getPosition())
+			if (enemy_shooters != 0 && *user_bullets->data->getPosition() == enemy_shooters->data->getPosition())
 				{
 					enemy_shooters->data->isHit();
 					tmp = user_bullets->next;
 					_bullets_user.erase(user_bullets->data);
 					user_bullets = tmp;
 				}
-			else
+			else {
+
 				user_bullets = user_bullets->next;
+			}
 		}
 	}
 }
@@ -57,6 +66,7 @@ BulletsManager::BulletsManager(List<IBulletsManager *> *pList, IBulletsManager* 
 }
 
 void BulletsManager::fireUser() {
+	file << "SHOOTER USER IS NULL" << (_shooter_user ==  0) <<std::endl;
 	_bullets_user.pushFront(_shooter_user->fire());
 }
 
