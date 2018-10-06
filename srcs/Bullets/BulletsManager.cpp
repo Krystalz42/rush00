@@ -54,6 +54,6 @@ BulletsManager::BulletsManager(List<IBulletsManager *> *pList) {
 }
 
 void BulletsManager::fireUser() {
-
+	_bullets_user.pushFront(_shooter_user->fire());
 }
 

@@ -9,14 +9,14 @@
 
 class PlayerBullet : virtual public ABullet {
 public:
-	PlayerBullet();
 	PlayerBullet(Position *p);
-	PlayerBullet(const ABullet &i);
 	~PlayerBullet();
 
 private:
 	virtual void drawBullet() const;
 	virtual void deleteBullet() const;
+	PlayerBullet();
+	PlayerBullet(const ABullet &i);
 };
 
 #endif //__PLAYERBULLET_HPP__
