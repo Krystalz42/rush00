@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o"
   "CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o"
   "CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o"
+  "CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o"
   "_.pdb"
   "_"
 )

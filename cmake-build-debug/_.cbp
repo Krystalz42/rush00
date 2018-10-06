@@ -99,6 +99,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/AShip.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipManager.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipMob.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -130,6 +133,9 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/AShip.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipManager.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMob.cpp">

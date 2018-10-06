@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o"
   "/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BulletsManager.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o"
   "/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/AShip.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/Ship/AShip.cpp.o"
+  "/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipManager.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o"
   "/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMob.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o"
   "/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/main.cpp.o"
   "/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Position.cpp" "/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles/_.dir/srcs/utils/Position.cpp.o"

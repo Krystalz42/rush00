@@ -231,6 +231,33 @@ srcs/Ship/AShip.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/AShip.cpp.s
 .PHONY : srcs/Ship/AShip.cpp.s
 
+srcs/Ship/ShipManager.o: srcs/Ship/ShipManager.cpp.o
+
+.PHONY : srcs/Ship/ShipManager.o
+
+# target to build an object file
+srcs/Ship/ShipManager.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o
+.PHONY : srcs/Ship/ShipManager.cpp.o
+
+srcs/Ship/ShipManager.i: srcs/Ship/ShipManager.cpp.i
+
+.PHONY : srcs/Ship/ShipManager.i
+
+# target to preprocess a source file
+srcs/Ship/ShipManager.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.i
+.PHONY : srcs/Ship/ShipManager.cpp.i
+
+srcs/Ship/ShipManager.s: srcs/Ship/ShipManager.cpp.s
+
+.PHONY : srcs/Ship/ShipManager.s
+
+# target to generate assembly for a file
+srcs/Ship/ShipManager.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.s
+.PHONY : srcs/Ship/ShipManager.cpp.s
+
 srcs/Ship/ShipMob.o: srcs/Ship/ShipMob.cpp.o
 
 .PHONY : srcs/Ship/ShipMob.o
@@ -333,6 +360,9 @@ help:
 	@echo "... srcs/Ship/AShip.o"
 	@echo "... srcs/Ship/AShip.i"
 	@echo "... srcs/Ship/AShip.s"
+	@echo "... srcs/Ship/ShipManager.o"
+	@echo "... srcs/Ship/ShipManager.i"
+	@echo "... srcs/Ship/ShipManager.s"
 	@echo "... srcs/Ship/ShipMob.o"
 	@echo "... srcs/Ship/ShipMob.i"
 	@echo "... srcs/Ship/ShipMob.s"
