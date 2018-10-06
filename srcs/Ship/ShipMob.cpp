@@ -3,9 +3,9 @@
 //
 
 #include <Ship/ShipMob.hpp>
-#include <Bullets/MobBullet.hpp>
 #include <ncurses.h>
 #include <cstdlib>
+#include <Bullets/MobBullet.hpp>
 
 #include "Ship/ShipMob.hpp"
 
