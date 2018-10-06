@@ -19,11 +19,13 @@ private:
 	List<ABullet*>		_bullets_user;
 
 public:
-	void 		moveBullets();
+	void 		moveMobBullets();
+	void 		movePlayerBullets();
 
 	BulletsManager(List<IBulletsManager *> *pList, IBulletsManager* user);
 
 	void fireUser();
+	void fireMob();
 };
 
 #endif //__BULLETSMANAGER_HPP__

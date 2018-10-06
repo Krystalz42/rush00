@@ -59,11 +59,11 @@ void Space::getInput(int ch) {
 }
 
 void Space::moveUserBullets() {
-	_bm->moveBullets();
+	_bm->movePlayerBullets();
 }
 
 void Space::moveEnnemyBullets() {
-	_bm->moveBullets();
+	_bm->moveMobBullets();
 }
 
 void Space::ennemyAction() {

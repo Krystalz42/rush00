@@ -23,6 +23,7 @@ public:
 
 	void		moveBullet();
 	Position *	getPosition();
+	bool 		isAlive();
 private:
 	ABullet();
 

@@ -8,6 +8,8 @@
 #define EMPTY ' '
 #define SHIP_MOB '@'
 #define SHIP_PLAYER 'A'
+#define MOB_BULLET '|'
+#define PLAYER_BULLET 'o'
 
 enum Move {
 	NORTH,
