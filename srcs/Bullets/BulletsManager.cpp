@@ -8,3 +8,8 @@
 
 void BulletsManager::moveBullets() {
 }
+
+BulletsManager::BulletsManager(List<IBulletsManager *> *pList) {
+
+}
+

@@ -11,7 +11,7 @@
 
 class Space {
 private:
-	List<AShip *>		ship_ennemy;
+	List<AShip *>		*ship_ennemy;
 	AShip*				ship_user;
 
 	ShipManager		*_sm;

@@ -3,6 +3,7 @@
 //
 
 #include <Space.hpp>
+#include <Ship/ShipMob.hpp>
 
 #include "Space.hpp"
 
@@ -37,14 +38,15 @@ void Space::ennemyAction() {
 
 void Space::initLevel() {
 	int difficulty = _level *  10;
+	ship_ennemy = new List<AShip *>;
 
-	_sm = new ShipManager();
-	_bm = new BulletsManager();
+
 
 	for (int idx = 0; idx < difficulty; idx++) {
-		_sm->
+		ship_ennemy->pushFront(new ShipMob(10 ,10));
 	}
 
+	_sm = new ShipManager(ship_ennemy);
 }
 /** Operator **/
 
