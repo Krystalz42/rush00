@@ -4,6 +4,7 @@
 
 #include <utils/IShipsManager.hpp>
 #include <Ship/ShipManager.hpp>
+#include <Ship/ShipMob.hpp>
 
 
 ShipManager::ShipManager() {
@@ -11,10 +12,6 @@ ShipManager::ShipManager() {
 }
 
 ShipManager::ShipManager(List<IShipsManager *> *pList) {
-
-}
-
-ShipManager::ShipManager(List<AShip *> *pList) {
-
+	IShipsManager * s = new ShipMob();
 }
 

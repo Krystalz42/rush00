@@ -26,3 +26,7 @@ BulletsManager::BulletsManager(List<IBulletsManager *> *pList) {
 
 }
 
+void BulletsManager::fireUser() {
+
+}
+

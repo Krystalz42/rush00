@@ -11,15 +11,13 @@
 
 class ShipManager {
 private:
-	List<IShipsManager *>		ships;
+	List<IShipsManager *>		*ships;
 	IShipsManager			*user_ship;
-
-public:
 	ShipManager();
 
-	ShipManager(List<IShipsManager *> *pList);
+public:
 
-	ShipManager(List<AShip *> *pList);
+	ShipManager(List<IShipsManager *> *pList);
 };
 
 #endif //SHIPMANAGER_HPP

@@ -3,7 +3,9 @@
 //
 
 #include <Ship/ShipMob.hpp>
-#include <Bullets/MobBullet.hpp>
+#include <Bullets/BasicBullet.hpp>
+#include <ncurses.h>
+#include <cstdlib>
 
 #include "Ship/ShipMob.hpp"
 
@@ -15,11 +17,10 @@
 
 
 ShipMob::ShipMob() {
-
-}
-ShipMob::ShipMob(int x, int y) : AShip(x, y) {
-	_current_bullets = 10;
+	_p = new Position(rand() % (COLS / 3), rand() % (LINES - 1));
 	_max_bullets = 10;
+	_current_bullets = 10;
+
 }
 
 ShipMob::ShipMob(ShipMob const &i) {
@@ -30,7 +31,7 @@ ShipMob::ShipMob(ShipMob const &i) {
 
 ABullet *ShipMob::fire() const {
 	if (_current_bullets > 0) {
-		return new MobBullet();
+		return new BasicBullet();
 	}
 	return 0;
 }

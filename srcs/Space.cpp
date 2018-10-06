@@ -20,7 +20,34 @@ Space::Space(Space const &i) {
 /** Public **/
 
 void Space::getInput(int ch) {
-
+	switch (ch)
+	{
+		case 'd':
+		case 'D':
+			ship_user->move(EAST);
+			break;
+		case 'a':
+		case 'A':
+			ship_user->move(WEST);
+			break;
+		case 'q':
+		case 'Q':
+			ship_user->move(WEST);
+			_bm->fireUser()
+			break;
+		case 'e':
+		case 'E':
+			ship_user->move(EAST);
+			_bm->fireUser()
+			break;
+		case ' ':
+			_bm->fireUser()
+			break;
+		case 27:
+			return;
+		default:
+			break;
+	}
 }
 
 void Space::moveBullets() {
@@ -37,16 +64,21 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
-	int difficulty = _level *  10;
+	int difficulty = _level * 10;
+	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
+	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
+
 	ship_ennemy = new List<AShip *>;
 
-
-
 	for (int idx = 0; idx < difficulty; idx++) {
-		ship_ennemy->pushFront(new ShipMob(10 ,10));
+		ship_ennemy->pushFront(new ShipMob());
 	}
-
-	_sm = new ShipManager(ship_ennemy);
+	for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
+		t_bm->pushFront(it->data);
+		t_sm->pushFront(it->data);
+	}
+	_bm = new BulletsManager(t_bm);
+	_sm = new ShipManager(t_sm);
 }
 /** Operator **/
 

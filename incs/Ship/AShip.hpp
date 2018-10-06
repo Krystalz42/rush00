@@ -8,23 +8,25 @@
 #include <utils/IShooter.hpp>
 #include <clocale>
 #include <utils/IBulletsManager.hpp>
+#include <utils/IShipsManager.hpp>
 #include "utils/IShooter.hpp"
 
-class AShip : public IBulletsManager {
+class AShip : public IBulletsManager, public IShipsManager {
 protected:
 	unsigned int	_current_bullets;
 	unsigned int	_max_bullets;
 	Position		*_p;
 	unsigned int	_life;
+
 	AShip();
 
 public:
-	AShip(int x, int y);
 	AShip(AShip const &i);
 	virtual ~AShip();
 
-	AShip	&operator=(AShip const &i);
+	virtual AShip	&operator=(AShip const &i);
 
+	virtual void move(Move m);
 	virtual bool	isAlive();
 	virtual ABullet *fire() const = 0;
 	virtual void isHit();

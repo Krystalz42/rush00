@@ -11,9 +11,6 @@ AShip::AShip() {
 
 }
 
-AShip::AShip(int x, int y) {
-
-}
 AShip::AShip(AShip const &i) {
 
 }
@@ -42,6 +39,10 @@ AShip &AShip::operator=(const AShip &i) {
 AShip::~AShip() {
 	if (_p != 0)
 		delete _p;
+}
+
+void AShip::move(Move m) {
+
 }
 
 

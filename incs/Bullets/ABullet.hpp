@@ -21,6 +21,7 @@ public:
 	ABullet(Position *p, Move m);
 	ABullet(ABullet const &i);
 	virtual ~ABullet();
+
 	void		moveBullet();
 	Position *	getPosition();
 };

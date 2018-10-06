@@ -9,7 +9,8 @@ enum Move {
 	NORTH,
 	SOUTH,
 	EAST,
-	WEST
+	WEST,
+	NONE
 };
 
 

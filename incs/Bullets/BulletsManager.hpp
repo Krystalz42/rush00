@@ -22,6 +22,8 @@ public:
 	void 		moveBullets();
 
 	BulletsManager(List<IBulletsManager *> *pList);
+
+	void fireUser();
 };
 
 #endif //__BULLETSMANAGER_HPP__
