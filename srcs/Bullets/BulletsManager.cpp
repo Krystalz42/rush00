@@ -7,7 +7,4 @@
 #include <Ship/ShipMob.hpp>
 
 void BulletsManager::moveBullets() {
-	_shooters_ennemy.begin();
-	_shooters_ennemy.end();
-	_shooters_ennemy.pushBack(new ShipMob(0, 0));
 }

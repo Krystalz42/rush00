@@ -3,6 +3,8 @@
 //
 
 #include <Ship/AShip.hpp>
+#include <ncurses.h>
 
 int main () {
+	initscr();
 }

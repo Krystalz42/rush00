@@ -3,8 +3,7 @@
 //
 
 #include <utils/Position.hpp>
-#include <curses.h>
-
+#include <ncurses.h>
 
 Position::Position() {
 

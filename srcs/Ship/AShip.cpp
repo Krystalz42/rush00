@@ -4,6 +4,23 @@
 
 #include <Ship/AShip.hpp>
 
+/** Static **/
+/** Constructor **/
+
+AShip::AShip() {
+
+}
+
+AShip::AShip(int x, int y) {
+
+}
+
+/** Public **/
+
+/** Private **/
+/** Operator **/
+/** Destructor **/
+
 AShip &AShip::operator=(const AShip &i) {
 	return *this;
 }
@@ -21,14 +38,6 @@ AShip::~AShip() {
 }
 
 void AShip::isHit() {
-
-}
-
-AShip::AShip() {
-
-}
-
-AShip::AShip(int x, int y) {
 
 }
 

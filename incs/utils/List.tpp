@@ -7,34 +7,35 @@
 
 template <typename T>
 class List {
-private:
 
+
+public:
 	typedef struct t_list{
 		T					data;
 		struct t_list		*next;
 		struct t_list		*prev;
-	}				list;
+	}				lst;
 
-	list		*begin;
-	list		*end;
-
-public:
 	typedef void (*operator_f)(void);
 
-	void		pushFront(T *element);
-	void 		erase(T *element);
-	T			*begin();
+	void				pushFront(T *element);
+	void 				erase(T *element);
+	struct t_list		*begin() {
+		return beg;
+	}
+
 	List();
+private:
+	struct t_list		*beg;
+	struct t_list		*end;
+
 };
+
+
 
 template<typename T>
 List<T>::List() {
 
-}
-
-template<typename T>
-T *List<T>::begin() {
-	return begin;
 }
 
 template<typename T>
@@ -47,7 +48,7 @@ void List<T>::pushFront(T *element) {
 
 template<typename T>
 void List<T>::erase(T *element) {
-	for (list *it = begin; it != 0; it = it->next) {
+	for (lst *it = beg; it != 0; it = it->next) {
 		if (it == element) {
 			it->prev->next = it->next;
 			it->next->prev = it->prev;
@@ -55,6 +56,7 @@ void List<T>::erase(T *element) {
 		}
 	}
 }
+
 
 
 #endif //__LIST_HPP__

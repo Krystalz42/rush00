@@ -79,7 +79,7 @@ LIBS		= \
 LDFLAGS		= \
 
 LDLIBS		= \
-#			  -lncurses								\
+			  -lncurses								\
 
 CPPFLAGS	= \
 			  -I$(DIR_INCS)							\
