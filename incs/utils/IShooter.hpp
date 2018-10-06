@@ -11,8 +11,6 @@
 class IShooter {
 public:
 	virtual ABullet	*fire() const = 0;
-	virtual void	isHit() = 0;
-	virtual Position	const &getPosition() = 0;
 	virtual ~IShooter() {}
 };
 

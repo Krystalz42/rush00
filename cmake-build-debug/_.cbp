@@ -105,6 +105,12 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/ft_retro.h">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IBulletsManager.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/ICollision.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IShooter.hpp">
 			<Option target="_"/>
 		</Unit>
