@@ -101,6 +101,7 @@ void Space::moveEnnemyBullets() {
 void Space::ennemyAction() {
 	if (_sm != 0) {
 		_sm->moveEnnemy();
+		_bm->fireMob();
 		for (List<Star *>::t_list *it = _star.begin(); it!=0; it = it->next) {
 			it->data->moveStar();
 		}
@@ -184,7 +185,7 @@ void Space::initStars() {
 		for (int x = 0; x < COLS; x++) {
 			if (x % 15 == 0) {
 				randp = rand() % 8;
-				file << randp << std::endl;
+				// file << randp << std::endl;
 				_star.pushFront(new Star(new Position(((randp <= 3) ? y  - randp : y + randp), (randp <= 3 ? x  + randp : x - randp))));
 			}
 		}

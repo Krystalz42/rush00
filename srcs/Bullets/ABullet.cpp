@@ -67,7 +67,7 @@ void ABullet::moveBullet() {
 }
 
 bool ABullet::isAlive() {
-	return !(_p->getY() == 1 || _p->getY() == LINES);
+	return !(_p->getY() == 1 || _p->getY() == LINES - 1);
 }
 
 

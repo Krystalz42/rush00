@@ -82,7 +82,7 @@ void AShip::isHit() {
 }
 
 void AShip::getAmmo() {
-	file << _current_bullets << std::endl;
+	// file << _current_bullets << std::endl;
 	_current_bullets++;
 }
 
