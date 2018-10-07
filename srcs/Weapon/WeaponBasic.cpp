@@ -22,7 +22,7 @@ WeaponBasic::WeaponBasic(WeaponBasic const &i) {
 
 List<ABullet *> *WeaponBasic::createBullets(Position const &p, Move m) {
 	List<ABullet *> *l = new List<ABullet *>();
-	l->pushFront(new BasicBullet(new Position(p.getY(), p.getX()), m, PLAYER_BULLET, CYAN));
+	l->pushFront(new BasicBullet(new Position(p.getY(), p.getX()), m, (m == NORTH ? PLAYER_DOT : PLAYER_BULLET_VERTIC) , (m == NORTH ? CYAN : MAGENTA)));
 	return l;
 }
 

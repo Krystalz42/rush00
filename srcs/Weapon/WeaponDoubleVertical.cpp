@@ -31,12 +31,12 @@ WeaponDoubleVertical::createBullets(Position const &p, Move m) {
 	ABullet *b;
 	pos = new Position(p);
 	pos->setX(pos->getX() - 2);
-	b = new BasicBullet(pos, m, PLAYER_BULLET_VERTIC, CYAN);
+	b = new BasicBullet(pos, m, PLAYER_BULLET, (m == NORTH ? CYAN : MAGENTA));
 	l->pushFront(b);
 
 	pos = new Position(p);
 	pos->setX(pos->getX() + 2);
-	b = new BasicBullet(pos, m, PLAYER_BULLET_VERTIC, CYAN);
+	b = new BasicBullet(pos, m, PLAYER_BULLET, (m == NORTH ? CYAN : MAGENTA));
 	l->pushFront(b);
 	return l;
 }

@@ -14,7 +14,6 @@ void listenUser() {
 	unsigned count = 0;
 
 	while (0x2a) {
-		file << COLS << LINES << std::endl;
 		if (COLS < 100 || LINES < 25) {
 			std::cout << "Windows too small" << std::endl;
 			Utils::getInstance()->exitAndReset();

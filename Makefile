@@ -103,8 +103,8 @@ CPPFLAGS	= \
 CFLAGS		= \
 				-std=c++98					\
 				-g3			\
-				-fsanitize=address		\
-				-Wall -Werror -Wextra					\
+				#-fsanitize=address		\
+				#-Wall -Werror -Wextra					\
 
 # ---------------------------------------------------------------------------- #
 # /!\ SOURCE NORMALIZATION AND COMPILATION RULES /!\                           #
