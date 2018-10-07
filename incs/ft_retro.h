@@ -8,6 +8,7 @@
 #define EMPTY ' '
 #define MOB_BULLET '|'
 #define PLAYER_BULLET 'o'
+#define PLAYER_BULLET_VERTIC '^'
 #define RED  1
 #define CYAN  2
 #define MAGENTA  3

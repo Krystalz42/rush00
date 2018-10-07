@@ -26,17 +26,17 @@ WeaponTripleDiagonal::createBullets(Position const &p, Move m) {
 	ABullet *b;
 	pos = new Position(p);
 	pos->setX(pos->getX() - 1);
-	b = new BasicBullet(pos, (m == NORTH ? NORTHWEST : SOUTHWEST));
+	b = new BasicBullet(pos, (m == NORTH ? NORTHWEST : SOUTHWEST), PLAYER_BULLET, CYAN);
 	l->pushFront(b);
 
 	pos = new Position(p);
 	pos->setX(pos->getX());
-	b = new BasicBullet(pos, m);
+	b = new BasicBullet(pos, m, PLAYER_BULLET, CYAN);
 	l->pushFront(b);
 
 	pos = new Position(p);
 	pos->setX(pos->getX() + 1);
-	b = new BasicBullet(pos, (m == NORTH ? NORTHEAST : SOUTHEAST));
+	b = new BasicBullet(pos, (m == NORTH ? NORTHEAST : SOUTHEAST), PLAYER_BULLET, CYAN);
 	l->pushFront(b);
 	return l;
 }

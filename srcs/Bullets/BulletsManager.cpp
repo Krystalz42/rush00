@@ -4,7 +4,6 @@
 
 #include <Bullets/BulletsManager.hpp>
 #include <Bullets/BasicBullet.hpp>
-#include <Bullets/MobBullet.hpp>
 #include <Ship/ShipMob.hpp>
 #include <utils/List.hpp>
 #include <iostream>

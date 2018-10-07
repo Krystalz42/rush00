@@ -19,7 +19,7 @@ BasicBullet::BasicBullet(const ABullet &i) : ABullet(i) {
 
 }
 
-BasicBullet::BasicBullet(Position *p, Move m) : ABullet(p, m) {
+BasicBullet::BasicBullet(Position *p, Move m, char c, char color) : ABullet(p, m, c, color) {
 	deleteBullet();
 	switch (_m) {
 		case NORTH:
@@ -54,8 +54,8 @@ BasicBullet::BasicBullet(Position *p, Move m) : ABullet(p, m) {
 
 void BasicBullet::drawBullet() const {
 	move(_p->getY(), _p->getX());
-	attron(COLOR_PAIR(CYAN));
-	addch(PLAYER_BULLET);
+	attron(COLOR_PAIR(_color));
+	addch(_c);
 	attroff(COLOR_PAIR(RED));
 }
 

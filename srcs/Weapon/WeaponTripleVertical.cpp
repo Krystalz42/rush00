@@ -27,17 +27,17 @@ WeaponTripleVertical::createBullets(Position const &p, Move m) {
 	ABullet *b;
 	pos = new Position(p);
 	pos->setX(pos->getX() - 2);
-	b = new BasicBullet(pos, m);
+	b = new BasicBullet(pos, m, PLAYER_BULLET_VERTIC, CYAN);
 	l->pushFront(b);
 
 	pos = new Position(p);
 	pos->setX(pos->getX());
-	b = new BasicBullet(pos, m);
+	b = new BasicBullet(pos, m, PLAYER_BULLET_VERTIC, CYAN);
 	l->pushFront(b);
 
 	pos = new Position(p);
 	pos->setX(pos->getX() + 2);
-	b = new BasicBullet(pos, m);
+	b = new BasicBullet(pos, m, PLAYER_BULLET_VERTIC, CYAN);
 	l->pushFront(b);
 	return l;
 }

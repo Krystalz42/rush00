@@ -21,9 +21,8 @@ WeaponBasic::WeaponBasic(WeaponBasic const &i) {
 /** Public **/
 
 List<ABullet *> *WeaponBasic::createBullets(Position const &p, Move m) {
-	// file << "createbullets" << std::endl;
 	List<ABullet *> *l = new List<ABullet *>();
-	l->pushFront(new BasicBullet(new Position(p.getY(), p.getX()), m));
+	l->pushFront(new BasicBullet(new Position(p.getY(), p.getX()), m, PLAYER_BULLET, CYAN));
 	return l;
 }
 
