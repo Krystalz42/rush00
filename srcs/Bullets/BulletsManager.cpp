@@ -48,23 +48,56 @@ void BulletsManager::fireUser() {
 
 void BulletsManager::fireMob() {
 //	file << "SHOOTER MOB IS NULL" << (_shooters_ennemy == 0) << std::endl;
-	// if (rand() % 10 == 1)
-
-	// _bullets_ennemy.pushFront(_shooters_ennemy->fire());
+	List<IBulletsManager*>::t_list *it = _shooters_ennemy->begin();
+	List<ABullet *> *lst_bullets;
+	int cpt = rand() % _shooters_ennemy->size();
+	file << "Bullet enemies PUSH" << std::endl;
+	if (it != 0) {
+		file << cpt << std::endl;
+		for (int i = 0; i != cpt; i++)
+			it = it->next;
+		file << "2" << std::endl;
+		lst_bullets = it->data->fire();
+		file << "3" << std::endl;
+		for (List<ABullet *>::t_list *it = lst_bullets->begin(); it != 0; it = it->next) {
+			file << "4" << std::endl;
+			_bullets_ennemy.pushFront(it->data);
+		}
+		file << "5" << std::endl;
+		delete lst_bullets;
+	}
 }
 void BulletsManager::moveMobBullets() {
-	List<ABullet *>::t_list *enemy_bullets = _bullets_ennemy.begin();
+	List<ABullet *>::t_list *enemy_bullets;
+	List<IBulletsManager *>::t_list *user_shooter;
 	List<ABullet *>::t_list *tmp;
 
-	while (enemy_bullets) {
+	for (enemy_bullets = _bullets_ennemy.begin(); enemy_bullets != 0;) {
+
 		enemy_bullets->data->moveBullet();
-//		if (*enemy_bullets->data->getPosition() == _shooter_user->getPosition()) {
-//			_shooter_user->isHit();
-//			tmp = enemy_bullets->next;
-//			enemy_bullets = tmp;
-//
-//		} else
-//			enemy_bullets = enemy_bullets->next;
+
+//		file << *enemy_bullets->data->getPosition() << std::endl;
+		if (_shooter_user->isAlive() &&  _shooter_user->isCollide(enemy_bullets->data->getPosition())) {
+				file << "isHit" << std::endl;
+				_shooter_user->isHit();
+				ABullet * tmp_ = enemy_bullets->data;
+				tmp = enemy_bullets;
+				enemy_bullets = enemy_bullets->next;
+				_bullets_ennemy.erase(tmp->data);
+				// _shooter_user->getAmmo();
+				delete tmp_;
+			}
+		else if (enemy_bullets != 0 && !enemy_bullets->data->isAlive()) {
+			file << "isAlive" << std::endl;
+			ABullet * tmp_ = enemy_bullets->data;
+			tmp = enemy_bullets;
+			enemy_bullets = enemy_bullets->next;
+			_bullets_ennemy.erase(tmp->data);
+			// _shooter_user->getAmmo();
+			delete tmp_;
+		}
+		else
+			enemy_bullets = enemy_bullets->next;
 	}
 }
 

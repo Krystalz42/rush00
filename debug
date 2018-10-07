@@ -1,0 +1,25 @@
+ASAN:DEADLYSIGNAL
+=================================================================
+==48093==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000102d6b689 bp 0x7fff5ceb2620 sp 0x7fff5ceb2550 T0)
+==48093==The signal is caused by a READ memory access.
+==48093==Hint: address points to the zero page.
+==48093==WARNING: Can't read from symbolizer at fd 6
+==48093==WARNING: Can't read from symbolizer at fd 6
+==48093==WARNING: Can't read from symbolizer at fd 6
+==48093==WARNING: Can't read from symbolizer at fd 6
+==48093==WARNING: Failed to use and restart external symbolizer!
+    #0 0x102d6b688 in ShipMob::fire() (/Users/gubourge/Documents/PiscineCPP/Rush00/./ft_retro:x86_64+0x10001e688)
+    #1 0x102d62bab in BulletsManager::fireMob() (/Users/gubourge/Documents/PiscineCPP/Rush00/./ft_retro:x86_64+0x100015bab)
+    #2 0x102d726f1 in Space::ennemyAction() (/Users/gubourge/Documents/PiscineCPP/Rush00/./ft_retro:x86_64+0x1000256f1)
+    #3 0x102d4de2e in listenUser() (/Users/gubourge/Documents/PiscineCPP/Rush00/./ft_retro:x86_64+0x100000e2e)
+    #4 0x102d4df45 in main (/Users/gubourge/Documents/PiscineCPP/Rush00/./ft_retro:x86_64+0x100000f45)
+    #5 0x7fffb0fb2234 in start (/usr/lib/system/libdyld.dylib:x86_64+0x5234)
+
+==48093==Register values:
+rax = 0x0000100000000000  rbx = 0x00007fff5ceb2960  rcx = 0x0000000000000000  rdx = 0x0000000000000000  
+rdi = 0x0000100000000000  rsi = 0x0000000000000000  rbp = 0x00007fff5ceb2620  rsp = 0x00007fff5ceb2550  
+ r8 = 0x0000000103d4d900   r9 = 0x0000000103d4d8e0  r10 = 0x0000000000000000  r11 = 0x0000000000012068  
+r12 = 0x0000000000000000  r13 = 0x0000000000000000  r14 = 0x0000000000000000  r15 = 0x0000000000000000  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV (/Users/gubourge/Documents/PiscineCPP/Rush00/./ft_retro:x86_64+0x10001e688) in ShipMob::fire()
+==48093==ABORTING
