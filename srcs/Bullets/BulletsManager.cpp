@@ -13,7 +13,6 @@
 #include <curses.h>
 #include <utils/IBulletsManagerUser.hpp>
 
-extern std::ofstream file;
 
 /** Static **/
 
@@ -66,7 +65,6 @@ void BulletsManager::moveMobBullets() {
 		enemy_bullets->data->moveBullet();
 
 		if (_shooter_user->isAlive() &&  _shooter_user->isCollide(enemy_bullets->data->getPosition())) {
-				file << "isHit" << std::endl;
 				_shooter_user->isHit();
 				ABullet * tmp_ = enemy_bullets->data;
 				tmp = enemy_bullets;
@@ -75,7 +73,6 @@ void BulletsManager::moveMobBullets() {
 				delete tmp_;
 			}
 		else if (enemy_bullets != 0 && !enemy_bullets->data->isAlive()) {
-			file << "isAlive" << std::endl;
 			ABullet * tmp_ = enemy_bullets->data;
 			tmp = enemy_bullets;
 			enemy_bullets = enemy_bullets->next;
