@@ -5,7 +5,6 @@
 #include <Ship/ShipPlayer.hpp>
 #include <ncurses.h>
 #include <cstdlib>
-#include <Bullets/MobBullet.hpp>
 #include <iostream>
 #include <Bullets/BasicBullet.hpp>
 #include <utils/List.hpp>

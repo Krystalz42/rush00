@@ -19,7 +19,7 @@ ABullet::ABullet(ABullet const &i) {
 }
 
 
-ABullet::ABullet(Position *p, Move m) : _p(p), _m(m) {
+ABullet::ABullet(Position *p, Move m, char c, char color) : _p(p), _m(m), _c(c), _color(color) {
 }
 
 /** Public **/

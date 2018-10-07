@@ -10,7 +10,6 @@
 #include <Ship/ShipMedium.hpp>
 #include <ncurses.h>
 #include <cstdlib>
-#include <Bullets/MobBullet.hpp>
 #include <iostream>
 #include <Weapon/WeaponDoubleVertical.hpp>
 

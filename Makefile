@@ -46,7 +46,6 @@ SRCS = \
 				main.cpp \
 				Bullets/ABullet.cpp \
 				Bullets/BasicBullet.cpp \
-				Bullets/MobBullet.cpp \
 				Bullets/BulletsManager.cpp \
 				Ship/AShip.cpp \
 				utils/Position.cpp \

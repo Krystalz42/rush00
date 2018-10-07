@@ -13,6 +13,8 @@ class ABullet {
 protected:
 	Position *_p;
 	Move _m;
+	char _c;
+	char _color;
 
 	virtual void drawBullet() const = 0;
 
@@ -21,7 +23,7 @@ protected:
 	ABullet();
 
 public:
-	ABullet(Position *p, Move m);
+	ABullet(Position *p, Move m, char c, char color);
 
 	ABullet(ABullet const &i);
 

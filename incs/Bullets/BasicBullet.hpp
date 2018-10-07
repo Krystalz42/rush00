@@ -9,7 +9,7 @@
 
 class BasicBullet : virtual public ABullet {
 public:
-	BasicBullet(Position *p, Move m);
+	BasicBullet(Position *p, Move m, char c, char color);
 
 	~BasicBullet();
 

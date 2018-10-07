@@ -3,7 +3,7 @@
 //
 
 #include <Weapon/WeaponMob.hpp>
-#include <Bullets/MobBullet.hpp>
+#include <Bullets/BasicBullet.hpp>
 
 /** Static **/
 /** Constructor **/
@@ -18,7 +18,7 @@ WeaponMob::WeaponMob(WeaponMob const &i) {
 
 List<ABullet *> *WeaponMob::createBullets(Position const &p, Move m) {
 	List<ABullet *> *l = new List<ABullet *>();
-	l->pushFront(new MobBullet(new Position(p), m));
+	l->pushFront(new BasicBullet(new Position(p), m, MOB_BULLET, GREEN));
 	return l;
 }
 
