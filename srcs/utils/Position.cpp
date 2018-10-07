@@ -14,7 +14,7 @@ Position::Position() {
 
 }
 
-Position::Position(int y, int x) : _y(y), _x(x) {
+Position::Position(int y, int x) : _x(x) , _y(y) {
 	if (_y == 0) _y++;
 }
 

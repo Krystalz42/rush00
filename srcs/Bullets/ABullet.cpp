@@ -15,7 +15,7 @@ ABullet::ABullet() {
 
 
 ABullet::ABullet(ABullet const &i) {
-
+	*this = i;
 }
 
 
@@ -77,8 +77,17 @@ Position const &ABullet::getPosition() {
 
 /** Private **/
 /** Operator **/
+
+ABullet &ABullet::operator=(ABullet const &i) {
+	if (this != &i) {
+	}
+	return *this;
+}
+
 /** Destructor **/
 
 ABullet::~ABullet() {
 }
+
+
 

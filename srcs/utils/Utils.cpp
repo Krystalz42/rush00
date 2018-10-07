@@ -13,7 +13,7 @@
 
 
 void Utils::setTimer() {
-	struct itimerval it = {0};
+	struct itimerval it;
 	static int time = 1000;
 	/*  Set timer  */
 

@@ -13,22 +13,45 @@
   <component name="ChangeListManager">
     <list default="true" id="45268bf7-012d-426b-9c95-d8a100fd3476" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Bullets/ABullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Bullets/ABullet.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Bullets/BasicBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Bullets/BasicBullet.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.objs/Bullets/BulletsManager.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Bullets/BulletsManager.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Bullets/MobBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Bullets/MobBullet.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Ship/AShip.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/AShip.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Ship/ShipBigBoss.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/ShipBigBoss.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Ship/ShipBoss.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/ShipBoss.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Ship/ShipManager.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/ShipManager.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.objs/Ship/ShipMedium.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/ShipMedium.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.objs/Ship/ShipMob.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/ShipMob.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Weapon/AWeapon.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/AWeapon.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Ship/ShipPlayer.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Ship/ShipPlayer.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Space.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Space.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.objs/Weapon/WeaponBasic.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/WeaponBasic.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Weapon/WeaponMob.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/WeaponMob.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Weapon/WeaponTripleDiagonal.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/WeaponTripleDiagonal.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/Weapon/WeaponTripleVertical.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/WeaponTripleVertical.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/utils/Position.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/utils/Position.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/utils/Star.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/utils/Star.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.objs/utils/Utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/utils/Utils.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Weapon/WeaponDoubleVertical.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/WeaponDoubleVertical.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/Weapon/WeaponUltime.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/Weapon/WeaponUltime.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.objs/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/.objs/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_retro" beforeDir="false" afterPath="$PROJECT_DIR$/ft_retro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/incs/Ship/ShipBoss.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/incs/Ship/ShipBoss.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/incs/utils/Star.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/incs/utils/Star.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Bullets/ABullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Bullets/ABullet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ship/AShip.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/AShip.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipMedium.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipMedium.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Space.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Space.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/utils/Position.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils/Position.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/utils/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils/Star.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/utils/Utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils/Utils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testmake" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,9 +72,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="20" />
-          <entry key="cpp" value="218" />
+          <entry key="cpp" value="235" />
           <entry key="h" value="11" />
-          <entry key="hpp" value="215" />
+          <entry key="hpp" value="219" />
           <entry key="tpp" value="7" />
           <entry key="txt" value="3" />
         </counts>
@@ -59,16 +82,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="450" />
+          <entry key="ObjectiveC" value="471" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Makefile" value="270" />
-          <entry key="cpp" value="15648" />
+          <entry key="Makefile" value="276" />
+          <entry key="cpp" value="16387" />
           <entry key="h" value="249" />
-          <entry key="hpp" value="4820" />
+          <entry key="hpp" value="4850" />
           <entry key="tpp" value="1200" />
           <entry key="txt" value="212" />
         </counts>
@@ -76,9 +99,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="60" />
-          <entry key="Doxygen file" value="74" />
-          <entry key="ObjectiveC" value="21843" />
-          <entry key="PLAIN_TEXT" value="422" />
+          <entry key="Doxygen file" value="77" />
+          <entry key="ObjectiveC" value="22609" />
+          <entry key="PLAIN_TEXT" value="428" />
         </counts>
       </usages-collector>
     </session>
@@ -89,88 +112,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipPlayer.cpp">
+        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-973">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="224">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
-                <element signature="e#53#83#0" expanded="true" />
+                <element signature="e#106#148#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/incs/Weapon/WeaponBasic.hpp">
+        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding>
-                <element signature="e#102#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/srcs/Space.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-241">
-              <caret line="174" selection-start-line="174" selection-end-line="174" />
-              <folding>
-                <element signature="e#53#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="e#53#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipMedium.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-              <folding>
-                <element signature="e#137#167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/incs/Ship/ShipMedium.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/incs/Ship/ShipMob.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="27" selection-end-column="2" />
+            <state relative-caret-position="464">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -178,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            <state relative-caret-position="419">
+              <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
               <folding>
                 <element signature="e#53#84#0" expanded="true" />
               </folding>
@@ -188,13 +145,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipMob.cpp">
+        <entry file="file://$PROJECT_DIR$/incs/Weapon/WeaponTripleVertical.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
-                <element signature="e#53#80#0" expanded="true" />
+                <element signature="e#53#95#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/srcs/utils/Star.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="e#55#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/srcs/Space.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+              <folding>
+                <element signature="e#53#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/srcs/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+              <folding>
+                <element signature="e#2#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/incs/utils/Star.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -273,57 +293,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/incs/Ship/ShipBoss.hpp" />
-        <option value="$PROJECT_DIR$/srcs/Ship/ShipManager.cpp" />
-        <option value="$PROJECT_DIR$/incs/Ship/ShipManager.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/IBulletsManager.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/IShooter.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/List.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/IShipsManager.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/Position.hpp" />
-        <option value="$PROJECT_DIR$/srcs/utils/Position.cpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/AWeapon.hpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/WeaponBasic.hpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/WeaponMob.hpp" />
         <option value="$PROJECT_DIR$/incs/Ship/AShip.hpp" />
         <option value="$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/WeaponTripleVertical.hpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/WeaponTripleDiagonal.hpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp" />
         <option value="$PROJECT_DIR$/incs/ft_retro.h" />
         <option value="$PROJECT_DIR$/incs/utils/Utils.hpp" />
-        <option value="$PROJECT_DIR$/srcs/utils/Utils.cpp" />
         <option value="$PROJECT_DIR$/srcs/Asteroid/Asteroid.cpp" />
         <option value="$PROJECT_DIR$/incs/Asteroid/Asteroid.hpp" />
-        <option value="$PROJECT_DIR$/srcs/utils/Star.cpp" />
-        <option value="$PROJECT_DIR$/incs/utils/Star.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/IScore.hpp" />
         <option value="$PROJECT_DIR$/incs/Bullets/BulletsManager.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/ICollision.hpp" />
         <option value="$PROJECT_DIR$/incs/utils/IBulletsManagerUser.hpp" />
-        <option value="$PROJECT_DIR$/srcs/Ship/AShip.cpp" />
         <option value="$PROJECT_DIR$/incs/Space.hpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/WeaponUltime.hpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/srcs/]/WeaponUltime.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" />
-        <option value="$PROJECT_DIR$/srcs/main.cpp" />
         <option value="$PROJECT_DIR$/incs/Ship/ShipPlayer.hpp" />
         <option value="$PROJECT_DIR$/incs/Weapon/WeaponDoubleVertical.hpp" />
-        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp" />
         <option value="$PROJECT_DIR$/srcs/Ship/ShipPlayer.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp" />
         <option value="$PROJECT_DIR$/incs/Ship/ShipMedium.hpp" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/srcs/Ship/ShipMob.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Space.cpp" />
         <option value="$PROJECT_DIR$/srcs/Ship/ShipMedium.cpp" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/srcs/Bullets/ABullet.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Ship/AShip.cpp" />
+        <option value="$PROJECT_DIR$/srcs/utils/Position.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Ship/ShipManager.cpp" />
+        <option value="$PROJECT_DIR$/incs/Ship/ShipBoss.hpp" />
+        <option value="$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp" />
+        <option value="$PROJECT_DIR$/srcs/utils/Utils.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp" />
+        <option value="$PROJECT_DIR$/incs/utils/Star.hpp" />
+        <option value="$PROJECT_DIR$/srcs/utils/Star.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Space.cpp" />
+        <option value="$PROJECT_DIR$/srcs/main.cpp" />
       </list>
     </option>
   </component>
@@ -360,55 +380,7 @@
             <path>
               <item name="_" type="b2602c69:ProjectViewProjectNode" />
               <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="incs" type="462c0819:PsiDirectoryNode" />
-              <item name="Bullets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="incs" type="462c0819:PsiDirectoryNode" />
-              <item name="Ship" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="incs" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="incs" type="462c0819:PsiDirectoryNode" />
-              <item name="Weapon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
               <item name="srcs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="srcs" type="462c0819:PsiDirectoryNode" />
-              <item name="Bullets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="srcs" type="462c0819:PsiDirectoryNode" />
-              <item name="Ship" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="srcs" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rush00" type="462c0819:PsiDirectoryNode" />
-              <item name="srcs" type="462c0819:PsiDirectoryNode" />
-              <item name="Weapon" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -594,13 +566,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74036000" />
+    <option name="totallyTimeSpent" value="75756000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="506" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.34191704" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" weight="1.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50120485" side_tool="true" weight="0.40863454" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -614,7 +586,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="9" weight="0.3120482" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -659,73 +631,14 @@
           <line>19</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp</url>
-          <line>164</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/incs/Ship/ShipManager.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/utils/IShipsManager.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/utils/IShooter.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#104#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/utils/Position.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#53#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/incs/utils/Position.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="e#1#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#53#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,36 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/utils/Utils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#53#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/utils/Star.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#96#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/utils/Star.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#55#75#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,23 +700,6 @@
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#110#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/Ship/ShipBoss.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Ship/AShip.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="79" column="23" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="23" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -902,16 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-          <folding>
-            <element signature="e#53#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/incs/Weapon/AWeapon.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -926,34 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/incs/ft_retro.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="e#2#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,47 +802,10 @@
     <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponDoubleDiagonal.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="18" selection-end-line="61" />
-          <folding>
-            <element signature="e#53#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/Weapon/WeaponTripleVertical.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/incs/Weapon/WeaponDoubleVertical.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#106#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#53#87#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,33 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <element signature="e#53#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipMob.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1095,12 +863,211 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Space.cpp">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        <state relative-caret-position="124">
+          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/incs/Bullets/ABullet.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Bullets/ABullet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
           <folding>
             <element signature="e#53#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+          <folding>
+            <element signature="e#53#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/AShip.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="e#53#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/utils/Position.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#53#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding>
+            <element signature="e#53#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/incs/Ship/ShipBoss.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="e#53#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/utils/Utils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#53#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding>
+            <element signature="e#53#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#53#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="e#106#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+          <folding>
+            <element signature="e#53#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/incs/Weapon/WeaponTripleVertical.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleVertical.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <element signature="e#53#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/incs/utils/Star.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/utils/Star.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#55#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Space.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+          <folding>
+            <element signature="e#53#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="e#2#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

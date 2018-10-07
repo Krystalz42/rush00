@@ -125,6 +125,9 @@ void ShipBigBoss::moveShip(Move m) {
 /** Operator **/
 
 ShipBigBoss &ShipBigBoss::operator=(ShipBigBoss const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

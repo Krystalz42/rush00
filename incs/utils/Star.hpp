@@ -12,14 +12,12 @@ class Star {
 private:
 	Position	*_p;
 	void 	drawStar();
-	void	deleteStar();
-	int 				_size;
 
 	Star();
 
 public:
 	Star(Position *p);
-
+	Star	&operator=(Star const &i);
 	Star(Star const &i);
 	~Star();
 

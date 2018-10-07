@@ -55,6 +55,7 @@ void Space::refresh() {
 	r += " | Weapon : ";
 	r += ship_user->getWeaponType();
 	r += " ]";
+	file << r.size() << std::endl;
 	move(0, COLS - r.size());
 	addstr(r.c_str());
 	attroff(A_BOLD);

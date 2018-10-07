@@ -18,7 +18,7 @@ ShipBoss::ShipBoss() :
 			10,
 			10) {
 	_w = new WeaponTripleDiagonal();
-	_ship_design = "\\/O/\\";
+	_ship_design = "xxXxx";
 	Position p(rand() % (LINES / 3) + 1,rand() % (COLS - 3) + 1);
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 1));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() + 1));
@@ -27,6 +27,9 @@ ShipBoss::ShipBoss() :
 	_p.pushFront(new Position(p.getY() + 1, p.getX() + 1));
 }
 
+ShipBoss::ShipBoss(ShipBoss const &i) {
+	*this = i;
+}
 /** Public **/
 
 List<ABullet *> *ShipBoss::fire() {
@@ -61,6 +64,9 @@ void ShipBoss::drawShip() const {
 /** Operator **/
 
 ShipBoss &ShipBoss::operator=(ShipBoss const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 
@@ -71,5 +77,7 @@ ShipBoss &ShipBoss::operator=(ShipBoss const &i) {
 ShipBoss::~ShipBoss() {
 
 }
+
+
 
 

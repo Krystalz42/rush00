@@ -15,7 +15,7 @@ WeaponBasic::WeaponBasic() : AWeapon(1, "Basic Weapon") {
 }
 
 WeaponBasic::WeaponBasic(WeaponBasic const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -32,6 +32,9 @@ List<ABullet *> *WeaponBasic::createBullets(Position const &p, Move m) {
 /** Operator **/
 
 WeaponBasic &WeaponBasic::operator=(WeaponBasic const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

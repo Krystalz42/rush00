@@ -26,14 +26,14 @@ ShipMedium::ShipMedium() :
 				3,
 				3) {
 	_w = new WeaponDoubleVertical();
-	_ship_design = "o><";
+	_ship_design = "<o>";
 	Position p = Position(rand() % (LINES / 3) ,rand() % (COLS - 1));
 	file << p << std::endl;
 	_p.pushFront(new Position(p));
 	p.setX(p.getX() + 1);
 	file << p << std::endl;
 	_p.pushFront(new Position(p));
-	p.setX(p.getX() - 2);
+	p.setX(p.getX() + 1);
 	file << p << std::endl;
 	_p.pushFront(new Position(p));
 

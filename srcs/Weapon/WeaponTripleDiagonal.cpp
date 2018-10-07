@@ -14,7 +14,7 @@ WeaponTripleDiagonal::WeaponTripleDiagonal() : AWeapon(3,
 }
 
 WeaponTripleDiagonal::WeaponTripleDiagonal(WeaponTripleDiagonal const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -46,6 +46,9 @@ WeaponTripleDiagonal::createBullets(Position const &p, Move m) {
 
 WeaponTripleDiagonal &
 WeaponTripleDiagonal::operator=(WeaponTripleDiagonal const &i) {
+	if (this != &i ) {
+
+	}
 	return *this;
 }
 

@@ -14,7 +14,7 @@ AShip::AShip() {
 }
 
 AShip::AShip(AShip const &i) {
-
+	*this = i;
 }
 AShip::AShip(
 		unsigned int _current_bullets,
@@ -136,6 +136,8 @@ void AShip::drawShip() const {
 /** Operator **/
 
 AShip &AShip::operator=(const AShip &i) {
+	if (this != &i) {
+	}
 	return *this;
 }
 

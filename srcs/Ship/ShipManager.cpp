@@ -27,7 +27,7 @@ ShipManager::ShipManager(
 }
 
 ShipManager::ShipManager(ShipManager const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -54,6 +54,9 @@ bool ShipManager::isAllEnnemyDead() {
 /** Operator **/
 
 ShipManager &ShipManager::operator=(ShipManager const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

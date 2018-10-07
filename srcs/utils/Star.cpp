@@ -15,6 +15,8 @@
 #include <ncurses.h>
 #include <utils/Utils.hpp>
 #include <Ship/ShipBigBoss.hpp>
+#include <utils/Star.hpp>
+
 extern std::ofstream file;
 
 /** Static **/
@@ -27,7 +29,7 @@ Star::Star(Position *p): _p(p) {
 }
 
 Star::Star(Star const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -43,16 +45,23 @@ void Star::drawStar() {
 	addch('*');
 }
 
-void Star::deleteStar() {
-
-}
 /** Operator **/
+
+Star &Star::operator=(Star const &i) {
+	if (this != &i) {
+
+	}
+	return *this;
+}
+
 /** Destructor **/
 
 
 Star::~Star() {
 
 }
+
+
 
 
 

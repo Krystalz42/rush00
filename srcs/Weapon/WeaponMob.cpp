@@ -11,7 +11,9 @@
 WeaponMob::WeaponMob() : AWeapon(1, "Weapon Mob") {
 
 }
-
+WeaponMob::WeaponMob(WeaponMob const &i) {
+	*this = i;
+}
 /** Public **/
 
 List<ABullet *> *WeaponMob::createBullets(Position const &p, Move m) {
@@ -20,13 +22,14 @@ List<ABullet *> *WeaponMob::createBullets(Position const &p, Move m) {
 	return l;
 }
 
-WeaponMob::WeaponMob(WeaponMob const &i) {
 
-}
 /** Private **/
 /** Operator **/
 
 WeaponMob &WeaponMob::operator=(WeaponMob const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

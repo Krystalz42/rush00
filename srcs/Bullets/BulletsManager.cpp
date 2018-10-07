@@ -29,7 +29,7 @@ BulletsManager::BulletsManager(List<IBulletsManager *> *pList,
 BulletsManager::BulletsManager() {}
 
 BulletsManager::BulletsManager(BulletsManager const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -157,6 +157,9 @@ void BulletsManager::moveBasicBullets() {
 /** Operator **/
 
 BulletsManager &BulletsManager::operator=(BulletsManager const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

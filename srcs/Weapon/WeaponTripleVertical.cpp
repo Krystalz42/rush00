@@ -15,7 +15,7 @@ WeaponTripleVertical::WeaponTripleVertical() : AWeapon(3,
 }
 
 WeaponTripleVertical::WeaponTripleVertical(WeaponTripleVertical const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -47,6 +47,9 @@ WeaponTripleVertical::createBullets(Position const &p, Move m) {
 
 WeaponTripleVertical &
 WeaponTripleVertical::operator=(WeaponTripleVertical const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

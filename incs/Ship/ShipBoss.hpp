@@ -18,6 +18,7 @@ protected:
 
 public:
 	ShipBoss();
+	ShipBoss(ShipBoss const &i);
 
 	ShipBoss &operator=(ShipBoss const &i);
 

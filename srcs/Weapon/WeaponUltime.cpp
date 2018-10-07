@@ -10,8 +10,7 @@
 /** Static **/
 /** Constructor **/
 
-WeaponUltime::WeaponUltime() : AWeapon(6,
-									   "Ultimate Weapon") {
+WeaponUltime::WeaponUltime() : AWeapon(6, "Ultimate Weapon") {
 
 }
 
@@ -49,6 +48,9 @@ List<ABullet *> *WeaponUltime::createBullets(Position const &p, Move m) {
 /** Operator **/
 
 WeaponUltime &WeaponUltime::operator=(WeaponUltime const &i) {
+	if (this != & i){
+
+	}
 	return *this;
 }
 

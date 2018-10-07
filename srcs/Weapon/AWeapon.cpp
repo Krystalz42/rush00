@@ -8,12 +8,12 @@ AWeapon::AWeapon() {
 
 }
 
-AWeapon::AWeapon(unsigned int nu, std::string type) : _nu(nu), _type(type) {
+AWeapon::AWeapon(unsigned int nu, std::string type) : _type(type), _nu(nu) {
 
 }
 
 AWeapon::AWeapon(AWeapon const &i) {
-
+	*this = i;
 }
 
 
@@ -32,7 +32,10 @@ const std::string &AWeapon::getType() const {
 /** Private **/
 /** Operator **/
 
-AWeapon &AWeapon::operator=(AWeapon const &) {
+AWeapon &AWeapon::operator=(AWeapon const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 

@@ -19,7 +19,7 @@ WeaponDoubleVertical::WeaponDoubleVertical() : AWeapon(2,
 }
 
 WeaponDoubleVertical::WeaponDoubleVertical(WeaponDoubleVertical const &i) {
-
+	*this = i;
 }
 
 /** Public **/
@@ -46,6 +46,9 @@ WeaponDoubleVertical::createBullets(Position const &p, Move m) {
 
 WeaponDoubleVertical &
 WeaponDoubleVertical::operator=(WeaponDoubleVertical const &i) {
+	if (this != &i) {
+
+	}
 	return *this;
 }
 
