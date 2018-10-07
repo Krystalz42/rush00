@@ -160,7 +160,7 @@ void BulletsManager::moveBasicBullets() {
 
 BulletsManager &BulletsManager::operator=(BulletsManager const &i) {
 	if (this != &i) {
-
+		
 	}
 	return *this;
 }
