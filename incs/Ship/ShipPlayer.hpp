@@ -13,15 +13,14 @@ public:
 	ShipPlayer();
 	ShipPlayer(ShipPlayer const & i);
 
+	virtual void getAmmo();
 
+	virtual void			moveShip(Move m);
 	virtual ~ShipPlayer();
 	virtual ShipPlayer		&operator=(ShipPlayer const &i);
-	virtual ABullet *fire() const;
-	virtual void moveShip(Move m);
 
 protected:
-	virtual void drawShip() const;
-	virtual void deleteShip() const;
+	virtual List<ABullet *> *fire();
 
 public:
 };

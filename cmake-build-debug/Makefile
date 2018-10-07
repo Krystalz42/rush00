@@ -150,6 +150,33 @@ srcs/Bullets/ABullet.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.s
 .PHONY : srcs/Bullets/ABullet.cpp.s
 
+srcs/Bullets/BasicBullet.o: srcs/Bullets/BasicBullet.cpp.o
+
+.PHONY : srcs/Bullets/BasicBullet.o
+
+# target to build an object file
+srcs/Bullets/BasicBullet.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o
+.PHONY : srcs/Bullets/BasicBullet.cpp.o
+
+srcs/Bullets/BasicBullet.i: srcs/Bullets/BasicBullet.cpp.i
+
+.PHONY : srcs/Bullets/BasicBullet.i
+
+# target to preprocess a source file
+srcs/Bullets/BasicBullet.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i
+.PHONY : srcs/Bullets/BasicBullet.cpp.i
+
+srcs/Bullets/BasicBullet.s: srcs/Bullets/BasicBullet.cpp.s
+
+.PHONY : srcs/Bullets/BasicBullet.s
+
+# target to generate assembly for a file
+srcs/Bullets/BasicBullet.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s
+.PHONY : srcs/Bullets/BasicBullet.cpp.s
+
 srcs/Bullets/BulletsManager.o: srcs/Bullets/BulletsManager.cpp.o
 
 .PHONY : srcs/Bullets/BulletsManager.o
@@ -204,33 +231,6 @@ srcs/Bullets/MobBullet.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.s
 .PHONY : srcs/Bullets/MobBullet.cpp.s
 
-srcs/Bullets/PlayerBullet.o: srcs/Bullets/PlayerBullet.cpp.o
-
-.PHONY : srcs/Bullets/PlayerBullet.o
-
-# target to build an object file
-srcs/Bullets/PlayerBullet.cpp.o:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o
-.PHONY : srcs/Bullets/PlayerBullet.cpp.o
-
-srcs/Bullets/PlayerBullet.i: srcs/Bullets/PlayerBullet.cpp.i
-
-.PHONY : srcs/Bullets/PlayerBullet.i
-
-# target to preprocess a source file
-srcs/Bullets/PlayerBullet.cpp.i:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i
-.PHONY : srcs/Bullets/PlayerBullet.cpp.i
-
-srcs/Bullets/PlayerBullet.s: srcs/Bullets/PlayerBullet.cpp.s
-
-.PHONY : srcs/Bullets/PlayerBullet.s
-
-# target to generate assembly for a file
-srcs/Bullets/PlayerBullet.cpp.s:
-	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s
-.PHONY : srcs/Bullets/PlayerBullet.cpp.s
-
 srcs/Ship/AShip.o: srcs/Ship/AShip.cpp.o
 
 .PHONY : srcs/Ship/AShip.o
@@ -257,6 +257,33 @@ srcs/Ship/AShip.s: srcs/Ship/AShip.cpp.s
 srcs/Ship/AShip.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/AShip.cpp.s
 .PHONY : srcs/Ship/AShip.cpp.s
+
+srcs/Ship/ShipBoss.o: srcs/Ship/ShipBoss.cpp.o
+
+.PHONY : srcs/Ship/ShipBoss.o
+
+# target to build an object file
+srcs/Ship/ShipBoss.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o
+.PHONY : srcs/Ship/ShipBoss.cpp.o
+
+srcs/Ship/ShipBoss.i: srcs/Ship/ShipBoss.cpp.i
+
+.PHONY : srcs/Ship/ShipBoss.i
+
+# target to preprocess a source file
+srcs/Ship/ShipBoss.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.i
+.PHONY : srcs/Ship/ShipBoss.cpp.i
+
+srcs/Ship/ShipBoss.s: srcs/Ship/ShipBoss.cpp.s
+
+.PHONY : srcs/Ship/ShipBoss.s
+
+# target to generate assembly for a file
+srcs/Ship/ShipBoss.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.s
+.PHONY : srcs/Ship/ShipBoss.cpp.s
 
 srcs/Ship/ShipManager.o: srcs/Ship/ShipManager.cpp.o
 
@@ -366,6 +393,114 @@ srcs/Space.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Space.cpp.s
 .PHONY : srcs/Space.cpp.s
 
+srcs/Weapon/AWeapon.o: srcs/Weapon/AWeapon.cpp.o
+
+.PHONY : srcs/Weapon/AWeapon.o
+
+# target to build an object file
+srcs/Weapon/AWeapon.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o
+.PHONY : srcs/Weapon/AWeapon.cpp.o
+
+srcs/Weapon/AWeapon.i: srcs/Weapon/AWeapon.cpp.i
+
+.PHONY : srcs/Weapon/AWeapon.i
+
+# target to preprocess a source file
+srcs/Weapon/AWeapon.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.i
+.PHONY : srcs/Weapon/AWeapon.cpp.i
+
+srcs/Weapon/AWeapon.s: srcs/Weapon/AWeapon.cpp.s
+
+.PHONY : srcs/Weapon/AWeapon.s
+
+# target to generate assembly for a file
+srcs/Weapon/AWeapon.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.s
+.PHONY : srcs/Weapon/AWeapon.cpp.s
+
+srcs/Weapon/WeaponBasic.o: srcs/Weapon/WeaponBasic.cpp.o
+
+.PHONY : srcs/Weapon/WeaponBasic.o
+
+# target to build an object file
+srcs/Weapon/WeaponBasic.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o
+.PHONY : srcs/Weapon/WeaponBasic.cpp.o
+
+srcs/Weapon/WeaponBasic.i: srcs/Weapon/WeaponBasic.cpp.i
+
+.PHONY : srcs/Weapon/WeaponBasic.i
+
+# target to preprocess a source file
+srcs/Weapon/WeaponBasic.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.i
+.PHONY : srcs/Weapon/WeaponBasic.cpp.i
+
+srcs/Weapon/WeaponBasic.s: srcs/Weapon/WeaponBasic.cpp.s
+
+.PHONY : srcs/Weapon/WeaponBasic.s
+
+# target to generate assembly for a file
+srcs/Weapon/WeaponBasic.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.s
+.PHONY : srcs/Weapon/WeaponBasic.cpp.s
+
+srcs/Weapon/WeaponMob.o: srcs/Weapon/WeaponMob.cpp.o
+
+.PHONY : srcs/Weapon/WeaponMob.o
+
+# target to build an object file
+srcs/Weapon/WeaponMob.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o
+.PHONY : srcs/Weapon/WeaponMob.cpp.o
+
+srcs/Weapon/WeaponMob.i: srcs/Weapon/WeaponMob.cpp.i
+
+.PHONY : srcs/Weapon/WeaponMob.i
+
+# target to preprocess a source file
+srcs/Weapon/WeaponMob.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.i
+.PHONY : srcs/Weapon/WeaponMob.cpp.i
+
+srcs/Weapon/WeaponMob.s: srcs/Weapon/WeaponMob.cpp.s
+
+.PHONY : srcs/Weapon/WeaponMob.s
+
+# target to generate assembly for a file
+srcs/Weapon/WeaponMob.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.s
+.PHONY : srcs/Weapon/WeaponMob.cpp.s
+
+srcs/Weapon/WeaponTripleDiagonal.o: srcs/Weapon/WeaponTripleDiagonal.cpp.o
+
+.PHONY : srcs/Weapon/WeaponTripleDiagonal.o
+
+# target to build an object file
+srcs/Weapon/WeaponTripleDiagonal.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o
+.PHONY : srcs/Weapon/WeaponTripleDiagonal.cpp.o
+
+srcs/Weapon/WeaponTripleDiagonal.i: srcs/Weapon/WeaponTripleDiagonal.cpp.i
+
+.PHONY : srcs/Weapon/WeaponTripleDiagonal.i
+
+# target to preprocess a source file
+srcs/Weapon/WeaponTripleDiagonal.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.i
+.PHONY : srcs/Weapon/WeaponTripleDiagonal.cpp.i
+
+srcs/Weapon/WeaponTripleDiagonal.s: srcs/Weapon/WeaponTripleDiagonal.cpp.s
+
+.PHONY : srcs/Weapon/WeaponTripleDiagonal.s
+
+# target to generate assembly for a file
+srcs/Weapon/WeaponTripleDiagonal.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.s
+.PHONY : srcs/Weapon/WeaponTripleDiagonal.cpp.s
+
 srcs/main.o: srcs/main.cpp.o
 
 .PHONY : srcs/main.o
@@ -459,18 +594,21 @@ help:
 	@echo "... srcs/Bullets/ABullet.o"
 	@echo "... srcs/Bullets/ABullet.i"
 	@echo "... srcs/Bullets/ABullet.s"
+	@echo "... srcs/Bullets/BasicBullet.o"
+	@echo "... srcs/Bullets/BasicBullet.i"
+	@echo "... srcs/Bullets/BasicBullet.s"
 	@echo "... srcs/Bullets/BulletsManager.o"
 	@echo "... srcs/Bullets/BulletsManager.i"
 	@echo "... srcs/Bullets/BulletsManager.s"
 	@echo "... srcs/Bullets/MobBullet.o"
 	@echo "... srcs/Bullets/MobBullet.i"
 	@echo "... srcs/Bullets/MobBullet.s"
-	@echo "... srcs/Bullets/PlayerBullet.o"
-	@echo "... srcs/Bullets/PlayerBullet.i"
-	@echo "... srcs/Bullets/PlayerBullet.s"
 	@echo "... srcs/Ship/AShip.o"
 	@echo "... srcs/Ship/AShip.i"
 	@echo "... srcs/Ship/AShip.s"
+	@echo "... srcs/Ship/ShipBoss.o"
+	@echo "... srcs/Ship/ShipBoss.i"
+	@echo "... srcs/Ship/ShipBoss.s"
 	@echo "... srcs/Ship/ShipManager.o"
 	@echo "... srcs/Ship/ShipManager.i"
 	@echo "... srcs/Ship/ShipManager.s"
@@ -483,6 +621,18 @@ help:
 	@echo "... srcs/Space.o"
 	@echo "... srcs/Space.i"
 	@echo "... srcs/Space.s"
+	@echo "... srcs/Weapon/AWeapon.o"
+	@echo "... srcs/Weapon/AWeapon.i"
+	@echo "... srcs/Weapon/AWeapon.s"
+	@echo "... srcs/Weapon/WeaponBasic.o"
+	@echo "... srcs/Weapon/WeaponBasic.i"
+	@echo "... srcs/Weapon/WeaponBasic.s"
+	@echo "... srcs/Weapon/WeaponMob.o"
+	@echo "... srcs/Weapon/WeaponMob.i"
+	@echo "... srcs/Weapon/WeaponMob.s"
+	@echo "... srcs/Weapon/WeaponTripleDiagonal.o"
+	@echo "... srcs/Weapon/WeaponTripleDiagonal.i"
+	@echo "... srcs/Weapon/WeaponTripleDiagonal.s"
 	@echo "... srcs/main.o"
 	@echo "... srcs/main.i"
 	@echo "... srcs/main.s"

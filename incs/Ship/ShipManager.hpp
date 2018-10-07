@@ -6,7 +6,7 @@
 #define SHIPMANAGER_HPP
 
 #include <utils/IShipsManager.hpp>
-#include <utils/List.tpp>
+#include <utils/List.hpp>
 #include "AShip.hpp"
 
 class ShipManager {
@@ -16,8 +16,12 @@ private:
 	ShipManager();
 
 public:
+	virtual ~ShipManager();
 
-	ShipManager(List<IShipsManager *> *pList);
+	ShipManager(List<IShipsManager *> *ships, IShipsManager *user_ship);
+	void			moveEnnemy();
+	void			moveUser(Move m);
+	bool			isAllEnnemyDead();
 };
 
 #endif //SHIPMANAGER_HPP

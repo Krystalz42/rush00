@@ -45,16 +45,23 @@ NAME		= ft_retro
 SRCS = \
 				main.cpp \
 				Bullets/ABullet.cpp \
-				Bullets/PlayerBullet.cpp \
+				Bullets/BasicBullet.cpp \
 				Bullets/MobBullet.cpp \
 				Bullets/BulletsManager.cpp \
 				Ship/AShip.cpp \
 				utils/Position.cpp \
 				Ship/ShipMob.cpp	\
 				Ship/ShipManager.cpp\
+				Ship/ShipBoss.cpp\
 				Space.cpp\
 				utils/Utils.cpp\
 				Ship/ShipPlayer.cpp\
+				Weapon/AWeapon.cpp\
+                Weapon/WeaponBasic.cpp\
+                Weapon/WeaponMob.cpp\
+                Weapon/WeaponTripleDiagonal.cpp\
+
+
 # ---------------------------------------------------------------------------- #
 # /!\ COLOR FOR PRINTF /!\                                                     #
 # ---------------------------------------------------------------------------- #
@@ -90,8 +97,8 @@ CPPFLAGS	= \
 
 CFLAGS		= \
 				-std=c++98					\
-				-g3			\
-				-fsanitize=address		\
+			#	-g3			\
+			#	-fsanitize=address		\
 			 # -Wall -Werror -Wextra					\
 
 # ---------------------------------------------------------------------------- #

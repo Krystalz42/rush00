@@ -7,7 +7,7 @@
 
 #include <Ship/ShipManager.hpp>
 #include <Bullets/BulletsManager.hpp>
-#include <utils/List.tpp>
+#include <utils/List.hpp>
 
 class Space {
 private:
@@ -26,10 +26,11 @@ public:
 
 	Space &operator=(Space const & i);
 
-	void getInput(int ch);
+	bool getInput(int ch);
 	void moveUserBullets();
 	void moveEnnemyBullets();
 	void ennemyAction();
+	void refresh();
 
 };
 

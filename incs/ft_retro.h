@@ -6,8 +6,6 @@
 #define __FT_RETRO_H
 
 #define EMPTY ' '
-#define SHIP_MOB '@'
-#define SHIP_PLAYER 'A'
 #define MOB_BULLET '|'
 #define PLAYER_BULLET 'o'
 
@@ -16,6 +14,10 @@ enum Move {
 	SOUTH,
 	EAST,
 	WEST,
+	NORTHWEST,
+	NORTHEAST,
+	SOUTHEAST,
+	SOUTHWEST,
 	NONE
 };
 

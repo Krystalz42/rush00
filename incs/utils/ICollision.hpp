@@ -11,7 +11,9 @@
 class ICollision {
 public:
 	virtual void	isHit() = 0;
-	virtual Position	const &getPosition() = 0;
+	virtual bool	isCollide(Position const &p) = 0;
+	virtual bool 	isAlive() const = 0;
+
 	virtual ~ICollision() {}
 };
 

@@ -9,7 +9,7 @@
 
 class MobBullet : virtual public ABullet {
 public:
-	MobBullet(Position *p);
+	MobBullet(Position *p, Move m);
 	~MobBullet();
 
 private:

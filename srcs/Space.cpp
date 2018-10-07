@@ -9,8 +9,9 @@
 #include <iomanip>
 #include <fstream>
 #include <Ship/ShipPlayer.hpp>
+#include <Ship/ShipBoss.hpp>
 
-extern std::ofstream		file;
+extern std::ofstream file;
 
 /** Static **/
 /** Constructor **/
@@ -23,76 +24,107 @@ Space::Space() : _level(1) {
 Space::Space(Space const &i) {
 	*this = i;
 }
+
 /** Public **/
 
-void Space::getInput(int ch) {
-	if (ship_user == 0)
-		return;
-	switch (ch)
-	{
+bool Space::getInput(int ch) {
+	if (_sm == 0) {
+		return false;
+	}
+	switch (ch) {
 		case 'd':
 		case 'D':
-			ship_user->moveShip(EAST);
+			_sm->moveUser(EAST);
 			break;
 		case 'a':
 		case 'A':
-			ship_user->moveShip(WEST);
+			_sm->moveUser(WEST);
 			break;
 		case 'q':
 		case 'Q':
-			ship_user->moveShip(WEST);
+			_sm->moveUser(WEST);
 			_bm->fireUser();
 			break;
 		case 'e':
 		case 'E':
-			ship_user->moveShip(EAST);
+			_sm->moveUser(EAST);
 			_bm->fireUser();
 			break;
 		case ' ':
 			_bm->fireUser();
 			break;
 		case 27:
-			return;
+			return true;
 		default:
 			break;
 	}
+	return false;
 }
 
 void Space::moveUserBullets() {
-	_bm->movePlayerBullets();
+	if (_bm != 0) {
+		_bm->moveBasicBullets();
+	}
 }
 
 void Space::moveEnnemyBullets() {
-	_bm->moveMobBullets();
+	if (_bm != 0) {
+		_bm->moveMobBullets();
+	}
 }
 
 void Space::ennemyAction() {
-
+	if (_sm != 0) {
+		_sm->moveEnnemy();
+		if (_sm->isAllEnnemyDead()) {
+			delete _bm;
+			_bm = 0;
+			delete _sm;
+			_sm = 0;
+			for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
+				delete it->data;
+			}
+			delete ship_ennemy;
+			ship_user->levelUp();
+			ship_ennemy = 0;
+			_level++;
+			initLevel();
+		}
+	}
 }
 
 /** Private **/
 
 void Space::initLevel() {
-	file << "Init level" << std::endl;
 	int difficulty = _level * 10;
+
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
-
 	ship_ennemy = new List<AShip *>;
 
+
+	for (int idx = 0; idx < difficulty / 20; idx++) {
+		AShip *sm = new ShipBoss();
+		ship_ennemy->pushFront(sm);
+		t_bm->pushFront(sm);
+		t_sm->pushFront(sm);
+		difficulty -= 5;
+	}
+
+
 	for (int idx = 0; idx < difficulty; idx++) {
-		ship_ennemy->pushFront(new ShipMob());
+		AShip *sm = new ShipMob();
+		ship_ennemy->pushFront(sm);
+		t_bm->pushFront(sm);
+		t_sm->pushFront(sm);
 	}
-	for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
-		t_bm->pushFront(it->data);
-		t_sm->pushFront(it->data);
-	}
+
 	_bm = new BulletsManager(t_bm, ship_user);
-	_sm = new ShipManager(t_sm);
+	_sm = new ShipManager(t_sm, ship_user);
 //	delete t_bm;
 //	delete t_sm;
-	file << "Finish init level" << std::endl;
 }
+
 /** Operator **/
 
 Space &Space::operator=(Space const &i) {
@@ -105,6 +137,11 @@ Space &Space::operator=(Space const &i) {
 /** Destructor **/
 
 Space::~Space() {
+	delete ship_user;
+	file << "dilite" << std::endl;
+}
+
+void Space::refresh() {
 
 }
 

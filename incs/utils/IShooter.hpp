@@ -7,11 +7,13 @@
 
 #include "Bullets/ABullet.hpp"
 #include "Position.hpp"
+#include "List.hpp"
 
 class IShooter {
 public:
-	virtual ABullet	*fire() const = 0;
+	virtual List<ABullet *>	*fire() = 0;
 	virtual ~IShooter() {}
+	virtual void getAmmo() = 0;
 };
 
 #endif //__ISHOOTER_HPP__

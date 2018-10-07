@@ -15,13 +15,9 @@ public:
 
 	virtual ~ShipMob();
 	virtual ShipMob		&operator=(ShipMob const &i);
-	virtual ABullet *fire() const;
-	virtual void moveShip(Move m);
 
 protected:
-	virtual void drawShip() const;
-	virtual void deleteShip() const;
-
+	virtual List<ABullet *> *fire();
 public:
 };
 

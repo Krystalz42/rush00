@@ -122,18 +122,18 @@ CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BulletsManager.cpp -o CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.s
 
-CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o: CMakeFiles/_.dir/flags.make
-CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o: ../srcs/Bullets/PlayerBullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp
+CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o: ../srcs/Bullets/BasicBullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp
 
-CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp > CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.i
+CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp > CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.i
 
-CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp -o CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.s
+CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp -o CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.s
 
 CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o: CMakeFiles/_.dir/flags.make
 CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o: ../srcs/Bullets/MobBullet.cpp
@@ -213,6 +213,71 @@ CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipPlayer.cpp -o CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.s
 
+CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o: ../srcs/Weapon/AWeapon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/AWeapon.cpp
+
+CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/AWeapon.cpp > CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.i
+
+CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/AWeapon.cpp -o CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.s
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o: ../srcs/Weapon/WeaponBasic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponBasic.cpp
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponBasic.cpp > CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.i
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponBasic.cpp -o CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.s
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o: ../srcs/Weapon/WeaponMob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponMob.cpp
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponMob.cpp > CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.i
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponMob.cpp -o CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.s
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o: ../srcs/Weapon/WeaponTripleDiagonal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleDiagonal.cpp
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleDiagonal.cpp > CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.i
+
+CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleDiagonal.cpp -o CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.s
+
+CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o: CMakeFiles/_.dir/flags.make
+CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o: ../srcs/Ship/ShipBoss.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o -c /Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipBoss.cpp
+
+CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipBoss.cpp > CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.i
+
+CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipBoss.cpp -o CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.s
+
 # Object files for target _
 __OBJECTS = \
 "CMakeFiles/_.dir/srcs/main.cpp.o" \
@@ -220,13 +285,18 @@ __OBJECTS = \
 "CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.o" \
 "CMakeFiles/_.dir/srcs/Ship/AShip.cpp.o" \
 "CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o" \
-"CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o" \
+"CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o" \
 "CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o" \
 "CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o" \
 "CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o" \
 "CMakeFiles/_.dir/srcs/Space.cpp.o" \
 "CMakeFiles/_.dir/srcs/utils/Utils.cpp.o" \
-"CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.o"
+"CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.o" \
+"CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o" \
+"CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o" \
+"CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o" \
+"CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o" \
+"CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o"
 
 # External object files for target _
 __EXTERNAL_OBJECTS =
@@ -236,16 +306,21 @@ _ : CMakeFiles/_.dir/srcs/utils/Position.cpp.o
 _ : CMakeFiles/_.dir/srcs/Bullets/ABullet.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/AShip.cpp.o
 _ : CMakeFiles/_.dir/srcs/Bullets/BulletsManager.cpp.o
-_ : CMakeFiles/_.dir/srcs/Bullets/PlayerBullet.cpp.o
+_ : CMakeFiles/_.dir/srcs/Bullets/BasicBullet.cpp.o
 _ : CMakeFiles/_.dir/srcs/Bullets/MobBullet.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/ShipMob.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.o
 _ : CMakeFiles/_.dir/srcs/Space.cpp.o
 _ : CMakeFiles/_.dir/srcs/utils/Utils.cpp.o
 _ : CMakeFiles/_.dir/srcs/Ship/ShipPlayer.cpp.o
+_ : CMakeFiles/_.dir/srcs/Weapon/AWeapon.cpp.o
+_ : CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.o
+_ : CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o
+_ : CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o
+_ : CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o
 _ : CMakeFiles/_.dir/build.make
 _ : CMakeFiles/_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable _"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandreroulin/pool_cpp/rush00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable _"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

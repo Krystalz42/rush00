@@ -90,16 +90,19 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/ABullet.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/BasicBullet.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/BulletsManager.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/MobBullet.hpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Bullets/PlayerBullet.hpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/AShip.hpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/AShip.hpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipBoss.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipManager.hpp">
@@ -112,6 +115,18 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Space.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/AWeapon.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponBasic.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponMob.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponTripleDiagonal.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/ft_retro.h">
@@ -129,7 +144,7 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IShooter.hpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/List.tpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/List.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Position.hpp">
@@ -141,16 +156,19 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/ABullet.cpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BasicBullet.cpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/BulletsManager.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/MobBullet.cpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Bullets/PlayerBullet.cpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/AShip.cpp">
 			<Option target="_"/>
 		</Unit>
-		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/AShip.cpp">
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipBoss.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipManager.cpp">
@@ -163,6 +181,18 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Space.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/AWeapon.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponBasic.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponMob.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleDiagonal.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp">

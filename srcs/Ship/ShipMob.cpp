@@ -16,16 +16,15 @@
 
 /** Constructor **/
 
-
 ShipMob::ShipMob() :
-	AShip(
-			10,
-			10,
-			new Position(rand() % (LINES / 3) ,rand() % (COLS - 1)),
-			1){
-
-	drawShip();
+		AShip(
+				10,
+				10,
+				1) {
+	_ship_design = "@";
+	_p.pushFront(new Position(rand() % (LINES / 3) ,rand() % (COLS - 1)));
 }
+
 
 ShipMob::ShipMob(ShipMob const &i) {
 	*this = i;
@@ -33,14 +32,13 @@ ShipMob::ShipMob(ShipMob const &i) {
 
 /** Public **/
 
-ABullet *ShipMob::fire() const {
+List<ABullet *> *ShipMob::fire() {
 	if (_current_bullets > 0) {
-		Position * t_p = new Position(*_p);
-		t_p->setY(t_p->getY() + 1);
-		return new MobBullet(t_p);
+		return _w->createBullets(*_p.begin()->data, SOUTH);
 	}
 	return 0;
 }
+
 
 /** Private **/
 /** Operator **/
@@ -57,27 +55,5 @@ ShipMob &ShipMob::operator=(ShipMob const &i) {
 
 ShipMob::~ShipMob() {
 
-}
-
-void ShipMob::moveShip(Move m) {
-	deleteShip();
-	switch (m) {
-		case NORTH: _p->setY(_p->getY() - 1); break;
-		case SOUTH: _p->setY(_p->getY() + 1); break;
-		case EAST:_p->setX(_p->getX() + 1); break;
-		case WEST:_p->setX(_p->getX() - 1); break;
-		case NONE:break;
-	}
-	drawShip();
-}
-
-void ShipMob::drawShip() const {
-	move(_p->getY(), _p->getX());
-	addch(SHIP_MOB);
-}
-
-void ShipMob::deleteShip() const {
-	move(_p->getY(), _p->getX());
-	addch(EMPTY);
 }
 

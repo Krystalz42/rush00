@@ -7,7 +7,7 @@
 
 
 #include <utils/IShooter.hpp>
-#include <utils/List.tpp>
+#include <utils/List.hpp>
 #include <utils/IBulletsManager.hpp>
 #include <Ship/AShip.hpp>
 
@@ -18,11 +18,14 @@ private:
 	List<ABullet*>		_bullets_ennemy;
 	List<ABullet*>		_bullets_user;
 
+	void		deleteBullet();
 public:
 	void 		moveMobBullets();
-	void 		movePlayerBullets();
+	void 		moveBasicBullets();
 
 	BulletsManager(List<IBulletsManager *> *pList, IBulletsManager* user);
+
+	virtual ~BulletsManager();
 
 	void fireUser();
 	void fireMob();

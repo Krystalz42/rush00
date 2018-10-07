@@ -16,6 +16,8 @@ protected:
 	virtual void		drawBullet() const = 0;
 	virtual void		deleteBullet() const = 0;
 
+	ABullet();
+
 public:
 	ABullet(Position *p, Move m);
 	ABullet(ABullet const &i);
@@ -24,8 +26,6 @@ public:
 	void		moveBullet();
 	Position *	getPosition();
 	bool 		isAlive();
-private:
-	ABullet();
 
 };
 

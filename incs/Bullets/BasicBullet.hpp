@@ -7,16 +7,17 @@
 
 #include "ABullet.hpp"
 
-class PlayerBullet : virtual public ABullet {
+class BasicBullet : virtual public ABullet {
 public:
-	PlayerBullet(Position *p);
-	~PlayerBullet();
+
+	BasicBullet(Position *p, Move m);
+	~BasicBullet();
 
 private:
 	virtual void drawBullet() const;
 	virtual void deleteBullet() const;
-	PlayerBullet();
-	PlayerBullet(const ABullet &i);
+	BasicBullet();
+	BasicBullet(ABullet const &i);
 };
 
 #endif //__PLAYERBULLET_HPP__

@@ -15,11 +15,15 @@ void listenUser() {
 
 	while (0x2a) {
 		if ((ch = getch()) != ERR)
-			s.getInput(ch);
+			if (s.getInput(ch))
+				return;
 		if ((count % 150) == 0)
 			s.moveUserBullets();
 		if ((count % 300) == 0) {
 			s.moveEnnemyBullets();
+		}
+
+		if ((count % 5000) == 0) {
 			s.ennemyAction();
 		}
 
@@ -29,8 +33,9 @@ void listenUser() {
 }
 
 int main() {
+	file << "-----------" << std::endl;
 	Utils::getInstance();
 	listenUser();
+//	while(true);
 	Utils::getInstance()->exitAndReset();
 }
-

@@ -5,6 +5,7 @@
 #include <utils/Position.hpp>
 #include <ncurses.h>
 #include <iostream>
+#include <utils/List.hpp>
 
 Position::Position() {
 
@@ -22,8 +23,9 @@ int Position::getX() const {
 }
 
 void Position::setX(int x) {
-	if (x > 0 && x < COLS)
+	if (!(x < 0 || x >= COLS )) {
 		_x = x;
+	}
 }
 
 int Position::getY() const {
@@ -31,8 +33,9 @@ int Position::getY() const {
 }
 
 void Position::setY(int y) {
-	if (y > 0 && y < LINES)
+	if (!(y < 0 || y >= LINES)) {
 		_y = y;
+	}
 }
 
 Position &Position::operator=(Position const &i) {
@@ -56,4 +59,9 @@ bool Position::operator==(const Position &rhs) const {
 
 Position::~Position() {
 
+}
+
+std::ostream &operator<<(std::ostream &os, const Position &position) {
+	os << "_x: " << position._x << " _y: " << position._y;
+	return os;
 }

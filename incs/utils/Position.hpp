@@ -6,6 +6,8 @@
 #define __POSITION_HPP__
 
 
+#include <ostream>
+
 class Position {
 private:
 	int 		_x;
@@ -13,6 +15,8 @@ private:
 	Position();
 
 public:
+	friend std::ostream &operator<<(std::ostream &os, const Position &position);
+
 	int getX() const;
 
 	void setX(int _x);
