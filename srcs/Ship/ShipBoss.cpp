@@ -35,7 +35,6 @@ ShipBoss::ShipBoss(ShipBoss const &i) {
 List<ABullet *> *ShipBoss::fire() {
 
 	if (_current_bullets > 0) {
-		system("afplay $PWD/sound/piou.mp3 &");
 		Position p = *_p.begin()->data;
 		p.setX(p.getX() + 1);
 		p.setY(p.getY() + 2);

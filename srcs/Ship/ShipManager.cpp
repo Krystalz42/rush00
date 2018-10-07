@@ -11,8 +11,6 @@
 #include <fstream>
 #include <Ship/ShipPlayer.hpp>
 
-extern std::ofstream		file;
-
 /** Static **/
 /** Constructor **/
 

@@ -13,7 +13,6 @@
 #include <curses.h>
 #include <utils/IBulletsManagerUser.hpp>
 
-extern std::ofstream file;
 
 /** Static **/
 
@@ -34,10 +33,10 @@ BulletsManager::BulletsManager(BulletsManager const &i) {
 /** Public **/
 
 void BulletsManager::fireUser() {
-//	file << "SHOOTER USER IS NULL" << (_shooter_user != 0) << std::endl;
-	List<ABullet*>	*lst = _shooter_user->fire();
+	List<ABullet *> *lst = _shooter_user->fire();
 	if (lst != 0) {
-		for (List<ABullet *>::t_list *it = lst->begin(); it != 0; it = it->next) {
+		for (List<ABullet *>::t_list *it = lst->begin();
+			 it != 0; it = it->next) {
 			_bullets_user.pushFront(it->data);
 		}
 		delete lst;
@@ -46,17 +45,16 @@ void BulletsManager::fireUser() {
 }
 
 void BulletsManager::fireMob() {
-//	file << "SHOOTER MOB IS NULL" << (_shooters_ennemy == 0) << std::endl;
-	List<IBulletsManager*>::t_list *it = _shooters_ennemy->begin();
+	List<IBulletsManager *>::t_list *it = _shooters_ennemy->begin();
 	List<ABullet *> *lst_bullets;
 	int cpt = rand() % _shooters_ennemy->size();
 	if (it != 0) {
-		file << cpt << std::endl;
 		for (int i = 0; i != cpt; i++)
 			it = it->next;
 		if (it->data->isAlive()) {
 			lst_bullets = it->data->fire();
-			for (List<ABullet *>::t_list *it = lst_bullets->begin(); it != 0; it = it->next) {
+			for (List<ABullet *>::t_list *it = lst_bullets->begin();
+				 it != 0; it = it->next) {
 				_bullets_ennemy.pushFront(it->data);
 			}
 			delete lst_bullets;
@@ -72,27 +70,21 @@ void BulletsManager::moveMobBullets() {
 
 		enemy_bullets->data->moveBullet();
 
-//		file << *enemy_bullets->data->getPosition() << std::endl;
-		if (_shooter_user->isAlive() &&  _shooter_user->isCollide(enemy_bullets->data->getPosition())) {
-				file << "isHit" << std::endl;
-				_shooter_user->isHit();
-				ABullet * tmp_ = enemy_bullets->data;
-				tmp = enemy_bullets;
-				enemy_bullets = enemy_bullets->next;
-				_bullets_ennemy.erase(tmp->data);
-				// _shooter_user->getAmmo();
-				delete tmp_;
-			}
-		else if (enemy_bullets != 0 && !enemy_bullets->data->isAlive()) {
-			file << "isAlive" << std::endl;
-			ABullet * tmp_ = enemy_bullets->data;
+		if (_shooter_user->isAlive() &&
+			_shooter_user->isCollide(enemy_bullets->data->getPosition())) {
+			_shooter_user->isHit();
+			ABullet *tmp_ = enemy_bullets->data;
 			tmp = enemy_bullets;
 			enemy_bullets = enemy_bullets->next;
 			_bullets_ennemy.erase(tmp->data);
-			// _shooter_user->getAmmo();
 			delete tmp_;
-		}
-		else
+		} else if (enemy_bullets != 0 && !enemy_bullets->data->isAlive()) {
+			ABullet *tmp_ = enemy_bullets->data;
+			tmp = enemy_bullets;
+			enemy_bullets = enemy_bullets->next;
+			_bullets_ennemy.erase(tmp->data);
+			delete tmp_;
+		} else
 			enemy_bullets = enemy_bullets->next;
 	}
 }
@@ -106,14 +98,16 @@ void BulletsManager::moveBasicBullets() {
 
 		user_bullets->data->moveBullet();
 
-//		file << *user_bullets->data->getPosition() << std::endl;
-		for (enemy_shooters = _shooters_ennemy->begin();enemy_shooters != 0; enemy_shooters = enemy_shooters->next) {
-			if (enemy_shooters->data->isAlive() &&  enemy_shooters->data->isCollide(user_bullets->data->getPosition())) {
-//				file << "isHit" << std::endl;
+		for (enemy_shooters = _shooters_ennemy->begin();
+			 enemy_shooters != 0; enemy_shooters = enemy_shooters->next) {
+			if (enemy_shooters->data->isAlive() &&
+				enemy_shooters->data->isCollide(
+						user_bullets->data->getPosition())) {
 				enemy_shooters->data->isHit();
 				if (!enemy_shooters->data->isAlive())
-					_shooter_user->setScore(_shooter_user->getScore() + enemy_shooters->data->getPowerfull());
-				ABullet * tmp_ = user_bullets->data;
+					_shooter_user->setScore(_shooter_user->getScore() +
+											enemy_shooters->data->getPowerfull());
+				ABullet *tmp_ = user_bullets->data;
 				tmp = user_bullets;
 				user_bullets = user_bullets->next;
 				_bullets_user.erase(tmp->data);
@@ -125,8 +119,7 @@ void BulletsManager::moveBasicBullets() {
 		if (user_bullets == 0)
 			break;
 		if (!user_bullets->data->isAlive()) {
-//			file << "isAlive" << std::endl;
-			ABullet * tmp_ = user_bullets->data;
+			ABullet *tmp_ = user_bullets->data;
 			tmp = user_bullets;
 			user_bullets = user_bullets->next;
 			_bullets_user.erase(tmp->data);
@@ -136,22 +129,6 @@ void BulletsManager::moveBasicBullets() {
 		}
 		user_bullets = user_bullets->next;
 	}
-
-//	while (user_bullets) {
-//		user_bullets->data->moveBullet();
-//		file << "Lines:" << LINES << " isAlive:" <<user_bullets->data->isAlive() << *user_bullets->data->getPosition() << std::endl;
-//		enemy_shooters = _shooters_ennemy->begin();
-//		while (enemy_shooters && *user_bullets->data->getPosition() !=
-//								 enemy_shooters->data->getPosition())
-//			enemy_shooters = enemy_shooters->next;
-//		if (enemy_shooters != 0) {
-//			enemy_shooters->data->isHit();
-//			tmp = user_bullets->next;
-//			user_bullets = tmp;
-//		} else
-//			user_bullets = user_bullets->next;
-//
-//	}
 }
 
 /** Private **/
@@ -168,10 +145,12 @@ BulletsManager &BulletsManager::operator=(BulletsManager const &i) {
 /** Destructor **/
 
 BulletsManager::~BulletsManager() {
-	for (List<ABullet *>::t_list *it = _bullets_ennemy.begin(); it!=0; it = it->next) {
+	for (List<ABullet *>::t_list *it = _bullets_ennemy.begin();
+		 it != 0; it = it->next) {
 		delete it->data;
 	}
-	for (List<ABullet *>::t_list *it = _bullets_user.begin(); it!=0; it = it->next) {
+	for (List<ABullet *>::t_list *it = _bullets_user.begin();
+		 it != 0; it = it->next) {
 		delete it->data;
 	}
 	delete _shooters_ennemy;

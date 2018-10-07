@@ -17,8 +17,6 @@
 #include <Ship/ShipBigBoss.hpp>
 #include <utils/Star.hpp>
 
-extern std::ofstream file;
-
 /** Static **/
 /** Constructor **/
 Star::Star() {

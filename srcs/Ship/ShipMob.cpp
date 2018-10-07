@@ -36,7 +36,6 @@ ShipMob::ShipMob(ShipMob const &i) {
 
 List<ABullet *> *ShipMob::fire() {
 	if (_current_bullets > 0) {
-		file << "current bullets : " << _current_bullets << std::endl;
 		return _w->createBullets(*_p.begin()->data, SOUTH);
 	}
 	return 0;

@@ -104,7 +104,7 @@ CFLAGS		= \
 				-std=c++98					\
 				-g3			\
 				-Wall -Werror -Wextra					\
-				#-fsanitize=address		\
+				-fsanitize=address		\
 
 # ---------------------------------------------------------------------------- #
 # /!\ SOURCE NORMALIZATION AND COMPILATION RULES /!\                           #

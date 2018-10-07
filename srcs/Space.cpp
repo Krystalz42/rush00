@@ -18,8 +18,7 @@
 #include <Weapon/WeaponDoubleVertical.hpp>
 #include <Weapon/WeaponTripleDiagonal.hpp>
 #include <Ship/ShipMedium.hpp>
-
-extern std::ofstream file;
+#include <Weapon/WeaponUltime.hpp>
 
 /** Static **/
 /** Constructor **/
@@ -55,7 +54,6 @@ void Space::refresh() {
 	r += " | Weapon : ";
 	r += ship_user->getWeaponType();
 	r += " ]";
-	file << r.size() << std::endl;
 	move(0, COLS - r.size());
 	addstr(r.c_str());
 	attroff(A_BOLD);
@@ -141,24 +139,25 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
-	int difficulty = _level * 12;
+	int difficulty = _level * 14;
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
 	ship_ennemy = new List<AShip *>;
-	if (_level == 5)
+	if (_level == 3)
 		ship_user->setWeapon(new WeaponDoubleVertical());
-	if (_level == 10)
+	if (_level == 6)
 		ship_user->setWeapon(new WeaponTripleDiagonal());
-
-	for (int idx = 0; idx < difficulty / 50; idx++) {
+	if (_level == 9)
+		ship_user->setWeapon(new WeaponUltime());
+	for (int idx = 0; idx < difficulty / 30; idx++) {
 		AShip *sm = new ShipBigBoss();
 		ship_ennemy->pushFront(sm);
 		t_bm->pushFront(sm);
 		t_sm->pushFront(sm);
-		difficulty -= 20;
+		difficulty -= 10;
 	}
 
-	for (int idx = 0; idx < difficulty / 20; idx++) {
+	for (int idx = 0; idx < difficulty / 15; idx++) {
 		AShip *sm = new ShipBoss();
 		ship_ennemy->pushFront(sm);
 		t_bm->pushFront(sm);
@@ -166,7 +165,7 @@ void Space::initLevel() {
 		difficulty -= 5;
 	}
 
-	for (int idx = 0; idx < difficulty / 10; idx++) {
+	for (int idx = 0; idx < difficulty / 8; idx++) {
 		AShip *sm = new ShipMedium();
 		ship_ennemy->pushFront(sm);
 		t_bm->pushFront(sm);

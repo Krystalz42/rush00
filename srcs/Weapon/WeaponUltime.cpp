@@ -28,7 +28,6 @@ List<ABullet *> *WeaponUltime::createBullets(Position const &p, Move m) {
 
 	pos->setX(pos->getX() + 1);
 	List<ABullet *> * temp = wtd.createBullets(*pos, m);
-	file << temp->begin()->data->getPosition() << std::endl;
 	for (List<ABullet *>::t_list *it = temp->begin(); it!=0; it= it->next) {
 		lst->pushFront(it->data);
 	}
@@ -36,7 +35,6 @@ List<ABullet *> *WeaponUltime::createBullets(Position const &p, Move m) {
 
 	pos->setX(pos->getX() - 2);
 	temp = wtd.createBullets(*pos, m);
-	file << temp->begin()->data->getPosition() << std::endl;
 	for (List<ABullet *>::t_list *it =temp->begin(); it!=0; it= it->next) {
 		lst->pushFront(it->data);
 	}

@@ -10,8 +10,6 @@
 #include <iomanip>
 #include <fstream>
 
-extern std::ofstream file;
-
 template<typename T>
 class List {
 public:

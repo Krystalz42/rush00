@@ -5,8 +5,6 @@
 #include <ostream>
 #include <fstream>
 
-std::ofstream file("/tmp/log.out");
-
 void listenUser() {
 
 	Space s = Space();
@@ -28,7 +26,7 @@ void listenUser() {
 			s.moveEnnemyBullets();
 		if ((count % 100) == 0)
 			s.refresh();
-		if ((count % 500) == 0)
+		if ((count % 800) == 0)
 			s.ennemyAction();
 		count++;
 	}
@@ -36,9 +34,7 @@ void listenUser() {
 }
 
 int main() {
-	file << "-----------" << std::endl;
 	Utils::getInstance();
 	listenUser();
-	while (true);
 	Utils::getInstance()->exitAndReset();
 }
