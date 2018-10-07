@@ -16,7 +16,7 @@ BasicBullet::BasicBullet() {
 }
 
 BasicBullet::BasicBullet(const ABullet &i) : ABullet(i) {
-
+	*this = i;
 }
 
 BasicBullet::BasicBullet(Position *p, Move m, char c, char color) : ABullet(p, m, c, color) {
@@ -65,6 +65,17 @@ void BasicBullet::deleteBullet() const {
 }
 
 /** Operator **/
+
+BasicBullet &BasicBullet::operator=(BasicBullet const &i) {
+	if (this != &i) {
+		_p = i._p;
+		_m = i._m;
+		_c = i._c;
+		_color = i._color;
+	}
+	return *this;
+}
+
 /** Destructor **/
 
 BasicBullet::~BasicBullet() {
