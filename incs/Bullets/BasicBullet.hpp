@@ -11,10 +11,11 @@ class BasicBullet : virtual public ABullet {
 public:
 	BasicBullet(Position *p, Move m, char c, char color);
 
+	BasicBullet(ABullet const &i);
+
 	~BasicBullet();
 
 private:
-	BasicBullet(ABullet const &i);
 
 	BasicBullet();
 

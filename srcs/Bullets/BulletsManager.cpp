@@ -54,13 +54,16 @@ void BulletsManager::fireMob() {
 		file << cpt << std::endl;
 		for (int i = 0; i != cpt; i++)
 			it = it->next;
-		lst_bullets = it->data->fire();
-		for (List<ABullet *>::t_list *it = lst_bullets->begin(); it != 0; it = it->next) {
-			_bullets_ennemy.pushFront(it->data);
+		if (it->data->isAlive()) {
+			lst_bullets = it->data->fire();
+			for (List<ABullet *>::t_list *it = lst_bullets->begin(); it != 0; it = it->next) {
+				_bullets_ennemy.pushFront(it->data);
+			}
+			delete lst_bullets;
 		}
-		delete lst_bullets;
 	}
 }
+
 void BulletsManager::moveMobBullets() {
 	List<ABullet *>::t_list *enemy_bullets;
 	List<ABullet *>::t_list *tmp;

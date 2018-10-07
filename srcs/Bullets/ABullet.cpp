@@ -80,6 +80,10 @@ Position const &ABullet::getPosition() {
 
 ABullet &ABullet::operator=(ABullet const &i) {
 	if (this != &i) {
+		_p = i._p;
+		_m = i._m;
+		_c = i._c;
+		_color = i._color;
 	}
 	return *this;
 }
