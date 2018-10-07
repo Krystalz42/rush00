@@ -13,7 +13,8 @@ void listenUser() {
 
 	while (0x2a) {
 		if (COLS < 100 || LINES < 25) {
-			std::cout << "Windows too small" << std::endl;
+			endwin();
+			std::cerr << "Windows too small" << std::endl;
 			Utils::getInstance()->exitAndReset();
 		}
 

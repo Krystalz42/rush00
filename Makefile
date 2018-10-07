@@ -95,16 +95,16 @@ LIBS		= \
 LDFLAGS		= \
 
 LDLIBS		= \
-			  -lncurses								\
+			  -lncurses						\
 
 CPPFLAGS	= \
-			  -I$(DIR_INCS)							\
+			  -I$(DIR_INCS)					\
 
 CFLAGS		= \
 				-std=c++98					\
-				#-g3			\
-				-Wall -Werror -Wextra					\
-				#-fsanitize=address		\
+				-Wall -Werror -Wextra		\
+				#-g3						\
+				#-fsanitize=address			\
 
 # ---------------------------------------------------------------------------- #
 # /!\ SOURCE NORMALIZATION AND COMPILATION RULES /!\                           #

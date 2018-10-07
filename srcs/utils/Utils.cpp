@@ -11,7 +11,6 @@
 #include <fstream>
 #include <utils/Utils.hpp>
 
-
 void Utils::setTimer() {
 	struct itimerval it = {{0,0}, {0, 0}};
 	static int time = 1000;
@@ -86,7 +85,6 @@ void Utils::exitAndReset() {
 	system("killall afplay");
 	exit(EXIT_SUCCESS);
 }
-
 
 void Utils::handler(int signum) {
 

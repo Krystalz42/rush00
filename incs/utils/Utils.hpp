@@ -12,6 +12,7 @@ class Utils {
 public:
 	static Utils *getInstance();
 	void exitAndReset();
+	;
 
 private:
 	static Utils *instance;
