@@ -8,6 +8,12 @@
 #define EMPTY ' '
 #define MOB_BULLET '|'
 #define PLAYER_BULLET 'o'
+#define RED  1
+#define CYAN  2
+#define MAGENTA  3
+#define GREEN  4
+#define BLACK 5
+#define YELLOW 6
 
 enum Move {
 	NORTH,
@@ -20,8 +26,6 @@ enum Move {
 	SOUTHWEST,
 	NONE
 };
-
-
 
 
 #endif //__FT_RETRO_H

@@ -5,18 +5,33 @@
 #include <Weapon/WeaponMob.hpp>
 #include <Bullets/MobBullet.hpp>
 
-WeaponMob::WeaponMob() : AWeapon(1) {
+/** Static **/
+/** Constructor **/
+
+WeaponMob::WeaponMob() : AWeapon(1, "Weapon Mob") {
 
 }
 
-
-WeaponMob::~WeaponMob() {
-
-}
+/** Public **/
 
 List<ABullet *> *WeaponMob::createBullets(Position const &p, Move m) {
-	List<ABullet *>		*l = new List<ABullet *>();
+	List<ABullet *> *l = new List<ABullet *>();
 	l->pushFront(new MobBullet(new Position(p), m));
 	return l;
 }
 
+WeaponMob::WeaponMob(WeaponMob const &i) {
+
+}
+/** Private **/
+/** Operator **/
+
+WeaponMob &WeaponMob::operator=(WeaponMob const &i) {
+	return *this;
+}
+
+/** Destructor **/
+
+WeaponMob::~WeaponMob() {
+
+}

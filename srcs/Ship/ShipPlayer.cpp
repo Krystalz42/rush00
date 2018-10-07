@@ -11,6 +11,7 @@
 #include <utils/List.hpp>
 #include <Weapon/WeaponBasic.hpp>
 #include <Weapon/WeaponTripleDiagonal.hpp>
+#include <Weapon/WeaponTripleVertical.hpp>
 
 /** Static **/
 
@@ -21,8 +22,8 @@
 
 ShipPlayer::ShipPlayer() :
 		AShip(
-				120,
-				120,
+				100,
+				100,
 				5) {
 	drawShip();
 
@@ -32,7 +33,7 @@ ShipPlayer::ShipPlayer() :
 	_p.pushFront(new Position(LINES - 2, COLS / 2));
 	_p.pushFront(new Position(LINES - 1, COLS / 2));
 	_p.pushFront(new Position(LINES - 1, (COLS / 2) + 1));
-	drawShip();
+	moveShip(NONE);
 }
 
 ShipPlayer::ShipPlayer(ShipPlayer const &i) {
@@ -43,7 +44,6 @@ ShipPlayer::ShipPlayer(ShipPlayer const &i) {
 
 
 List<ABullet *> *ShipPlayer::fire(){
-	file << _current_bullets << std::endl;
 	if (_current_bullets >= _w->getSize()) {
 		_current_bullets -= _w->getSize();
 		system("afplay $PWD/sound/piou.mp3 &");
@@ -53,6 +53,39 @@ List<ABullet *> *ShipPlayer::fire(){
 		return _w->createBullets(p, NORTH);
 	}
 	return 0;
+}
+
+void ShipPlayer::moveShip(Move m) {
+	deleteShip();
+	if (!isAlive())
+		return;
+	switch (m) {
+
+		case EAST:
+			if (_p.last()->data->getX() != COLS - 1)
+				for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next)
+					it->data->setX(it->data->getX() + 1);
+			break;
+		case WEST:
+			if (_p.begin()->data->getX() != 1)
+				for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next)
+					it->data->setX(it->data->getX() - 1);
+			break;
+		case NORTH:break;
+		case SOUTH:break;
+		case NONE:break;
+		case NORTHWEST:break;
+		case NORTHEAST:break;
+		case SOUTHEAST:break;
+		case SOUTHWEST:break;
+	}
+	attron(COLOR_PAIR(CYAN));
+	AShip::drawShip();
+	attroff(COLOR_PAIR(RED));
+}
+
+void ShipPlayer::getAmmo() {
+	_current_bullets++;
 }
 
 /** Private **/
@@ -74,33 +107,3 @@ ShipPlayer::~ShipPlayer() {
 
 }
 
-void ShipPlayer::moveShip(Move m) {
-	deleteShip();
-	if (!isAlive())
-		return;
-	switch (m) {
-
-		case EAST:
-			if (_p.last()->data->getX() != COLS - 1)
-				for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next)
-					it->data->setX(it->data->getX() + 1);
-			break;
-		case WEST:
-			if (_p.begin()->data->getX() != 1)
-			for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next)
-				it->data->setX(it->data->getX() - 1);
-			break;
-		case NORTH:break;
-		case SOUTH:break;
-		case NONE:break;
-		case NORTHWEST:break;
-		case NORTHEAST:break;
-		case SOUTHEAST:break;
-		case SOUTHWEST:break;
-	}
-	drawShip();
-}
-
-void ShipPlayer::getAmmo() {
-	_current_bullets++;
-}

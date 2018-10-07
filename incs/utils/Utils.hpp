@@ -23,7 +23,6 @@ private:
 
 	static void handler(int signum);
 	void setTimer();
-
 	void setSignals();
 
 };

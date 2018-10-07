@@ -11,22 +11,29 @@
 
 class ABullet {
 protected:
-	Position		*_p;
-	Move			_m;			
-	virtual void		drawBullet() const = 0;
-	virtual void		deleteBullet() const = 0;
+	Position *_p;
+	Move _m;
+
+	virtual void drawBullet() const = 0;
+
+	virtual void deleteBullet() const = 0;
 
 	ABullet();
 
 public:
 	ABullet(Position *p, Move m);
+
 	ABullet(ABullet const &i);
+
 	virtual ~ABullet();
 
-	void		moveBullet();
-	Position *	getPosition();
-	bool 		isAlive();
+	ABullet &operator=(ABullet const &i);
 
+	void moveBullet();
+
+	Position const &getPosition();
+
+	bool isAlive();
 };
 
 

@@ -4,25 +4,30 @@
 
 #ifndef AWEAPON_HPP
 #define AWEAPON_HPP
+
 #include <Bullets/ABullet.hpp>
 #include <utils/List.hpp>
 
 class AWeapon {
-protected:
-	AWeapon(unsigned int _nu);
-
-public:
 
 protected:
-	unsigned int		_nu;
+	std::string _type;
+
+	AWeapon(unsigned int _nu, std::string type);
+
+	unsigned int _nu;
+
+	AWeapon();
+
 public:
+	const std::string &getType() const;
+	AWeapon(AWeapon const &i);
 
 	virtual ~AWeapon();
 
-	virtual List<ABullet *>		*createBullets(Position const &p, Move m) = 0;
-private:
-	AWeapon();
-public:
+	AWeapon &operator=(AWeapon const &);
+
+	virtual List<ABullet *> *createBullets(Position const &p, Move m) = 0;
 	unsigned int getSize() const;
 };
 

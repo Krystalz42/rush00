@@ -16,6 +16,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/_.dir/srcs/Weapon/WeaponMob.cpp.o"
   "CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.o"
   "CMakeFiles/_.dir/srcs/Ship/ShipBoss.cpp.o"
+  "CMakeFiles/_.dir/srcs/Ship/ShipBigBoss.cpp.o"
+  "CMakeFiles/_.dir/srcs/Ship/ShipMedium.cpp.o"
+  "CMakeFiles/_.dir/srcs/Weapon/WeaponTripleVertical.cpp.o"
+  "CMakeFiles/_.dir/srcs/utils/Star.cpp.o"
   "_.pdb"
   "_"
 )

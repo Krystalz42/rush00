@@ -11,8 +11,10 @@
 
 class IShooter {
 public:
-	virtual List<ABullet *>	*fire() = 0;
+	virtual List<ABullet *> *fire() = 0;
+
 	virtual ~IShooter() {}
+
 	virtual void getAmmo() = 0;
 };
 

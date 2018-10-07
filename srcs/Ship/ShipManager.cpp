@@ -13,6 +13,8 @@
 
 extern std::ofstream		file;
 
+/** Static **/
+/** Constructor **/
 
 ShipManager::ShipManager() {
 
@@ -23,6 +25,12 @@ ShipManager::ShipManager(
 		IShipsManager *user_ship)
 		: ships(ships), user_ship(user_ship) {
 }
+
+ShipManager::ShipManager(ShipManager const &i) {
+
+}
+
+/** Public **/
 
 void ShipManager::moveEnnemy() {
 	for (List<IShipsManager *>::t_list *it = ships->begin(); it != 0; it = it->next) {
@@ -42,7 +50,18 @@ bool ShipManager::isAllEnnemyDead() {
 	return true;
 }
 
+/** Private **/
+/** Operator **/
+
+ShipManager &ShipManager::operator=(ShipManager const &i) {
+	return *this;
+}
+
+/** Destructor **/
+
 ShipManager::~ShipManager() {
 	delete ships;
 }
+
+
 

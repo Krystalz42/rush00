@@ -7,18 +7,24 @@
 
 #include "AShip.hpp"
 
-class ShipMob : virtual public AShip{
+class ShipMob : virtual public AShip {
 public:
 	ShipMob();
-	ShipMob(ShipMob const & i);
 
+	ShipMob(ShipMob const &i);
 
 	virtual ~ShipMob();
-	virtual ShipMob		&operator=(ShipMob const &i);
+
+	virtual ShipMob &operator=(ShipMob const &i);
 
 protected:
 	virtual List<ABullet *> *fire();
-public:
+
+	virtual void drawShip() const;
+
+	virtual void deleteShip() const;
+
+	virtual void isHit();
 };
 
 #endif //__SHIPMOB_HPP__

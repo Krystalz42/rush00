@@ -102,10 +102,16 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/AShip.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipBigBoss.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipBoss.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipManager.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipMedium.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Ship/ShipMob.hpp">
@@ -129,6 +135,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponTripleDiagonal.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponTripleVertical.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/ft_retro.h">
 			<Option target="_"/>
 		</Unit>
@@ -150,6 +159,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Position.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Star.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/Utils.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -168,10 +180,16 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/AShip.cpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipBigBoss.cpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipBoss.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipManager.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMedium.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Ship/ShipMob.cpp">
@@ -195,10 +213,16 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleDiagonal.cpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleVertical.cpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Position.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Star.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/utils/Utils.cpp">

@@ -22,7 +22,9 @@ void listenUser() {
 		if ((count % 300) == 0) {
 			s.moveEnnemyBullets();
 		}
-
+		if ((count % 100) == 0) {
+			s.refresh();
+		}
 		if ((count % 5000) == 0) {
 			s.ennemyAction();
 		}

@@ -60,6 +60,9 @@ SRCS = \
                 Weapon/WeaponBasic.cpp\
                 Weapon/WeaponMob.cpp\
                 Weapon/WeaponTripleDiagonal.cpp\
+                Ship/ShipBigBoss.cpp		\
+                Weapon/WeaponTripleVertical.cpp\
+                utils/Star.cpp\
 
 
 # ---------------------------------------------------------------------------- #
@@ -97,8 +100,8 @@ CPPFLAGS	= \
 
 CFLAGS		= \
 				-std=c++98					\
-			#	-g3			\
-			#	-fsanitize=address		\
+				-g3			\
+				-fsanitize=address		\
 			 # -Wall -Werror -Wextra					\
 
 # ---------------------------------------------------------------------------- #

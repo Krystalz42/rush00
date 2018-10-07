@@ -11,18 +11,18 @@
 class ShipPlayer : public AShip {
 public:
 	ShipPlayer();
-	ShipPlayer(ShipPlayer const & i);
+
+	ShipPlayer(ShipPlayer const &i);
 
 	virtual void getAmmo();
 
-	virtual void			moveShip(Move m);
+	virtual void moveShip(Move m);
+
 	virtual ~ShipPlayer();
-	virtual ShipPlayer		&operator=(ShipPlayer const &i);
 
-protected:
+	virtual ShipPlayer &operator=(ShipPlayer const &i);
+
 	virtual List<ABullet *> *fire();
-
-public:
 };
 
 #endif //SHIPPLAYER_HPP

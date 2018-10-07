@@ -10,33 +10,31 @@
 
 class Position {
 private:
-	int 		_x;
-	int 		_y;
-	Position();
+	int _x;
+	int _y;
 
 public:
-	friend std::ostream &operator<<(std::ostream &os, const Position &position);
 
 	int getX() const;
 
-	void setX(int _x);
+	void setX(int x);
 
 	int getY() const;
 
-	void setY(int _y);
-
-public:
+	void setY(int y);
 	Position(int x, int y);
-
 	Position(Position const &i);
+
 	~Position();
 
 	bool operator==(const Position &rhs) const;
-
 	bool operator!=(const Position &rhs) const;
 
-	Position	&operator=(Position const &i);
+	Position &operator=(Position const &i);
+
+	Position();
 };
 
+std::ostream &operator<<(std::ostream &os, const Position &position);
 
 #endif //__POSITION_HPP__

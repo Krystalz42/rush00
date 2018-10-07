@@ -12,12 +12,15 @@
 #include "AWeapon.hpp"
 #include <Ship/ShipPlayer.hpp>
 
-class WeaponMob: virtual public AWeapon  {
+class WeaponMob : virtual public AWeapon {
 public:
 	WeaponMob();
 
+	WeaponMob(WeaponMob const &i);
+
 	virtual ~WeaponMob();
 
+	WeaponMob &operator=(WeaponMob const &i);
 
 	virtual List<ABullet *> *createBullets(Position const &p, Move m);
 

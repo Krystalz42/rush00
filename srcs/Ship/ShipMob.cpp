@@ -39,7 +39,21 @@ List<ABullet *> *ShipMob::fire() {
 	return 0;
 }
 
+void ShipMob::isHit() {
+	AShip::isHit();
+	file << "ShipBoss is called" << std::endl;
+	system("afplay $PWD/sound/boom.mp3 &");
+}
 
+void ShipMob::drawShip() const {
+	attron(COLOR_PAIR(RED));
+	AShip::drawShip();
+	attroff(COLOR_PAIR(RED));
+}
+
+void ShipMob::deleteShip() const {
+	AShip::deleteShip();
+}
 /** Private **/
 /** Operator **/
 
@@ -54,6 +68,5 @@ ShipMob &ShipMob::operator=(ShipMob const &i) {
 /** Destructor **/
 
 ShipMob::~ShipMob() {
-
 }
 

@@ -16,38 +16,6 @@ AShip::AShip() {
 AShip::AShip(AShip const &i) {
 
 }
-
-/** Public **/
-
-void AShip::isHit() {
-	if (_life != 0) _life--; else 	deleteShip();
-}
-
-
-
-/** Private **/
-/** Operator **/
-AShip &AShip::operator=(const AShip &i) {
-	return *this;
-}
-
-/** Destructor **/
-AShip::~AShip() {
-	delete _w;
-	for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next) {
-		delete it->data;
-	}
-}
-
-void AShip::getAmmo() {
-	file << _current_bullets << std::endl;
-	_current_bullets++;
-}
-
-bool AShip::isAlive() const {
-	return _life > 0;
-}
-
 AShip::AShip(
 		unsigned int _current_bullets,
 		unsigned int _max_bullets,
@@ -56,9 +24,10 @@ AShip::AShip(
 		_max_bullets(_max_bullets),
 		_life(_life),
 		_w(0)
-		{
+{
 	_p = List<Position *>();
 }
+
 
 void AShip::moveShip(Move m) {
 	deleteShip();
@@ -106,6 +75,46 @@ bool AShip::isCollide(Position const &p) {
 	return false;
 }
 
+/** Public **/
+
+void AShip::isHit() {
+	if (_life != 0) _life--; else 	deleteShip();
+}
+
+void AShip::getAmmo() {
+	file << _current_bullets << std::endl;
+	_current_bullets++;
+}
+
+bool AShip::isAlive() const {
+	return _life > 0;
+}
+
+void AShip::levelUp() {
+	_max_bullets += 4;
+	_current_bullets = _max_bullets;
+	_life++;
+}
+
+unsigned int AShip::getLife() const {
+	return _life;
+}
+
+unsigned int AShip::getMaxBullets() const {
+	return _max_bullets;
+}
+
+unsigned int AShip::getCurrentBullets() const {
+	return _current_bullets;
+}
+
+std::string const &AShip::getWeaponType() const {
+	return _w->getType();
+}
+
+/** Private **/
+
+
 void AShip::deleteShip() const {
 	for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next) {
 		move(it->data->getY(), it->data->getX());
@@ -122,21 +131,16 @@ void AShip::drawShip() const {
 	}
 
 }
+/** Operator **/
 
-void AShip::levelUp() {
-	_max_bullets += 4;
-	_current_bullets = _max_bullets;
-	_life++;
+AShip &AShip::operator=(const AShip &i) {
+	return *this;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/** Destructor **/
+AShip::~AShip() {
+	delete _w;
+	for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next) {
+		delete it->data;
+	}
+}

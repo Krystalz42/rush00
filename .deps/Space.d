@@ -4,7 +4,8 @@
   incs/utils/IShooter.hpp incs/Bullets/ABullet.hpp \
   incs/utils/IBulletsManager.hpp incs/Weapon/AWeapon.hpp \
   incs/Bullets/BulletsManager.hpp incs/Ship/ShipMob.hpp \
-  incs/Ship/ShipPlayer.hpp incs/Ship/ShipBoss.hpp
+  incs/Ship/ShipBoss.hpp incs/utils/Star.hpp incs/Ship/ShipPlayer.hpp \
+  incs/utils/Utils.hpp incs/Ship/ShipBigBoss.hpp
 
 incs/Space.hpp:
 
@@ -34,6 +35,12 @@ incs/Bullets/BulletsManager.hpp:
 
 incs/Ship/ShipMob.hpp:
 
+incs/Ship/ShipBoss.hpp:
+
+incs/utils/Star.hpp:
+
 incs/Ship/ShipPlayer.hpp:
 
-incs/Ship/ShipBoss.hpp:
+incs/utils/Utils.hpp:
+
+incs/Ship/ShipBigBoss.hpp:

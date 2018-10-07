@@ -10,15 +10,18 @@
 class ShipBoss : public AShip {
 protected:
 
-	virtual List<ABullet *> *fire() ;
+	virtual List<ABullet *> *fire();
 
+	virtual void drawShip() const;
 
-
-public:
-protected:
+	virtual void isHit();
 
 public:
 	ShipBoss();
+
+	ShipBoss &operator=(ShipBoss const &i);
+
+	virtual ~ShipBoss();
 };
 
 #endif //SHIPBOSS_HPP

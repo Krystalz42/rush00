@@ -7,23 +7,30 @@
 #include <iostream>
 #include <utils/List.hpp>
 
+/** Static **/
+/** Constructor **/
+
 Position::Position() {
 
 }
 
 Position::Position(int y, int x) : _y(y), _x(x) {
+	if (_y == 0) _y++;
 }
 
 Position::Position(Position const &i) {
 	*this = i;
 }
 
+/** Public **/
+
+
 int Position::getX() const {
 	return _x;
 }
 
 void Position::setX(int x) {
-	if (!(x < 0 || x >= COLS )) {
+	if (!(x < 0 || x >= COLS)) {
 		_x = x;
 	}
 }
@@ -33,10 +40,13 @@ int Position::getY() const {
 }
 
 void Position::setY(int y) {
-	if (!(y < 0 || y >= LINES)) {
+	if (!(y <= 0 || y >= LINES)) {
 		_y = y;
 	}
 }
+
+/** Private **/
+/** Operator **/
 
 Position &Position::operator=(Position const &i) {
 	if (this != &i) {
@@ -54,14 +64,15 @@ bool Position::operator==(const Position &rhs) const {
 	return _x == rhs._x && _y == rhs._y;
 }
 
+std::ostream &operator<<(std::ostream &os, const Position &position) {
+	os << "_x: " << position.getX() << " _y: " << position.getY();
+	return os;
+}
 
-
+/** Destructor **/
 
 Position::~Position() {
 
 }
 
-std::ostream &operator<<(std::ostream &os, const Position &position) {
-	os << "_x: " << position._x << " _y: " << position._y;
-	return os;
-}
+

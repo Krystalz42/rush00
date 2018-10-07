@@ -10,25 +10,34 @@
 #include <utils/List.hpp>
 #include <utils/IBulletsManager.hpp>
 #include <Ship/AShip.hpp>
+#include <Ship/ShipMob.hpp>
+#include <Ship/ShipBoss.hpp>
 
 class BulletsManager {
 private:
-	List<IBulletsManager*>		*_shooters_ennemy;
-	IBulletsManager			*_shooter_user;
-	List<ABullet*>		_bullets_ennemy;
-	List<ABullet*>		_bullets_user;
+	List<IBulletsManager *> *_shooters_ennemy;
+	IBulletsManager *_shooter_user;
+	List<ABullet *> _bullets_ennemy;
+	List<ABullet *> _bullets_user;
 
-	void		deleteBullet();
+	BulletsManager();
+
 public:
-	void 		moveMobBullets();
-	void 		moveBasicBullets();
+	void moveMobBullets();
 
-	BulletsManager(List<IBulletsManager *> *pList, IBulletsManager* user);
+	void moveBasicBullets();
 
-	virtual ~BulletsManager();
+	BulletsManager(List<IBulletsManager *> *pList, IBulletsManager *user);
+
+	BulletsManager(BulletsManager const &i);
+
+	BulletsManager &operator=(BulletsManager const &i);
 
 	void fireUser();
+
 	void fireMob();
+
+	virtual ~BulletsManager();
 };
 
 #endif //__BULLETSMANAGER_HPP__

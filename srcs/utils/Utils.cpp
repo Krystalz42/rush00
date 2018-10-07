@@ -55,7 +55,11 @@ Utils::Utils() {
 		perror("error initialising ncurses");
 		exit(EXIT_FAILURE);
 	}
-
+	start_color();
+	init_pair(1, COLOR_RED, COLOR_BLACK);
+	init_pair(2, COLOR_CYAN, COLOR_BLACK);
+	init_pair(3, COLOR_MAGENTA, COLOR_BLACK);
+	init_pair(4, COLOR_GREEN, COLOR_BLACK);
 	cbreak();
 	noecho();
 	is_keypad_ = is_keypad(windows);
@@ -79,6 +83,7 @@ void Utils::exitAndReset() {
 	curs_set(old_cursor);
 	endwin();
 	refresh();
+	system("killall afplay");
 	exit(EXIT_SUCCESS);
 }
 

@@ -8,28 +8,38 @@
 #include <Ship/ShipManager.hpp>
 #include <Bullets/BulletsManager.hpp>
 #include <utils/List.hpp>
+#include <utils/Star.hpp>
 
 class Space {
 private:
-	List<AShip *>		*ship_ennemy;
-	AShip*				ship_user;
+	List<AShip *> *ship_ennemy;
+	AShip *ship_user;
+	List<Star *> _star;
+	ShipManager *_sm;
+	BulletsManager *_bm;
+	unsigned int _level;
 
-	ShipManager		*_sm;
-	BulletsManager		*_bm;
-	unsigned int		_level;
-	void		initLevel();
+	void initLevel();
 
 public:
 	Space();
+
 	Space(Space const &i);
+
 	~Space();
 
-	Space &operator=(Space const & i);
+	Space &operator=(Space const &i);
+
+	void initStars();
 
 	bool getInput(int ch);
+
 	void moveUserBullets();
+
 	void moveEnnemyBullets();
+
 	void ennemyAction();
+
 	void refresh();
 
 };

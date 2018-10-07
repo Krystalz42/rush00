@@ -258,6 +258,33 @@ srcs/Ship/AShip.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/AShip.cpp.s
 .PHONY : srcs/Ship/AShip.cpp.s
 
+srcs/Ship/ShipBigBoss.o: srcs/Ship/ShipBigBoss.cpp.o
+
+.PHONY : srcs/Ship/ShipBigBoss.o
+
+# target to build an object file
+srcs/Ship/ShipBigBoss.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipBigBoss.cpp.o
+.PHONY : srcs/Ship/ShipBigBoss.cpp.o
+
+srcs/Ship/ShipBigBoss.i: srcs/Ship/ShipBigBoss.cpp.i
+
+.PHONY : srcs/Ship/ShipBigBoss.i
+
+# target to preprocess a source file
+srcs/Ship/ShipBigBoss.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipBigBoss.cpp.i
+.PHONY : srcs/Ship/ShipBigBoss.cpp.i
+
+srcs/Ship/ShipBigBoss.s: srcs/Ship/ShipBigBoss.cpp.s
+
+.PHONY : srcs/Ship/ShipBigBoss.s
+
+# target to generate assembly for a file
+srcs/Ship/ShipBigBoss.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipBigBoss.cpp.s
+.PHONY : srcs/Ship/ShipBigBoss.cpp.s
+
 srcs/Ship/ShipBoss.o: srcs/Ship/ShipBoss.cpp.o
 
 .PHONY : srcs/Ship/ShipBoss.o
@@ -311,6 +338,33 @@ srcs/Ship/ShipManager.s: srcs/Ship/ShipManager.cpp.s
 srcs/Ship/ShipManager.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipManager.cpp.s
 .PHONY : srcs/Ship/ShipManager.cpp.s
+
+srcs/Ship/ShipMedium.o: srcs/Ship/ShipMedium.cpp.o
+
+.PHONY : srcs/Ship/ShipMedium.o
+
+# target to build an object file
+srcs/Ship/ShipMedium.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMedium.cpp.o
+.PHONY : srcs/Ship/ShipMedium.cpp.o
+
+srcs/Ship/ShipMedium.i: srcs/Ship/ShipMedium.cpp.i
+
+.PHONY : srcs/Ship/ShipMedium.i
+
+# target to preprocess a source file
+srcs/Ship/ShipMedium.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMedium.cpp.i
+.PHONY : srcs/Ship/ShipMedium.cpp.i
+
+srcs/Ship/ShipMedium.s: srcs/Ship/ShipMedium.cpp.s
+
+.PHONY : srcs/Ship/ShipMedium.s
+
+# target to generate assembly for a file
+srcs/Ship/ShipMedium.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Ship/ShipMedium.cpp.s
+.PHONY : srcs/Ship/ShipMedium.cpp.s
 
 srcs/Ship/ShipMob.o: srcs/Ship/ShipMob.cpp.o
 
@@ -501,6 +555,33 @@ srcs/Weapon/WeaponTripleDiagonal.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleDiagonal.cpp.s
 .PHONY : srcs/Weapon/WeaponTripleDiagonal.cpp.s
 
+srcs/Weapon/WeaponTripleVertical.o: srcs/Weapon/WeaponTripleVertical.cpp.o
+
+.PHONY : srcs/Weapon/WeaponTripleVertical.o
+
+# target to build an object file
+srcs/Weapon/WeaponTripleVertical.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleVertical.cpp.o
+.PHONY : srcs/Weapon/WeaponTripleVertical.cpp.o
+
+srcs/Weapon/WeaponTripleVertical.i: srcs/Weapon/WeaponTripleVertical.cpp.i
+
+.PHONY : srcs/Weapon/WeaponTripleVertical.i
+
+# target to preprocess a source file
+srcs/Weapon/WeaponTripleVertical.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleVertical.cpp.i
+.PHONY : srcs/Weapon/WeaponTripleVertical.cpp.i
+
+srcs/Weapon/WeaponTripleVertical.s: srcs/Weapon/WeaponTripleVertical.cpp.s
+
+.PHONY : srcs/Weapon/WeaponTripleVertical.s
+
+# target to generate assembly for a file
+srcs/Weapon/WeaponTripleVertical.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleVertical.cpp.s
+.PHONY : srcs/Weapon/WeaponTripleVertical.cpp.s
+
 srcs/main.o: srcs/main.cpp.o
 
 .PHONY : srcs/main.o
@@ -555,6 +636,33 @@ srcs/utils/Position.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Position.cpp.s
 .PHONY : srcs/utils/Position.cpp.s
 
+srcs/utils/Star.o: srcs/utils/Star.cpp.o
+
+.PHONY : srcs/utils/Star.o
+
+# target to build an object file
+srcs/utils/Star.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Star.cpp.o
+.PHONY : srcs/utils/Star.cpp.o
+
+srcs/utils/Star.i: srcs/utils/Star.cpp.i
+
+.PHONY : srcs/utils/Star.i
+
+# target to preprocess a source file
+srcs/utils/Star.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Star.cpp.i
+.PHONY : srcs/utils/Star.cpp.i
+
+srcs/utils/Star.s: srcs/utils/Star.cpp.s
+
+.PHONY : srcs/utils/Star.s
+
+# target to generate assembly for a file
+srcs/utils/Star.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/utils/Star.cpp.s
+.PHONY : srcs/utils/Star.cpp.s
+
 srcs/utils/Utils.o: srcs/utils/Utils.cpp.o
 
 .PHONY : srcs/utils/Utils.o
@@ -606,12 +714,18 @@ help:
 	@echo "... srcs/Ship/AShip.o"
 	@echo "... srcs/Ship/AShip.i"
 	@echo "... srcs/Ship/AShip.s"
+	@echo "... srcs/Ship/ShipBigBoss.o"
+	@echo "... srcs/Ship/ShipBigBoss.i"
+	@echo "... srcs/Ship/ShipBigBoss.s"
 	@echo "... srcs/Ship/ShipBoss.o"
 	@echo "... srcs/Ship/ShipBoss.i"
 	@echo "... srcs/Ship/ShipBoss.s"
 	@echo "... srcs/Ship/ShipManager.o"
 	@echo "... srcs/Ship/ShipManager.i"
 	@echo "... srcs/Ship/ShipManager.s"
+	@echo "... srcs/Ship/ShipMedium.o"
+	@echo "... srcs/Ship/ShipMedium.i"
+	@echo "... srcs/Ship/ShipMedium.s"
 	@echo "... srcs/Ship/ShipMob.o"
 	@echo "... srcs/Ship/ShipMob.i"
 	@echo "... srcs/Ship/ShipMob.s"
@@ -633,12 +747,18 @@ help:
 	@echo "... srcs/Weapon/WeaponTripleDiagonal.o"
 	@echo "... srcs/Weapon/WeaponTripleDiagonal.i"
 	@echo "... srcs/Weapon/WeaponTripleDiagonal.s"
+	@echo "... srcs/Weapon/WeaponTripleVertical.o"
+	@echo "... srcs/Weapon/WeaponTripleVertical.i"
+	@echo "... srcs/Weapon/WeaponTripleVertical.s"
 	@echo "... srcs/main.o"
 	@echo "... srcs/main.i"
 	@echo "... srcs/main.s"
 	@echo "... srcs/utils/Position.o"
 	@echo "... srcs/utils/Position.i"
 	@echo "... srcs/utils/Position.s"
+	@echo "... srcs/utils/Star.o"
+	@echo "... srcs/utils/Star.i"
+	@echo "... srcs/utils/Star.s"
 	@echo "... srcs/utils/Utils.o"
 	@echo "... srcs/utils/Utils.i"
 	@echo "... srcs/utils/Utils.s"

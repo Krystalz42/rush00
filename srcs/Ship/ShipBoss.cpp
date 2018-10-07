@@ -6,6 +6,7 @@
 #include <Ship/ShipBoss.hpp>
 #include <ncurses.h>
 #include <Weapon/WeaponTripleDiagonal.hpp>
+#include <Weapon/WeaponTripleVertical.hpp>
 
 /** Static **/
 /** Constructor **/
@@ -15,8 +16,8 @@ ShipBoss::ShipBoss() :
 			10,
 			10,
 			10) {
-	_w = new WeaponTripleDiagonal();
-	_ship_design = "OOOOO";
+	_w = new WeaponTripleVertical();
+	_ship_design = "\\/O/\\";
 	Position p(rand() % (LINES / 3) + 1,rand() % (COLS - 3) + 1);
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 1));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() + 1));
@@ -24,15 +25,8 @@ ShipBoss::ShipBoss() :
 	_p.pushFront(new Position(p.getY() + 1, p.getX() - 1));
 	_p.pushFront(new Position(p.getY() + 1, p.getX() + 1));
 }
-//	\ /
-//	 o
-//	/ \
 
 /** Public **/
-/** Private **/
-/** Operator **/
-/** Destructor **/
-
 
 List<ABullet *> *ShipBoss::fire() {
 
@@ -45,4 +39,36 @@ List<ABullet *> *ShipBoss::fire() {
 	}
 	return 0;
 }
+
+
+
+void ShipBoss::isHit() {
+	if (_life == 1) {
+		system("afplay $PWD/sound/boom_boss.mp3 &");
+	}
+	AShip::isHit();
+}
+
+/** Private **/
+
+void ShipBoss::drawShip() const {
+	attron(COLOR_PAIR(MAGENTA));
+	AShip::drawShip();
+	attroff(COLOR_PAIR(RED));
+}
+
+/** Operator **/
+
+ShipBoss &ShipBoss::operator=(ShipBoss const &i) {
+	return *this;
+}
+
+/** Destructor **/
+
+
+
+ShipBoss::~ShipBoss() {
+
+}
+
 

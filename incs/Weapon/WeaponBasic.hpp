@@ -8,13 +8,15 @@
 #include "AWeapon.hpp"
 #include <Ship/ShipPlayer.hpp>
 
-class WeaponBasic: virtual public AWeapon  {
-private:
+class WeaponBasic : virtual public AWeapon {
 public:
 	WeaponBasic();
 
+	WeaponBasic(WeaponBasic const &i);
+
 	virtual ~WeaponBasic();
 
+	WeaponBasic &operator=(WeaponBasic const &i);
 
 	virtual List<ABullet *> *createBullets(Position const &p, Move m);
 

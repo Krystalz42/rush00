@@ -11,17 +11,25 @@
 
 class ShipManager {
 private:
-	List<IShipsManager *>		*ships;
-	IShipsManager			*user_ship;
+	List<IShipsManager *> *ships;
+	IShipsManager *user_ship;
+
 	ShipManager();
 
 public:
-	virtual ~ShipManager();
+	ShipManager(ShipManager const &i);
 
 	ShipManager(List<IShipsManager *> *ships, IShipsManager *user_ship);
-	void			moveEnnemy();
-	void			moveUser(Move m);
-	bool			isAllEnnemyDead();
+
+	virtual ~ShipManager();
+
+	ShipManager &operator=(ShipManager const &i);
+
+	void moveEnnemy();
+
+	void moveUser(Move m);
+
+	bool isAllEnnemyDead();
 };
 
 #endif //SHIPMANAGER_HPP

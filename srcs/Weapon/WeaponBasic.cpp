@@ -10,28 +10,40 @@
 /** Static **/
 /** Constructor **/
 
+WeaponBasic::WeaponBasic() : AWeapon(1, "Basic Weapon") {
+
+}
+
+WeaponBasic::WeaponBasic(WeaponBasic const &i) {
+
+}
 
 /** Public **/
 
-
+List<ABullet *> *WeaponBasic::createBullets(Position const &p, Move m) {
+	List<ABullet *> *l = new List<ABullet *>();
+	l->pushFront(new BasicBullet(new Position(p.getY(), p.getX()), m));
+	return l;
+}
 
 /** Private **/
+
 /** Operator **/
+
+WeaponBasic &WeaponBasic::operator=(WeaponBasic const &i) {
+	return *this;
+}
+
 /** Destructor **/
 
 WeaponBasic::~WeaponBasic() {
 
 }
 
-WeaponBasic::WeaponBasic() : AWeapon(1) {
 
-}
 
-List<ABullet *> *WeaponBasic::createBullets(Position const &p, Move m) {
-	List<ABullet *>		*l = new List<ABullet *>();
-	l->pushFront(new BasicBullet(new Position(p.getY(), p.getX()), m));
-	return l;
-}
+
+
 
 
 

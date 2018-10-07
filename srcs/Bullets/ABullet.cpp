@@ -6,6 +6,24 @@
 #include <Bullets/ABullet.hpp>
 #include <utils/List.hpp>
 
+/** Static **/
+/** Constructor **/
+
+ABullet::ABullet() {
+
+}
+
+
+ABullet::ABullet(ABullet const &i) {
+
+}
+
+
+ABullet::ABullet(Position *p, Move m) : _p(p), _m(m) {
+}
+
+/** Public **/
+
 void ABullet::moveBullet() {
 	deleteBullet();
 	switch (_m) {
@@ -31,7 +49,7 @@ void ABullet::moveBullet() {
 		case NORTHEAST:
 			_p->setX(_p->getX() + 1);
 			_p->setY(_p->getY() - 1);
-			_m = (_p->getX() == COLS -1  ? NORTHWEST : NORTHEAST);
+			_m = (_p->getX() == COLS - 1 ? NORTHWEST : NORTHEAST);
 
 			break;
 		case SOUTHEAST:
@@ -49,24 +67,18 @@ void ABullet::moveBullet() {
 }
 
 bool ABullet::isAlive() {
-	return !(_p->getY() == 0 || _p->getY() == LINES);
+	return !(_p->getY() == 1 || _p->getY() == LINES);
 }
 
-ABullet::ABullet(Position *p, Move m) : _p(p), _m(m) {
+
+Position const &ABullet::getPosition() {
+	return *_p;
 }
+
+/** Private **/
+/** Operator **/
+/** Destructor **/
 
 ABullet::~ABullet() {
 }
 
-
-Position *ABullet::getPosition() {
-	return _p;
-}
-
-ABullet::ABullet(ABullet const &i) {
-
-}
-
-ABullet::ABullet() {
-
-}

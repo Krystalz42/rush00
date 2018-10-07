@@ -10,13 +10,19 @@
 class MobBullet : virtual public ABullet {
 public:
 	MobBullet(Position *p, Move m);
+
 	~MobBullet();
 
 private:
 	virtual void drawBullet() const;
+
 	virtual void deleteBullet() const;
+
 	MobBullet();
+
 	MobBullet(const ABullet &i);
+
+	MobBullet &operator=(MobBullet const &i);
 };
 
 #endif //__MOBBULLET_HPP__

@@ -7,10 +7,12 @@
 
 #include "ICollision.hpp"
 
-class IShipsManager : virtual  public  ICollision {
+class IShipsManager : virtual public ICollision {
 
 public:
-	virtual void 	moveShip(Move m) = 0;
+	virtual void moveShip(Move m) = 0;
+
+	~IShipsManager() {};
 };
 
 #endif //ISHIPSMANAGER_HPP

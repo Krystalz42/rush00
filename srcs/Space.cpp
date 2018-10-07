@@ -10,6 +10,10 @@
 #include <fstream>
 #include <Ship/ShipPlayer.hpp>
 #include <Ship/ShipBoss.hpp>
+#include <ncurses.h>
+#include <utils/Utils.hpp>
+#include <Ship/ShipBigBoss.hpp>
+#include <utils/Star.hpp>
 
 extern std::ofstream file;
 
@@ -19,6 +23,8 @@ extern std::ofstream file;
 Space::Space() : _level(1) {
 	ship_user = new ShipPlayer();
 	initLevel();
+	system("afplay $PWD/sound/star_wars.mp3 &");
+	initStars();
 }
 
 Space::Space(Space const &i) {
@@ -26,6 +32,25 @@ Space::Space(Space const &i) {
 }
 
 /** Public **/
+void Space::refresh() {
+	attron(A_BOLD);
+	std::string r;
+	//[Level : %d | Life : %d | Current Bullets %d/%d | Weapon : %s ]
+	r += "      [ Level : ";
+	r += std::to_string(_level);
+	r += " | Life : ";
+	r += std::to_string(ship_user->getLife());
+	r += " | Current Bullets ";
+	r += std::to_string(ship_user->getCurrentBullets());
+	r += "/";
+	r += std::to_string(ship_user->getMaxBullets());
+	r += " | Weapon : ";
+	r += ship_user->getWeaponType();
+	r += " ]";
+	move(0, COLS - r.size());
+	addstr(r.c_str());
+	attroff(A_BOLD);
+}
 
 bool Space::getInput(int ch) {
 	if (_sm == 0) {
@@ -76,12 +101,16 @@ void Space::moveEnnemyBullets() {
 void Space::ennemyAction() {
 	if (_sm != 0) {
 		_sm->moveEnnemy();
+		for (List<Star *>::t_list *it = _star.begin(); it!=0; it = it->next) {
+			it->data->moveStar();
+		}
 		if (_sm->isAllEnnemyDead()) {
 			delete _bm;
 			_bm = 0;
 			delete _sm;
 			_sm = 0;
-			for (List<AShip *>::t_list *it = ship_ennemy->begin(); it != 0; it = it->next) {
+			for (List<AShip *>::t_list *it = ship_ennemy->begin();
+				 it != 0; it = it->next) {
 				delete it->data;
 			}
 			delete ship_ennemy;
@@ -89,6 +118,9 @@ void Space::ennemyAction() {
 			ship_ennemy = 0;
 			_level++;
 			initLevel();
+		} else if (ship_user->getLife() == 0) {
+			system("afplay $PWD/sound/game_over.mp3");
+			Utils::getInstance()->exitAndReset();
 		}
 	}
 }
@@ -96,12 +128,17 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
-	int difficulty = _level * 10;
-
+	int difficulty = _level * 50;
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
 	ship_ennemy = new List<AShip *>;
-
+	for (int idx = 0; idx < difficulty / 50; idx++) {
+		AShip *sm = new ShipBigBoss();
+		ship_ennemy->pushFront(sm);
+		t_bm->pushFront(sm);
+		t_sm->pushFront(sm);
+		difficulty -= 50;
+	}
 
 	for (int idx = 0; idx < difficulty / 20; idx++) {
 		AShip *sm = new ShipBoss();
@@ -138,12 +175,20 @@ Space &Space::operator=(Space const &i) {
 
 Space::~Space() {
 	delete ship_user;
-	file << "dilite" << std::endl;
 }
 
-void Space::refresh() {
-
+void Space::initStars() {
+	int randp;
+	for (int y = 0; y < LINES; y++) {
+		if (y % 15 == 0)
+		for (int x = 0; x < COLS; x++) {
+			if (x % 15 == 0) {
+				randp = rand() % 8;
+				file << randp << std::endl;
+				_star.pushFront(new Star(new Position(((randp <= 3) ? y  - randp : y + randp), (randp <= 3 ? x  + randp : x - randp))));
+			}
+		}
+	}
 }
-
 
 
