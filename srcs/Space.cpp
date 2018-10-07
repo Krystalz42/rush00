@@ -143,12 +143,18 @@ void Space::initLevel() {
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
 	ship_ennemy = new List<AShip *>;
-	if (_level == 3)
+	if (_level == 3) {
+		ship_user->levelUp();
 		ship_user->setWeapon(new WeaponDoubleVertical());
-	if (_level == 6)
+	}
+	if (_level == 6) {
+		ship_user->levelUp();
 		ship_user->setWeapon(new WeaponTripleDiagonal());
-	if (_level == 9)
+	}
+	if (_level == 9) {
+		ship_user->levelUp();
 		ship_user->setWeapon(new WeaponUltime());
+	}
 	for (int idx = 0; idx < difficulty / 30; idx++) {
 		AShip *sm = new ShipBigBoss();
 		ship_ennemy->pushFront(sm);

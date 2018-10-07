@@ -14,6 +14,8 @@ protected:
 
 	virtual void moveShip(Move m);
 
+	virtual void isHit();
+
 
 public:
 	ShipBigBoss();

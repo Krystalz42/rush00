@@ -13,16 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="45268bf7-012d-426b-9c95-d8a100fd3476" name="Default Changelist" comment="Merge branch 'master' of https://github.com/Krystalz42/rush00&#10;&#10;# Conflicts:&#10;#&#9;debug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/incs/utils/List.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/incs/utils/List.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipMedium.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipMedium.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Ship/ShipMob.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ship/ShipMob.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Space.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Space.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/utils/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/utils/Star.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,9 +37,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="21" />
-          <entry key="cpp" value="249" />
+          <entry key="cpp" value="251" />
           <entry key="h" value="12" />
-          <entry key="hpp" value="219" />
+          <entry key="hpp" value="222" />
           <entry key="tpp" value="7" />
           <entry key="txt" value="3" />
         </counts>
@@ -53,26 +47,26 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="3" />
-          <entry key="ObjectiveC" value="486" />
+          <entry key="ObjectiveC" value="491" />
           <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="279" />
-          <entry key="cpp" value="16553" />
+          <entry key="cpp" value="16664" />
           <entry key="h" value="274" />
           <entry key="hpp" value="4852" />
           <entry key="tpp" value="1200" />
-          <entry key="txt" value="212" />
+          <entry key="txt" value="217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="60" />
           <entry key="Doxygen file" value="77" />
-          <entry key="ObjectiveC" value="22802" />
-          <entry key="PLAIN_TEXT" value="431" />
+          <entry key="ObjectiveC" value="22913" />
+          <entry key="PLAIN_TEXT" value="436" />
         </counts>
       </usages-collector>
     </session>
@@ -82,15 +76,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipPlayer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+            <state relative-caret-position="-427">
+              <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
               <folding>
                 <element signature="e#53#83#0" expanded="true" />
               </folding>
@@ -113,12 +98,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/main.cpp">
+        <entry file="file://$PROJECT_DIR$/srcs/Ship/AShip.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="186">
+              <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="21" />
               <folding>
-                <element signature="e#2#28#0" expanded="true" />
+                <element signature="e#53#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#53#90#0" expanded="true" />
               </folding>
@@ -137,10 +122,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/incs/utils/Utils.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/utils/Utils.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state relative-caret-position="15">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#53#69#0" expanded="true" />
               </folding>
@@ -148,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/srcs/Space.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+            <state relative-caret-position="434">
+              <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
               <folding>
                 <element signature="e#53#73#0" expanded="true" />
               </folding>
@@ -160,23 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
-              <folding>
-                <element signature="e#106#148#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="279">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
               <folding>
                 <element signature="e#53#84#0" expanded="true" />
               </folding>
@@ -185,10 +167,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srcs/Weapon/WeaponTripleDiagonal.cpp">
+        <entry file="file://$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="28" column="111" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/incs/Bullets/BulletsManager.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding>
+                <element signature="e#117#146#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,10 +191,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>draw</find>
-      <find>::isAl</find>
-      <find>boom</find>
-      <find>syst</find>
       <find>struct t_list</find>
       <find>ShipBoss</find>
       <find>wea</find>
@@ -225,8 +215,12 @@
       <find>WeaponTripleVertical</find>
       <find>triple</find>
       <find>ShipMob</find>
-      <find>file</find>
       <find>getAm</find>
+      <find>piou</find>
+      <find>//`</find>
+      <find>file</find>
+      <find>super</find>
+      <find>system</find>
     </findStrings>
     <replaceStrings>
       <replace>_</replace>
@@ -257,8 +251,8 @@
       <replace>'</replace>
       <replace>WeaponUltime</replace>
       <replace>WeaponDoubleVertical</replace>
-      <replace>Star</replace>
       <replace>ShipMedium</replace>
+      <replace>Star</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -304,7 +298,6 @@
         <option value="$PROJECT_DIR$/srcs/Ship/ShipBoss.cpp" />
         <option value="$PROJECT_DIR$/srcs/Weapon/AWeapon.cpp" />
         <option value="$PROJECT_DIR$/srcs/Weapon/WeaponMob.cpp" />
-        <option value="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" />
         <option value="$PROJECT_DIR$/incs/utils/Star.hpp" />
         <option value="$PROJECT_DIR$/srcs/utils/Star.cpp" />
         <option value="$PROJECT_DIR$/srcs/Weapon/WeaponUltime.cpp" />
@@ -313,11 +306,12 @@
         <option value="$PROJECT_DIR$/srcs/Weapon/WeaponDoubleVertical.cpp" />
         <option value="$PROJECT_DIR$/incs/ft_retro.h" />
         <option value="$PROJECT_DIR$/srcs/Weapon/WeaponBasic.cpp" />
-        <option value="$PROJECT_DIR$/srcs/utils/Utils.cpp" />
         <option value="$PROJECT_DIR$/srcs/main.cpp" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp" />
+        <option value="$PROJECT_DIR$/srcs/utils/Utils.cpp" />
         <option value="$PROJECT_DIR$/srcs/Space.cpp" />
+        <option value="$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp" />
       </list>
     </option>
   </component>
@@ -408,21 +402,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._">
+  <component name="RunManager">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_" TARGET_NAME="_" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="_" RUN_TARGET_NAME="_">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application._" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -555,11 +540,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538931900533</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/Krystalz42/rush00&#10;&#10;# Conflicts:&#10;#&#9;debug">
+      <created>1538934202835</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1538934202835</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge branch 'master' of https://github.com/Krystalz42/rush00&#10;&#10;# Conflicts:&#10;#&#9;debug">
+      <created>1538934442224</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1538934442224</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78540000" />
+    <option name="totallyTimeSpent" value="80224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -579,7 +578,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="9" weight="0.3120482" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -617,7 +616,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp</url>
-          <line>19</line>
+          <line>21</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -640,20 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/utils/Utils.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -752,16 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/incs/Bullets/BulletsManager.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="70" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="70" />
-          <folding>
-            <element signature="e#117#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/incs/Weapon/AWeapon.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -837,16 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Ship/AShip.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs/utils/Position.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -880,16 +845,6 @@
           <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#53#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-          <folding>
-            <element signature="e#53#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1002,16 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/utils/Utils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding>
-            <element signature="e#53#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srcs/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1036,32 +981,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipPlayer.cpp">
+    <entry file="file://$PROJECT_DIR$/incs/Bullets/BulletsManager.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
-            <element signature="e#53#83#0" expanded="true" />
+            <element signature="e#117#146#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/srcs/Bullets/BulletsManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#53#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/incs/utils/Utils.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/utils/Utils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#53#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipPlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="e#53#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/AShip.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="21" />
+          <folding>
+            <element signature="e#53#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/srcs/Space.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+        <state relative-caret-position="434">
+          <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
           <folding>
             <element signature="e#53#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/incs/Ship/ShipBigBoss.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srcs/Ship/ShipBigBoss.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="e#53#84#0" expanded="true" />
           </folding>
         </state>
       </provider>

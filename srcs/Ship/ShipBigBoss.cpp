@@ -23,7 +23,7 @@ ShipBigBoss::ShipBigBoss() : AShip(
 				   "\\_______/"
 				   "^   ^";
 
-	Position p(rand() % (LINES / 5) + 10 + 1, COLS / 2);
+	Position p(rand() % (LINES / 5), rand() % (COLS - 20) + 10);
 
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 3));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 2));
@@ -134,5 +134,10 @@ ShipBigBoss &ShipBigBoss::operator=(ShipBigBoss const &i) {
 /** Destructor **/
 
 ShipBigBoss::~ShipBigBoss() {
-	system("afplay ./sound/big_explosion.mp3 &");
+}
+
+void ShipBigBoss::isHit() {
+	if (_life - 1 == 0)
+		system("afplay ./sound/big_explosion.mp3 &");
+	AShip::isHit();
 }

@@ -50,8 +50,9 @@ List<ABullet *> *ShipMedium::fire() {
 }
 
 void ShipMedium::isHit() {
+	if (_life - 1 == 0)
+		system("afplay $PWD/sound/boom.mp3 &");
 	AShip::isHit();
-	system("afplay $PWD/sound/boom.mp3 &");
 }
 
 void ShipMedium::drawShip() const {
