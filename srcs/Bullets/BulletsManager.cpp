@@ -51,25 +51,19 @@ void BulletsManager::fireMob() {
 	List<IBulletsManager*>::t_list *it = _shooters_ennemy->begin();
 	List<ABullet *> *lst_bullets;
 	int cpt = rand() % _shooters_ennemy->size();
-	file << "Bullet enemies PUSH" << std::endl;
 	if (it != 0) {
 		file << cpt << std::endl;
 		for (int i = 0; i != cpt; i++)
 			it = it->next;
-		file << "2" << std::endl;
 		lst_bullets = it->data->fire();
-		file << "3" << std::endl;
 		for (List<ABullet *>::t_list *it = lst_bullets->begin(); it != 0; it = it->next) {
-			file << "4" << std::endl;
 			_bullets_ennemy.pushFront(it->data);
 		}
-		file << "5" << std::endl;
 		delete lst_bullets;
 	}
 }
 void BulletsManager::moveMobBullets() {
 	List<ABullet *>::t_list *enemy_bullets;
-	List<IBulletsManager *>::t_list *user_shooter;
 	List<ABullet *>::t_list *tmp;
 
 	for (enemy_bullets = _bullets_ennemy.begin(); enemy_bullets != 0;) {

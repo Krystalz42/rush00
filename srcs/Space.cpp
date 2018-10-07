@@ -110,6 +110,7 @@ void Space::ennemyAction() {
 
 	if (_sm != 0) {
 		_sm->moveEnnemy();
+		_bm->fireMob();
 		for (List<Star *>::t_list *it = _star.begin(); it != 0; it = it->next) {
 			it->data->moveStar();
 		}
