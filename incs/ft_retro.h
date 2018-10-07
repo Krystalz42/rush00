@@ -16,6 +16,7 @@
 #define GREEN  4
 #define BLACK 5
 #define YELLOW 6
+#define FIRE_RATE_MOB 5
 
 enum Move {
 	NORTH,
