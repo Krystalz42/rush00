@@ -129,6 +129,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponBasic.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponDoubleVertical.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponMob.hpp">
 			<Option target="_"/>
 		</Unit>
@@ -138,13 +141,22 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponTripleVertical.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/Weapon/WeaponUltime.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/ft_retro.h">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IBulletsManager.hpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IBulletsManagerUser.hpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/ICollision.hpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IScore.hpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/incs/utils/IShipsManager.hpp">
@@ -207,6 +219,9 @@
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponBasic.cpp">
 			<Option target="_"/>
 		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponDoubleVertical.cpp">
+			<Option target="_"/>
+		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponMob.cpp">
 			<Option target="_"/>
 		</Unit>
@@ -214,6 +229,9 @@
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponTripleVertical.cpp">
+			<Option target="_"/>
+		</Unit>
+		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/Weapon/WeaponUltime.cpp">
 			<Option target="_"/>
 		</Unit>
 		<Unit filename="/Users/alexandreroulin/pool_cpp/rush00/srcs/main.cpp">

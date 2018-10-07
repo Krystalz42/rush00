@@ -7,6 +7,8 @@
 #include <cstdlib>
 #include <Bullets/MobBullet.hpp>
 #include <iostream>
+#include <Weapon/WeaponDoubleVertical.hpp>
+#include <Weapon/WeaponBasic.hpp>
 
 #include "Ship/ShipMob.hpp"
 
@@ -19,8 +21,9 @@
 ShipMob::ShipMob() :
 		AShip(
 				10,
-				10,
+				3,
 				1) {
+	_w = new WeaponBasic();
 	_ship_design = "@";
 	_p.pushFront(new Position(rand() % (LINES / 3) ,rand() % (COLS - 1)));
 }
@@ -41,14 +44,13 @@ List<ABullet *> *ShipMob::fire() {
 
 void ShipMob::isHit() {
 	AShip::isHit();
-	file << "ShipBoss is called" << std::endl;
 	system("afplay $PWD/sound/boom.mp3 &");
 }
 
 void ShipMob::drawShip() const {
-	attron(COLOR_PAIR(RED));
+	attron(COLOR_PAIR(COLOR_BLUE));
 	AShip::drawShip();
-	attroff(COLOR_PAIR(RED));
+	attroff(COLOR_PAIR(COLOR_BLUE));
 }
 
 void ShipMob::deleteShip() const {

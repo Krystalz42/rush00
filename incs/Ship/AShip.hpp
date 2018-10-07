@@ -44,6 +44,8 @@ public:
 
 	AShip(AShip const &i);
 
+	virtual unsigned int getPowerfull();
+
 	virtual ~AShip();
 
 	virtual AShip &operator=(AShip const &i);

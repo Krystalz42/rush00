@@ -14,13 +14,17 @@
 #include <utils/Utils.hpp>
 #include <Ship/ShipBigBoss.hpp>
 #include <utils/Star.hpp>
+#include <zconf.h>
+#include <Weapon/WeaponDoubleVertical.hpp>
+#include <Weapon/WeaponTripleDiagonal.hpp>
+#include <Ship/ShipMedium.hpp>
 
 extern std::ofstream file;
 
 /** Static **/
 /** Constructor **/
 
-Space::Space() : _level(1) {
+Space::Space() : _level(1), _time(time(0)) {
 	ship_user = new ShipPlayer();
 	initLevel();
 	system("afplay $PWD/sound/star_wars.mp3 &");
@@ -35,11 +39,15 @@ Space::Space(Space const &i) {
 void Space::refresh() {
 	attron(A_BOLD);
 	std::string r;
-	//[Level : %d | Life : %d | Current Bullets %d/%d | Weapon : %s ]
-	r += "      [ Level : ";
+	//[Level : %d | Life : %d. | Score : %d | Timer : %d| Current Bullets %d/%d | Weapon : %s ]
+	r += "  [ Level : ";
 	r += std::to_string(_level);
 	r += " | Life : ";
 	r += std::to_string(ship_user->getLife());
+	r += " | Score : ";
+	r += std::to_string(ship_user->getScore());
+	r += " | Time : ";
+	r += std::to_string(time(0) - _time);
 	r += " | Current Bullets ";
 	r += std::to_string(ship_user->getCurrentBullets());
 	r += "/";
@@ -99,11 +107,13 @@ void Space::moveEnnemyBullets() {
 }
 
 void Space::ennemyAction() {
+
 	if (_sm != 0) {
 		_sm->moveEnnemy();
-		for (List<Star *>::t_list *it = _star.begin(); it!=0; it = it->next) {
+		for (List<Star *>::t_list *it = _star.begin(); it != 0; it = it->next) {
 			it->data->moveStar();
 		}
+
 		if (_sm->isAllEnnemyDead()) {
 			delete _bm;
 			_bm = 0;
@@ -114,9 +124,10 @@ void Space::ennemyAction() {
 				delete it->data;
 			}
 			delete ship_ennemy;
-			ship_user->levelUp();
 			ship_ennemy = 0;
 			_level++;
+			system("afplay $PWD/sound/level_up.mp3 &");
+			ship_user->levelUp();
 			initLevel();
 		} else if (ship_user->getLife() == 0) {
 			system("afplay $PWD/sound/game_over.mp3");
@@ -128,16 +139,21 @@ void Space::ennemyAction() {
 /** Private **/
 
 void Space::initLevel() {
-	int difficulty = _level * 50;
+	int difficulty = _level * 12;
 	List<IShipsManager *> *t_sm = new List<IShipsManager *>();
 	List<IBulletsManager *> *t_bm = new List<IBulletsManager *>();
 	ship_ennemy = new List<AShip *>;
+	if (_level == 5)
+		ship_user->setWeapon(new WeaponDoubleVertical());
+	if (_level == 10)
+		ship_user->setWeapon(new WeaponTripleDiagonal());
+
 	for (int idx = 0; idx < difficulty / 50; idx++) {
 		AShip *sm = new ShipBigBoss();
 		ship_ennemy->pushFront(sm);
 		t_bm->pushFront(sm);
 		t_sm->pushFront(sm);
-		difficulty -= 50;
+		difficulty -= 20;
 	}
 
 	for (int idx = 0; idx < difficulty / 20; idx++) {
@@ -148,6 +164,14 @@ void Space::initLevel() {
 		difficulty -= 5;
 	}
 
+	for (int idx = 0; idx < difficulty / 10; idx++) {
+		AShip *sm = new ShipMedium();
+		ship_ennemy->pushFront(sm);
+		t_bm->pushFront(sm);
+		t_sm->pushFront(sm);
+		difficulty -= 3;
+	}
+
 
 	for (int idx = 0; idx < difficulty; idx++) {
 		AShip *sm = new ShipMob();
@@ -155,11 +179,8 @@ void Space::initLevel() {
 		t_bm->pushFront(sm);
 		t_sm->pushFront(sm);
 	}
-
 	_bm = new BulletsManager(t_bm, ship_user);
 	_sm = new ShipManager(t_sm, ship_user);
-//	delete t_bm;
-//	delete t_sm;
 }
 
 /** Operator **/
@@ -181,14 +202,17 @@ void Space::initStars() {
 	int randp;
 	for (int y = 0; y < LINES; y++) {
 		if (y % 15 == 0)
-		for (int x = 0; x < COLS; x++) {
-			if (x % 15 == 0) {
-				randp = rand() % 8;
-				file << randp << std::endl;
-				_star.pushFront(new Star(new Position(((randp <= 3) ? y  - randp : y + randp), (randp <= 3 ? x  + randp : x - randp))));
+			for (int x = 0; x < COLS; x++) {
+				if (x % 15 == 0) {
+					randp = rand() % 8;
+					_star.pushFront(new Star(
+							new Position(((randp <= 3) ? y - randp : y + randp),
+										 (randp <= 3 ? x + randp : x -
+																   randp))));
+				}
 			}
-		}
 	}
 }
+
 
 

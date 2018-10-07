@@ -7,6 +7,7 @@
 #include <ncurses.h>
 #include <Weapon/WeaponTripleDiagonal.hpp>
 #include <Weapon/WeaponTripleVertical.hpp>
+#include <Weapon/WeaponDoubleVertical.hpp>
 
 /** Static **/
 /** Constructor **/
@@ -16,7 +17,7 @@ ShipBoss::ShipBoss() :
 			10,
 			10,
 			10) {
-	_w = new WeaponTripleVertical();
+	_w = new WeaponTripleDiagonal();
 	_ship_design = "\\/O/\\";
 	Position p(rand() % (LINES / 3) + 1,rand() % (COLS - 3) + 1);
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 1));

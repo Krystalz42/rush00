@@ -12,9 +12,10 @@
 #include <Weapon/WeaponBasic.hpp>
 #include <Weapon/WeaponTripleDiagonal.hpp>
 #include <Weapon/WeaponTripleVertical.hpp>
-
-/** Static **/
-
+#include <iostream>
+#include <thread>
+#include <chrono>
+#include <Weapon/WeaponUltime.hpp>
 
 
 /** Constructor **/
@@ -22,12 +23,11 @@
 
 ShipPlayer::ShipPlayer() :
 		AShip(
-				100,
-				100,
-				5) {
+				12,
+				12,
+				5), _score(0) {
 	drawShip();
-
-	_w = new WeaponTripleDiagonal();
+	_w = new WeaponBasic();
 	_ship_design = "<^^>";
 	_p.pushFront(new Position(LINES - 1, (COLS / 2) - 1));
 	_p.pushFront(new Position(LINES - 2, COLS / 2));
@@ -43,7 +43,24 @@ ShipPlayer::ShipPlayer(ShipPlayer const &i) {
 /** Public **/
 
 
-List<ABullet *> *ShipPlayer::fire(){
+void ShipPlayer::setWeapon(AWeapon *w) {
+	if (w) {
+		delete _w;
+		_w = w;
+	}
+}
+
+unsigned int ShipPlayer::getScore() const {
+	return _score;
+}
+
+void ShipPlayer::setScore(unsigned int score) {
+	_score = score;
+}
+
+List<ABullet *> *ShipPlayer::fire() {
+	if (_w == 0)
+		return 0;
 	if (_current_bullets >= _w->getSize()) {
 		_current_bullets -= _w->getSize();
 		system("afplay $PWD/sound/piou.mp3 &");
@@ -63,21 +80,34 @@ void ShipPlayer::moveShip(Move m) {
 
 		case EAST:
 			if (_p.last()->data->getX() != COLS - 1)
-				for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next)
+				for (List<Position *>::t_list *it = _p.begin();
+					 it != 0; it = it->next)
 					it->data->setX(it->data->getX() + 1);
 			break;
 		case WEST:
 			if (_p.begin()->data->getX() != 1)
-				for (List<Position *>::t_list *it = _p.begin();it != 0; it = it->next)
+				for (List<Position *>::t_list *it = _p.begin();
+					 it != 0; it = it->next) {
 					it->data->setX(it->data->getX() - 1);
+				}
 			break;
-		case NORTH:break;
-		case SOUTH:break;
-		case NONE:break;
-		case NORTHWEST:break;
-		case NORTHEAST:break;
-		case SOUTHEAST:break;
-		case SOUTHWEST:break;
+		case NORTH:
+			for (List<Position *>::t_list *it = _p.begin();
+				 it != 0; it = it->next)
+				it->data->setY(it->data->getY() - 1);
+			break;
+		case SOUTH:
+			break;
+		case NONE:
+			break;
+		case NORTHWEST:
+			break;
+		case NORTHEAST:
+			break;
+		case SOUTHEAST:
+			break;
+		case SOUTHWEST:
+			break;
 	}
 	attron(COLOR_PAIR(CYAN));
 	AShip::drawShip();
@@ -89,6 +119,7 @@ void ShipPlayer::getAmmo() {
 }
 
 /** Private **/
+
 /** Operator **/
 
 ShipPlayer &ShipPlayer::operator=(ShipPlayer const &i) {

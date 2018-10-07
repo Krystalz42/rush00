@@ -501,6 +501,33 @@ srcs/Weapon/WeaponBasic.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponBasic.cpp.s
 .PHONY : srcs/Weapon/WeaponBasic.cpp.s
 
+srcs/Weapon/WeaponDoubleVertical.o: srcs/Weapon/WeaponDoubleVertical.cpp.o
+
+.PHONY : srcs/Weapon/WeaponDoubleVertical.o
+
+# target to build an object file
+srcs/Weapon/WeaponDoubleVertical.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponDoubleVertical.cpp.o
+.PHONY : srcs/Weapon/WeaponDoubleVertical.cpp.o
+
+srcs/Weapon/WeaponDoubleVertical.i: srcs/Weapon/WeaponDoubleVertical.cpp.i
+
+.PHONY : srcs/Weapon/WeaponDoubleVertical.i
+
+# target to preprocess a source file
+srcs/Weapon/WeaponDoubleVertical.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponDoubleVertical.cpp.i
+.PHONY : srcs/Weapon/WeaponDoubleVertical.cpp.i
+
+srcs/Weapon/WeaponDoubleVertical.s: srcs/Weapon/WeaponDoubleVertical.cpp.s
+
+.PHONY : srcs/Weapon/WeaponDoubleVertical.s
+
+# target to generate assembly for a file
+srcs/Weapon/WeaponDoubleVertical.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponDoubleVertical.cpp.s
+.PHONY : srcs/Weapon/WeaponDoubleVertical.cpp.s
+
 srcs/Weapon/WeaponMob.o: srcs/Weapon/WeaponMob.cpp.o
 
 .PHONY : srcs/Weapon/WeaponMob.o
@@ -581,6 +608,33 @@ srcs/Weapon/WeaponTripleVertical.s: srcs/Weapon/WeaponTripleVertical.cpp.s
 srcs/Weapon/WeaponTripleVertical.cpp.s:
 	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponTripleVertical.cpp.s
 .PHONY : srcs/Weapon/WeaponTripleVertical.cpp.s
+
+srcs/Weapon/WeaponUltime.o: srcs/Weapon/WeaponUltime.cpp.o
+
+.PHONY : srcs/Weapon/WeaponUltime.o
+
+# target to build an object file
+srcs/Weapon/WeaponUltime.cpp.o:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponUltime.cpp.o
+.PHONY : srcs/Weapon/WeaponUltime.cpp.o
+
+srcs/Weapon/WeaponUltime.i: srcs/Weapon/WeaponUltime.cpp.i
+
+.PHONY : srcs/Weapon/WeaponUltime.i
+
+# target to preprocess a source file
+srcs/Weapon/WeaponUltime.cpp.i:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponUltime.cpp.i
+.PHONY : srcs/Weapon/WeaponUltime.cpp.i
+
+srcs/Weapon/WeaponUltime.s: srcs/Weapon/WeaponUltime.cpp.s
+
+.PHONY : srcs/Weapon/WeaponUltime.s
+
+# target to generate assembly for a file
+srcs/Weapon/WeaponUltime.cpp.s:
+	$(MAKE) -f CMakeFiles/_.dir/build.make CMakeFiles/_.dir/srcs/Weapon/WeaponUltime.cpp.s
+.PHONY : srcs/Weapon/WeaponUltime.cpp.s
 
 srcs/main.o: srcs/main.cpp.o
 
@@ -741,6 +795,9 @@ help:
 	@echo "... srcs/Weapon/WeaponBasic.o"
 	@echo "... srcs/Weapon/WeaponBasic.i"
 	@echo "... srcs/Weapon/WeaponBasic.s"
+	@echo "... srcs/Weapon/WeaponDoubleVertical.o"
+	@echo "... srcs/Weapon/WeaponDoubleVertical.i"
+	@echo "... srcs/Weapon/WeaponDoubleVertical.s"
 	@echo "... srcs/Weapon/WeaponMob.o"
 	@echo "... srcs/Weapon/WeaponMob.i"
 	@echo "... srcs/Weapon/WeaponMob.s"
@@ -750,6 +807,9 @@ help:
 	@echo "... srcs/Weapon/WeaponTripleVertical.o"
 	@echo "... srcs/Weapon/WeaponTripleVertical.i"
 	@echo "... srcs/Weapon/WeaponTripleVertical.s"
+	@echo "... srcs/Weapon/WeaponUltime.o"
+	@echo "... srcs/Weapon/WeaponUltime.i"
+	@echo "... srcs/Weapon/WeaponUltime.s"
 	@echo "... srcs/main.o"
 	@echo "... srcs/main.i"
 	@echo "... srcs/main.s"

@@ -9,15 +9,17 @@
 #include <Bullets/BulletsManager.hpp>
 #include <utils/List.hpp>
 #include <utils/Star.hpp>
+#include <Ship/ShipPlayer.hpp>
 
 class Space {
 private:
 	List<AShip *> *ship_ennemy;
-	AShip *ship_user;
+	ShipPlayer *ship_user;
 	List<Star *> _star;
 	ShipManager *_sm;
 	BulletsManager *_bm;
 	unsigned int _level;
+	time_t _time;
 
 	void initLevel();
 

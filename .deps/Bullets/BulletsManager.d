@@ -5,6 +5,7 @@
   incs/utils/ICollision.hpp incs/Ship/AShip.hpp \
   incs/utils/IShipsManager.hpp incs/Weapon/AWeapon.hpp \
   incs/Ship/ShipMob.hpp incs/Ship/ShipBoss.hpp \
+  incs/utils/IBulletsManagerUser.hpp incs/utils/IScore.hpp \
   incs/Bullets/BasicBullet.hpp incs/Bullets/MobBullet.hpp
 
 incs/Bullets/BulletsManager.hpp:
@@ -32,6 +33,10 @@ incs/Weapon/AWeapon.hpp:
 incs/Ship/ShipMob.hpp:
 
 incs/Ship/ShipBoss.hpp:
+
+incs/utils/IBulletsManagerUser.hpp:
+
+incs/utils/IScore.hpp:
 
 incs/Bullets/BasicBullet.hpp:
 

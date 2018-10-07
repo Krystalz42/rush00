@@ -63,8 +63,7 @@ void AShip::moveShip(Move m) {
 		case SOUTHEAST:break;
 		case SOUTHWEST:break;
 	}
-
-	drawShip();
+ 	drawShip();
 }
 
 bool AShip::isCollide(Position const &p) {
@@ -77,12 +76,15 @@ bool AShip::isCollide(Position const &p) {
 
 /** Public **/
 
+unsigned int AShip::getPowerfull() {
+	return _max_bullets;
+}
+
 void AShip::isHit() {
 	if (_life != 0) _life--; else 	deleteShip();
 }
 
 void AShip::getAmmo() {
-	file << _current_bullets << std::endl;
 	_current_bullets++;
 }
 
@@ -144,3 +146,5 @@ AShip::~AShip() {
 		delete it->data;
 	}
 }
+
+

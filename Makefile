@@ -62,7 +62,10 @@ SRCS = \
                 Weapon/WeaponTripleDiagonal.cpp\
                 Ship/ShipBigBoss.cpp		\
                 Weapon/WeaponTripleVertical.cpp\
+                Weapon/WeaponDoubleVertical.cpp\
                 utils/Star.cpp\
+                Weapon/WeaponUltime.cpp\
+                Ship/ShipMedium.cpp\
 
 
 # ---------------------------------------------------------------------------- #

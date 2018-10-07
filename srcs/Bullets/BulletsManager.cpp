@@ -12,6 +12,7 @@
 #include <iomanip>
 #include <fstream>
 #include <curses.h>
+#include <utils/IBulletsManagerUser.hpp>
 
 extern std::ofstream file;
 
@@ -20,7 +21,7 @@ extern std::ofstream file;
 /** Constructor **/
 
 BulletsManager::BulletsManager(List<IBulletsManager *> *pList,
-							   IBulletsManager *user) :
+							   IBulletsManagerUser *user) :
 		_shooters_ennemy(pList),
 		_shooter_user(user) {
 }
@@ -81,6 +82,8 @@ void BulletsManager::moveBasicBullets() {
 			if (enemy_shooters->data->isAlive() &&  enemy_shooters->data->isCollide(user_bullets->data->getPosition())) {
 //				file << "isHit" << std::endl;
 				enemy_shooters->data->isHit();
+				if (!enemy_shooters->data->isAlive())
+					_shooter_user->setScore(_shooter_user->getScore() + enemy_shooters->data->getPowerfull());
 				ABullet * tmp_ = user_bullets->data;
 				tmp = user_bullets;
 				user_bullets = user_bullets->next;

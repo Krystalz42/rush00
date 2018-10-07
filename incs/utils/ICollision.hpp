@@ -16,6 +16,8 @@ public:
 
 	virtual bool isAlive() const = 0;
 
+	virtual unsigned int getPowerfull() = 0;
+
 	virtual ~ICollision() {}
 };
 

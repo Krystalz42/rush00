@@ -6,6 +6,7 @@
 #include <Weapon/WeaponTripleDiagonal.hpp>
 #include <ncurses.h>
 #include <Weapon/WeaponTripleVertical.hpp>
+#include <Weapon/WeaponUltime.hpp>
 #include "Ship/ShipBigBoss.hpp"
 
 /** Static **/
@@ -16,20 +17,23 @@ ShipBigBoss::ShipBigBoss() : AShip(
 		10,
 		10,
 		20) {
-	_w = new WeaponTripleVertical();
-	_ship_design = "_____"
-				   "/o   o\\"
-				   "\\_____/"
-				   "| | |";
+	_w = new WeaponUltime();
+	_ship_design = "_______"
+				   "/__/ \\__\\"
+				   "\\_______/"
+				   "^   ^";
 
-	Position p(rand() % (LINES / 4) + 10 + 1, COLS / 2);
+	Position p(rand() % (LINES / 5) + 10 + 1, COLS / 2);
 
+	_p.pushFront(new Position(p.getY() - 1, p.getX() - 3));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 2));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() - 1));
 	_p.pushFront(new Position(p.getY() - 1, p.getX()));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() + 1));
 	_p.pushFront(new Position(p.getY() - 1, p.getX() + 2));
+	_p.pushFront(new Position(p.getY() - 1, p.getX() + 3));
 
+	_p.pushFront(new Position(p.getY(), p.getX() - 4));
 	_p.pushFront(new Position(p.getY(), p.getX() - 3));
 	_p.pushFront(new Position(p.getY(), p.getX() - 2));
 	_p.pushFront(new Position(p.getY(), p.getX() - 1));
@@ -37,8 +41,10 @@ ShipBigBoss::ShipBigBoss() : AShip(
 	_p.pushFront(new Position(p.getY(), p.getX() + 1));
 	_p.pushFront(new Position(p.getY(), p.getX() + 2));
 	_p.pushFront(new Position(p.getY(), p.getX() + 3));
+	_p.pushFront(new Position(p.getY(), p.getX() + 4));
 
 
+	_p.pushFront(new Position(p.getY() + 1, p.getX() - 4));
 	_p.pushFront(new Position(p.getY() + 1, p.getX() - 3));
 	_p.pushFront(new Position(p.getY() + 1, p.getX() - 2));
 	_p.pushFront(new Position(p.getY() + 1, p.getX() - 1));
@@ -46,6 +52,7 @@ ShipBigBoss::ShipBigBoss() : AShip(
 	_p.pushFront(new Position(p.getY() + 1, p.getX() + 1));
 	_p.pushFront(new Position(p.getY() + 1, p.getX() + 2));
 	_p.pushFront(new Position(p.getY() + 1, p.getX() + 3));
+	_p.pushFront(new Position(p.getY() + 1, p.getX() + 4));
 
 
 	_p.pushFront(new Position(p.getY() + 2, p.getX() - 2));
@@ -111,8 +118,9 @@ void ShipBigBoss::moveShip(Move m) {
 		case NONE:
 			break;
 	}
-	drawShip();
-}
+	attron(COLOR_PAIR(GREEN));
+	AShip::drawShip();
+	attroff(COLOR_PAIR(GREEN));}
 
 /** Operator **/
 

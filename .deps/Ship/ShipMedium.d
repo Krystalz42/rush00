@@ -1,12 +1,12 @@
-.objs/Ship/ShipBigBoss.o: srcs/Ship/ShipBigBoss.cpp \
-  incs/Ship/ShipBigBoss.hpp incs/Ship/AShip.hpp incs/utils/IShooter.hpp \
+.objs/Ship/ShipMedium.o: srcs/Ship/ShipMedium.cpp \
+  incs/Ship/ShipMedium.hpp incs/Ship/AShip.hpp incs/utils/IShooter.hpp \
   incs/Bullets/ABullet.hpp incs/ft_retro.h incs/utils/Position.hpp \
   incs/utils/List.hpp incs/utils/IBulletsManager.hpp \
   incs/utils/ICollision.hpp incs/utils/IShipsManager.hpp \
-  incs/Weapon/AWeapon.hpp incs/Weapon/WeaponTripleDiagonal.hpp \
-  incs/Weapon/WeaponTripleVertical.hpp incs/Weapon/WeaponUltime.hpp
+  incs/Weapon/AWeapon.hpp incs/Bullets/MobBullet.hpp \
+  incs/Weapon/WeaponDoubleVertical.hpp
 
-incs/Ship/ShipBigBoss.hpp:
+incs/Ship/ShipMedium.hpp:
 
 incs/Ship/AShip.hpp:
 
@@ -28,8 +28,6 @@ incs/utils/IShipsManager.hpp:
 
 incs/Weapon/AWeapon.hpp:
 
-incs/Weapon/WeaponTripleDiagonal.hpp:
+incs/Bullets/MobBullet.hpp:
 
-incs/Weapon/WeaponTripleVertical.hpp:
-
-incs/Weapon/WeaponUltime.hpp:
+incs/Weapon/WeaponDoubleVertical.hpp:

@@ -4,7 +4,8 @@
   incs/utils/IBulletsManager.hpp incs/utils/ICollision.hpp \
   incs/utils/IShipsManager.hpp incs/Weapon/AWeapon.hpp \
   incs/Ship/ShipBoss.hpp incs/Weapon/WeaponTripleDiagonal.hpp \
-  incs/Weapon/WeaponTripleVertical.hpp
+  incs/Weapon/WeaponTripleVertical.hpp \
+  incs/Weapon/WeaponDoubleVertical.hpp
 
 incs/Ship/AShip.hpp:
 
@@ -31,3 +32,5 @@ incs/Ship/ShipBoss.hpp:
 incs/Weapon/WeaponTripleDiagonal.hpp:
 
 incs/Weapon/WeaponTripleVertical.hpp:
+
+incs/Weapon/WeaponDoubleVertical.hpp:
