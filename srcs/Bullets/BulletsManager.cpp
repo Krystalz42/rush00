@@ -45,9 +45,8 @@ void BulletsManager::fireUser() {
 }
 
 void BulletsManager::fireMob() {
-	List<IBulletsManager*>::t_list *it = _shooters_ennemy->begin();
 	List<ABullet *> *lst_bullets;
-	if (it != 0)
+	if (_shooters_ennemy != 0)
 		for (List<IBulletsManager*>::t_list *it = _shooters_ennemy->begin(); it != 0; it = it->next)
 			if (it->data->isAlive() && rand() % FIRE_RATE_MOB == 0) {
 				lst_bullets = it->data->fire();
