@@ -17,7 +17,6 @@ void listenUser() {
 			std::cerr << "Windows too small" << std::endl;
 			Utils::getInstance()->exitAndReset();
 		}
-
 		if ((ch = getch()) != ERR)
 			if (s.getInput(ch))
 				return;
